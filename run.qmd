@@ -1,0 +1,117 @@
+---
+title: "Run"
+author: 
+- name: Kaspar Rufibach
+  affiliation: Meiringen
+date: "Letzte Aenderung: `r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  rmarkdown::html_document:
+    highlight: pygments
+    number_sections: yes
+    self_contained: yes
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+---
+
+```{r setup, include=FALSE}
+## load packages
+packs.html <- c("knitr", "pander", "reporttools", "dplyr", "lubridate", "readxl", "tibble")
+for (i in 1:length(packs.html)){library(packs.html[i], character.only = TRUE)}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+path <- "C:/rufibach/01_personal/05_Sport/40_reporting/"
+path <- paste(getwd(), "/", sep = "")
+
+source(paste(path, "/functions/input_touren.r", sep = ""))
+source(paste(path, "/functions/hm_print.r", sep = ""))
+
+## =================================================================
+## input data
+## =================================================================
+cy <- as.character(read_excel(paste(path, "data/currentyear.xlsx", sep = "")))
+touren <- input_touren(path)
+                  
+# Run
+all <- (touren %>% mutate(skihalbtag = NULL, skihalbtag_fam = NULL, begleitung1 = NULL, begleitung2 = NULL, begleitung3 = NULL, 
+                          begleitung4 = NULL, beg = NULL, region = NULL, kommentar = NULL) %>% filter(sport == "Run") %>% arrange(end, time) )
+
+ski <- (all %>% select(start, end, date, time, startend))
+tour <- unique(ski$startend)
+```
+
+# Aktuelles Jahr 
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t <- (touren %>% filter(sport == "Run" & year(touren$date) == cy) %>% group_by(date) %>% arrange(desc(time), .by_group = TRUE) %>% slice(1) %>% hm_print())
+```
+
+Anzahl Touren: `r nrow(t)`. 
+
+::: {.panel-tabset .nav-pills}
+
+## Nach Datum
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t1 <- (t %>% select(-beg) %>% arrange(date)) %>% rowid_to_column("Nr")
+pander(t1)
+```
+
+## Nach Hoehenmeter
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t1 <- (t %>% select(-beg) %>% filter(is.na(hm_diff) == FALSE) %>% arrange(desc(hm_diff))) %>% rowid_to_column("Nr")
+pander(t1)
+```
+
+## Nach Hoehenmeter pro Stunde
+
+Dieser Abschnitt sortiert die Touren absteigend nach Hoehenmetern pro Stunde, wobei fuer jede Tour nur die schnellste genommen wird.
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t1 <- (t %>% group_by(paste(start, end, sep = "")) %>% filter(is.na(hm_h) == FALSE) %>% arrange(desc(hm_h)) %>% slice(1) %>% ungroup())
+t1 <- (t1 %>% hm_print())
+t1 <- (t1 %>% select(-beg)) %>% rowid_to_column("Nr")
+pander(t1)
+```
+
+:::
+
+# Schuh
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+all_m0 <- all[all$date >= "2024-07-20" & all$date <= "2025-08-31" & is.na(all$schuh) == FALSE, ]
+all_m <- (all_m0 %>% arrange(date) %>% group_by(date) %>% slice(1) %>% select(-season))
+sum_mod <- (all_m %>% arrange(schuh) %>% group_by(schuh) %>% summarise(Km = sum(km_manual, na.rm = TRUE), Hm = sum(hm_diff, na.rm = TRUE)))
+kable(sum_mod)
+```
+
+# Touren nach Ziel
+
+Dieser Abschnitt listet die Touren auf, chronologisch oder nach Laufzeit. Fuer die Listen nach Zeit werden die Touren ohne Zeitangabe nicht aufgefuehrt.
+
+```{r echo = FALSE, message = FALSE, warning = FALSE, results = "asis"}
+
+# how to do this with child documents: https://gist.github.com/rmoff/a043676a2f084b81a434
+
+out <- NULL
+for (i in 1:length(tour)){
+  out <- c(out, knit_expand('_tour_summary.qmd'))
+}
+
+cat(knit(text = unlist(paste(out, collapse = '\n')), quiet = TRUE))
+```
+
+# Hoehenmeter pro Stunde
+
+Dieser Abschnitt sortiert die Touren absteigend nach Hoehenmetern pro Stunde, wobei fuer jede Tour nur die schnellste genommen wird.
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t <- (touren %>% filter(is.na(hm_h) == FALSE & sport == "Run"))
+t <- (t %>% group_by(paste(start, end, sep = "")) %>% arrange(desc(hm_h)) %>% slice(1) %>% ungroup())
+t <- (t %>% hm_print())
+t1 <- (t %>% select(-beg))
+pander(t1)
+```
+

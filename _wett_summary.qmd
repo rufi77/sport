@@ -1,0 +1,68 @@
+```{r echo = FALSE}
+# how to do this with child documents: https://gist.github.com/rmoff/a043676a2f084b81a434
+
+i <- as.numeric('{{i}}')
+ind <- (Anlass == names(a)[i])
+ind[is.na(ind)] <- FALSE
+```
+
+## `r names(a)[i]` 
+
+::: {.panel-tabset .nav-pills}
+
+### Relativer Rang Kategorie
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 3.5}
+  # Relativer Rang
+  par(mfrow = c(1, 1), mar = c(3.5, 6, 3, 1), las = 2)
+  y <- pmin(1, (Kat_Rang / Kat_Teiln)[ind], na.rm = TRUE)
+  plot(Jahr[ind], y, type = "b", pch = 1, 
+         main = paste(names(a)[i], ": relativer Rang Kategorie", sep = ""), 
+         xaxt = "n", ylim = c(0, max(round(10 * y) / 10) + 0.1), lwd = 2,
+         xlab = "", ylab = "Relativer Rang Kategorie", col = 2)
+  axis(1, at = Jahr, labels = Jahr)
+  abline(h = 0:10 / 10, lty = 2, col = grey(0.5))
+```
+
+### Relativer Range Männer
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 3.5}
+  par(mfrow = c(1, 1), mar = c(3.5, 6, 3, 1), las = 2)
+  y <- pmin(1, (M_Rang / M_Teiln)[ind], na.rm = TRUE)
+  plot(Jahr[ind], y, type = "b", pch = 1, 
+         main = paste(names(a)[i], ": relativer Rang Maenner", sep = ""), 
+         xaxt = "n", ylim = c(0, max(round(10 * y) / 10) + 0.1), lwd = 2,
+         xlab = "", ylab = "Relativer Rang Maenner", col = 2)
+  axis(1, at = Jahr, labels = Jahr)
+  abline(h = 0:10 / 10, lty = 2, col = grey(0.5))
+```
+
+### Zeit
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 3.5}
+  par(mfrow = c(1, 1), mar = c(3.5, 6, 3, 1), las = 2)
+  y <- as.numeric(Zeit[ind])
+  plot(Jahr[ind], y, type = "b", pch = 1, 
+         main = paste(names(a)[i], ": Zeit", sep = ""), yaxt = "n",
+         xlab = "", ylab = "", col = 2, ylim = c(min(y, na.rm = TRUE), max(y, na.rm = TRUE)), lwd = 2)
+         axis(2, at = ypos, labels = as.character(ylab))
+```
+
+### Zeiten, nach Jahr
+
+```{r, echo = FALSE, results = 'asis', message = FALSE}
+panderOptions('knitr.auto.asis', FALSE)
+d <- as.data.frame(wett[ind, c("Jahr", "Anlass", "Zeit")])
+rownames(d) <- NULL
+pander(d)          
+```
+
+### Zeiten, sortiert
+
+```{r, echo = FALSE, results = 'asis', message = FALSE}
+library(pander)
+d2 <- (d[order(d[, "Zeit"]), ] %>% rowid_to_column("Nr"))
+pander(d2)          
+```
+
+:::

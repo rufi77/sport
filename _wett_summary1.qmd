@@ -1,0 +1,19 @@
+```{r echo = FALSE}
+# how to do this with child documents: https://gist.github.com/rmoff/a043676a2f084b81a434
+
+i <- as.numeric('{{i}}')
+ind <- (Anlass == names(a)[i])
+ind[is.na(ind)] <- FALSE
+```
+
+## `r names(a)[i]` 
+
+```{r, echo = FALSE, results = 'asis', message = FALSE}
+panderOptions('knitr.auto.asis', FALSE)
+d <- as.data.frame(wett[ind, c("Jahr", "Anlass", "Zeit")])
+rownames(d) <- NULL
+pander(d)          
+```
+
+
+

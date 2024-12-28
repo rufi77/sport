@@ -1,0 +1,254 @@
+---
+title: "Zusammenfassungen Sport"
+author: 
+- name: Kaspar Rufibach
+  affiliation: Meiringen
+date: "Letzte Aenderung: `r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  rmarkdown::html_document:
+    highlight: pygments
+    number_sections: yes
+    self_contained: yes
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+---
+
+```{r setup, include=FALSE}
+## load packages
+packs.html <- c("knitr", "pander", "reporttools", "dplyr", "readxl", "ggplot2")
+for (i in 1:length(packs.html)){library(packs.html[i], character.only = TRUE)}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+path <- paste(getwd(), "/", sep = "")
+
+source(paste(path, "functions/plotSummary.r", sep = ""))
+
+## =================================================================
+## input 
+## =================================================================
+cy <- as.character(read_excel(paste(path, "data/currentyear.xlsx", sep = "")))
+sportKR <- as.data.frame(read_excel(paste(path, "data/zsf.xlsx", sep = ""), col_types = NULL))
+sportKR <- (sportKR %>% mutate("Sport" = as.factor(Sport), "Einheit" = as.factor(Einheit)))
+
+lastcol <- ncol(sportKR)
+
+# define which years to include
+include <- sportKR[sportKR[, "Sport"] == "Include", 3:ncol(sportKR)]
+include <- as.numeric(include) * (3:ncol(sportKR))
+include <- include[include > 0] 
+
+# collapse certain disciplines
+sportKR[sportKR[, "Sport"] == "Bike", 3:ncol(sportKR)] <- sportKR[sportKR[, "Sport"] == "Bike", 3:ncol(sportKR)] + sportKR[sportKR[, "Sport"] == "Velo", 3:ncol(sportKR)] 
+
+sportKR[sportKR[, "Sport"] == "Running", 3:ncol(sportKR)] <- sportKR[sportKR[, "Sport"] == "Running", 3:ncol(sportKR)] + sportKR[sportKR[, "Sport"] == "Trail Running", 3:ncol(sportKR)] 
+
+# remove unused rows
+sportKR <- (sportKR %>% filter(!(Sport %in% c("Include", "Velo", "Trail Running"))))
+
+# linearly extrapolate last column to full year
+toda <- Sys.Date()
+first <- as.Date(paste(substr(toda, 1, 4), "-01-01", sep = ""))
+frac <- as.numeric((toda - first) / 365.25)
+#sportKR[, lastcol] <- sportKR[, lastcol] / frac
+#include <- c(include, tail(include, 1) + 1)
+
+# add extrapolation, for simplicity give it next year as label
+sportKR[, as.character(as.numeric(tail(colnames(sportKR), 1)) + 1)] <- sportKR[, lastcol] / frac
+dat <- sportKR[, 3:ncol(sportKR)]
+include <- c(include, tail(include, 1) + 1)
+
+# remove linear extrapolation
+include <- include[1:(length(include) - 1)]
+
+# only use years defined by "include"
+sportKR <- sportKR[, c(1, 2, include)]
+dat <- dat[, include - 2]
+
+# choose scaling
+skal <- c(1, 52)
+skal.nam <- c(" pro Jahr", " pro Woche")
+
+# monthly ascent
+ascent <- as.data.frame(read_excel(paste(path, "data/ascentmonthly.xlsx", sep = ""), col_types = NULL))
+```
+
+<!-- Numbers labelled `r tail(colnames(dat), 1)` are linearly extrapolated from `r toda` to the full year of `r tail(colnames(dat), 2)[1]`. -->
+
+# Jaehrliche Zusammenfassungen 
+
+::: {.panel-tabset .nav-pills}
+
+`r cy`` bezieht sich immer auf den gegenwaertigen Stand linear extrapoliert auf das ganze Jahr.
+
+## Kilometer
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 5}
+par(mfrow = c(1, 1), mar = c(3.5, 4.5, 3, 1), las = 2)
+km <- subset(sportKR, Einheit == "Km")
+xs <- as.numeric(colnames(km)[3:ncol(km)])
+ys <- km[, 3:ncol(km)]
+plot(0, 0, type = "n", xlim = range(xs), ylim = c(0, max(ys)), xlab = "", ylab = "Kilometer", 
+     main = "Kilometer")
+for (i in 1:nrow(km)){lines(xs, ys[i, ], type = "b", col = i + 1, lwd = 2)}
+legend("bottomleft", legend = km$Sport, lty = 1, col = 2:(nrow(km) + 1), bty = "n", lwd = 2)
+```
+
+## Aufstieg
+
+```{r, echo = FALSE, results = 'asis', message = FALSE}
+km <- subset(sportKR, Einheit == "Hm")
+xs <- as.numeric(colnames(km)[3:ncol(km)])
+ys <- km[, 3:ncol(km)]
+ystot <- apply(ys, 2, sum)
+ystot <- rbind(ystot, ystot / 52, ystot / 365)
+rownames(ystot) <- c("Total", "pro Woche", "pro Tag")
+pander(ystot) 
+```
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 5}
+par(mfrow = c(1, 1), mar = c(3.5, 5, 3, 1), las = 2)
+plot(0, 0, type = "n", xlim = range(xs), ylim = c(0, max(ys)), xlab = "", ylab = "", 
+     main = "Aufstieg", yaxt = "n")
+axis(2, at = seq(0, 10 ^ 6, by = 20000), labels = format(seq(0, 10 ^ 6, by = 20000), scientific = FALSE))
+for (i in 1:nrow(km)){lines(xs, ys[i, ], type = "b", col = i + 1, lwd = 2)}
+legend("topleft", legend = km$Sport, lty = 1, col = 2:(nrow(km) + 1), bty = "n", lwd = 2)
+
+par(las = 0)
+mtext(text = "Aufstieg", side = 2, line = 4, adj = 0.5)
+```
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 5}
+df <- rbind(cbind(xs, t(ys)[, 1]), cbind(xs, t(ys)[, 2]), cbind(xs, t(ys)[, 3]), cbind(xs, t(ys)[, 4]))
+df <- data.frame(df, rep(as.character(km[, "Sport"]), each = length(xs)))
+colnames(df) <- c("Jahr", "Hm", "Disziplin")
+ggplot(df, aes(x = Jahr, y = Hm, fill = Disziplin)) + geom_area(position = 'stack')
+```
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 5}
+par(mfrow = c(1, 1), mar = c(6, 5, 3, 1), las = 2)
+plot(0, 0, type = "n", xlim = c(1, 12), ylim = c(0, 20000), xlab = "", ylab = "", main = "Aufstieg", xaxt = "n")
+for (i in 2:ncol(ascent)){lines(1:12, ascent[, i], type = "b", col = i, lwd = 2)}
+axis(1, at = 1:12, labels = ascent[, "month"])
+par(las = 0)
+mtext(text = "Aufstieg (Hm)", side = 2, line = 4, adj = 0.5)
+legend("bottomleft", legend = paste(colnames(ascent)[-1], ": ", apply(ascent[, -1], 2, sum, na.rm = TRUE), sep = ""), lty = 1, col = 2:ncol(ascent), bty = "n", lwd = 2)
+```
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 5}
+par(mfrow = c(1, 1), mar = c(6, 5, 5, 1), las = 2)
+plot(0, 0, type = "n", xlim = c(1, 12), ylim = c(0, 170000), xlab = "", ylab = "", main = "Kumulativer Aufstieg", xaxt = "n", yaxt = "n")
+for (i in 2:ncol(ascent)){
+  tmp1 <- ascent[, i]
+  tmp2 <- cumsum(na.omit(tmp1))
+  if (length(tmp2) < 12){tmp2 <- c(tmp2, rep(NA, sum(is.na(tmp1))))}
+  
+  lines(1:12, tmp2, type = "b", col = i, lwd = 2)
+  }
+axis(1, at = 1:12, labels = ascent[, "month"])
+axis(2, at = seq(0, 10 ^ 6, by = 2.5 * 10 ^ 4), labels = format(seq(0, 10 ^ 6, by = 2.5 * 10 ^ 4), scientific = FALSE))
+par(las = 0)
+mtext(text = "Kumulativer Aufstieg (Hm)", side = 2, line = 4, adj = 0.5)
+legend("topleft", legend = paste(colnames(ascent)[-1], ": ", apply(ascent[, -1], 2, sum, na.rm = TRUE), sep = ""), lty = 1, col = 2:ncol(ascent), bty = "n", lwd = 2)
+gap <- (cumsum(ascent[, ncol(ascent)]) - cumsum(ascent[, ncol(ascent) - 1]))[tail(which(is.na(ascent[, ncol(ascent)]) == FALSE), 1)]
+mtext(paste("Abweichung zu vorherigem Jahr (letzter Monat) = ", gap, " Hm", sep = ""), side = 3, line = 0.5)
+
+abline(h = 10 ^ 5, col = grey(0.5), lty = 3)
+```
+
+
+## Zeit
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 5}
+par(mfrow = c(1, 1), mar = c(3.5, 4.5, 3, 1), las = 2)
+km <- subset(sportKR, Einheit == "Time")
+xs <- as.numeric(colnames(km)[3:ncol(km)])
+ys <- km[, 3:ncol(km)]
+plot(0, 0, type = "n", xlim = range(xs), ylim = c(0, max(ys)), xlab = "", ylab = "Stunden", 
+     main = "Stunden")
+for (i in 1:nrow(km)){lines(xs, ys[i, ], type = "b", col = i + 1, lwd = 2)}
+legend("bottomleft", legend = km$Sport, lty = 1, col = 2:(nrow(km) + 1), bty = "n", lwd = 2)
+```
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 5}
+df <- rbind(cbind(xs, t(ys)[, 1]), cbind(xs, t(ys)[, 2]), cbind(xs, t(ys)[, 3]))
+df <- data.frame(df, rep(as.character(km[, "Sport"]), each = length(xs)))
+colnames(df) <- c("Jahr", "Zeit", "Disziplin")
+ggplot(df, aes(x = Jahr, y = Zeit, fill = Disziplin)) + geom_area(position = 'stack')
+```
+:::
+
+# Pro Jahr
+
+::: {.panel-tabset .nav-pills}
+
+## Bike
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 5}
+s <- 1
+for (i in 1:3){plotSummary(dat = dat, sportKR = sportKR, i = i, s = s)}
+```
+
+## Run
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 5}
+for (i in 4:6){plotSummary(dat = dat, sportKR = sportKR, i = i, s = s)}
+```
+
+## Hiking
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 5}
+for (i in 7:9){plotSummary(dat = dat, sportKR = sportKR, i = i, s = s)}
+```
+
+## Skitouring
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 5}
+for (i in 19:20){plotSummary(dat = dat, sportKR = sportKR, i = i, s = s)}
+```
+
+## Exersuisse
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 5}
+for (i in 10){plotSummary(dat = dat, sportKR = sportKR, i = i, s = s)}
+```
+
+:::
+
+# Pro Woche
+
+::: {.panel-tabset .nav-pills}
+
+## Bike
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 5}
+s <- 2
+par(mar = c(4, 4, 4, 1), las = 1)
+for (i in 1:3){plotSummary(dat = dat, sportKR = sportKR, i = i, s = s)}
+```
+
+## Run
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 5}
+for (i in 4:6){plotSummary(dat = dat, sportKR = sportKR, i = i, s = s)}
+```
+
+## Hiking
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 5}
+for (i in 7:9){plotSummary(dat = dat, sportKR = sportKR, i = i, s = s)}
+```
+## Skitouring
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 5}
+for (i in 19:20){plotSummary(dat = dat, sportKR = sportKR, i = i, s = s)}
+```
+
+## Exersuisse
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 5}
+for (i in 10){plotSummary(dat = dat, sportKR = sportKR, i = i, s = s)}
+```
+
+:::

@@ -1,0 +1,32 @@
+```{r echo = FALSE}
+i <- as.numeric('{{i}}')
+
+# how to do this with child documents: https://gist.github.com/rmoff/a043676a2f084b81a434
+t0 <- (all %>% filter(startend == tour[i]) %>% arrange(desc(date))) 
+```
+
+## `r paste(tour[i], " (", select(t0, hm_diff)[1, 1], " Hm)", sep = "")` 
+
+::: {.panel-tabset .nav-pills}
+
+### Chronologisch
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t <- (t0 %>% select(start, end, date, time, hm_h))
+pander(t)
+```
+
+### Nach Zeit
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t <- (all %>% filter(startend == tour[i] & time != "") %>% arrange(time, desc(date))) %>% mutate(d = 60 * (time_h - first(time_h))) %>% mutate(Rueckst = paste(floor(d), "m", round((1 - (ceiling(d) - d)) * 60), "s", sep = "")) %>% select(start, end, date, time, hm_h, Rueckst) %>% rowid_to_column("Nr")
+
+t[1, "Rueckst"] <- ""
+
+cut <- 15
+t <- (t %>% mutate(start = substr(start, 1, cut), end = substr(end, 1, cut)))
+
+pander(t)
+```
+
+:::

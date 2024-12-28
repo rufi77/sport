@@ -1,0 +1,91 @@
+---
+title: "Tage im Ausland"
+author: 
+- name: Kaspar Rufibach
+  affiliation: Meiringen
+date: "Letzte Aenderung: `r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  rmarkdown::html_document:
+    highlight: pygments
+    number_sections: yes
+    self_contained: yes
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+---
+
+```{r setup, include=FALSE}
+## load packages
+packs.html <- c("knitr", "pander", "dplyr", "readxl", "ggplot2", "lubridate", "tidyr")
+for (i in 1:length(packs.html)){library(packs.html[i], character.only = TRUE)}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+path <- paste(getwd(), "/", sep = "")
+
+#source(paste(path, "functions/plotSummary.r", sep = ""))
+
+## =================================================================
+## input 
+## =================================================================
+countries <- as.data.frame(read_excel(paste(path, "data/countries.xlsx", sep = ""), col_types = NULL))
+countries <- (countries %>% mutate("year" = year(month)))
+
+countries <- countries %>% pivot_longer(cols = US:Tunisia, names_to = "country", values_to = "days")
+countries2 <- countries %>%
+  group_by(year, country) %>%
+    summarise(days = sum(days, na.rm = TRUE)) 
+
+# print(countries2, n = 40)
+
+countries3 <- countries %>%
+  group_by(year) %>%
+    summarise(days = sum(days, na.rm = TRUE)) 
+```
+
+::: {.panel-tabset .nav-pills}
+
+# Pro Jahr und Land
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 9}
+par(las = 2, mar = c(7, 4.5, 3, 1), mfrow = c(4, 3))
+for (y in sort(unique(countries2$year))){
+  barplot(days ~ country, data = countries2, subset = (year == y), main = y, xlab = "", ylim = c(0, 15), col = 1:10)
+}
+```
+
+<!-- ```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 9} -->
+<!-- ggplot(countries2, aes(fill = country, y = days, x = country)) +  -->
+<!--   geom_bar(position="dodge", stat="identity") + -->
+<!--   ggtitle("Travel") + -->
+<!--   facet_wrap(~year) + -->
+<!-- #  theme_ipsum()  -->
+<!--   theme(legend.position = "none") + -->
+<!--   xlab("") + -->
+<!--   theme(axis.text.x = element_text(angle = 90, hjust = 1)) + -->
+<!--   geom_text(aes(label = days), vjust = 1.6, color = "white", size = 3.5) +  -->
+<!--   theme(text = element_text(size = 20)) -->
+<!-- ``` -->
+
+# Pro Jahr
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 9}
+par(las = 2, mar = c(7, 4.5, 3, 1))
+barplot(days ~ year, data = countries3, xlab = "", ylim = c(0, 45), col = 1:10)
+```
+
+<!-- ```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 4.5} -->
+<!-- ggplot(countries3, aes(fill = year, y = days, x = year)) +  -->
+<!--   geom_bar(position="dodge", stat="identity") + -->
+<!--   ggtitle("Travel") + -->
+<!-- #  facet_wrap(~year) + -->
+<!-- #  theme_ipsum()  -->
+<!--   theme(legend.position = "none") + -->
+<!--   xlab("") + -->
+<!--   theme(axis.text.x = element_text(angle = 90, hjust = 1)) + -->
+<!--   geom_text(aes(label = days), vjust = 1.6, color = "white", size = 3.5) + -->
+<!--   theme_minimal() +  -->
+<!--   theme(text = element_text(size = 20)) -->
+<!-- ``` -->
+
+:::

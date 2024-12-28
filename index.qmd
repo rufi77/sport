@@ -1,3 +1,5 @@
-# Kaspars Sportseite
+---
+title: "Sport Kaspar Rufibach"
+---
 
 Diese Seite fasst Kaspars Sportresultate zusammen.

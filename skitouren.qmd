@@ -1,0 +1,206 @@
+---
+title: "Skitouren"
+author: 
+- name: Kaspar Rufibach
+  affiliation: Meiringen
+date: "Letzte Aenderung: `r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  rmarkdown::html_document:
+    highlight: pygments
+    number_sections: yes
+    self_contained: yes
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+---
+
+```{r setup, include=FALSE}
+## load packages
+packs.html <- c("knitr", "pander", "reporttools", "dplyr", "lubridate", "readxl", "tibble", "summarytools")
+for (i in 1:length(packs.html)){library(packs.html[i], character.only = TRUE)}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+path <- "C:/rufibach/01_personal/05_Sport/40_reporting/"
+path <- paste(getwd(), "/", sep = "")
+
+source(paste(path, "/functions/input_touren.r", sep = ""))
+source(paste(path, "/functions/hm_print.r", sep = ""))
+
+## =================================================================
+## input data
+## =================================================================
+cy <- as.character(read_excel(paste(path, "data/currentyear.xlsx", sep = "")))
+s <- as.numeric(substr(cy, 3, 4))
+
+# delete when in 2024
+#s <- s - 1
+
+touren <- input_touren(path)
+                  
+# skitouren
+all <- (touren %>% mutate(skihalbtag = NULL, skihalbtag_fam = NULL, begleitung1 = NULL, 
+                          begleitung2 = NULL, begleitung3 = NULL, begleitung4 = NULL, beg = NULL,
+                          region = NULL, kommentar = NULL) %>% filter(sport == "Skitour") %>% arrange(end, time) )
+
+ski <- (all %>% select(start, end, date, time, startend))
+tour <- sort(unique(ski$startend))
+```
+
+# Aktuelle Saison {.tabset .tabset-fade .tabset-pills}
+
+## Tage auf Ski total
+
+```{r echo = FALSE, message = FALSE, warning = FALSE, results = "asis", eval = TRUE}
+# count skiing days
+
+# f1 <- table(with(touren, cbind(skihalbtag, weekdays(date))[as.numeric(season) == s & is.na(skihalbtag) == FALSE, 2]))
+# f2 <- table(with(touren, cbind(skihalbtag_fam, weekdays(date))[as.numeric(season) == s & is.na(skihalbtag_fam) == FALSE, 2]))
+# f3 <- table(with(touren, cbind(sport == "Skitour", weekdays(date))[as.numeric(season) == s & (sport == "Skitour"), 2]))
+# 
+# m1 <- data.frame(matrix(NA, nrow = 7, ncol = 4))
+# colnames(m1) <- c("Skihalbtag", "Skihalbtag Familie", "Skitour", "Wochentag")
+# m1$Wochentag <- c("Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag")
+# m1[match(names(f1), m1$Wochentag), 1] <- f1
+# m1[match(names(f2), m1$Wochentag), 2] <- f2
+# m1[match(names(f3), m1$Wochentag), 3] <- f3
+# rownames(m1) <- m1$Wochentag
+# m1 <- m1[, -4]
+# m1[is.na(m1)] <- ""
+# m1 <- t(m1)
+# pander(m1)
+
+# days on ski (double counting not possible)
+f4 <- with(touren, data.frame(date, skihalbtag, skihalbtag_fam, skitag_fam, tour = as.numeric(sport == "Skitour"), season))
+f5 <- f4[f4$season == levels(with(touren, season))[s], ]
+f5$any <- with(f5, pmax(skihalbtag, skihalbtag_fam, skitag_fam, tour, na.rm = TRUE))
+f5_dat <- f5[f5$any == 1, "date"]
+skidays <- length(unique(f5_dat))
+```
+
+Total Skitage: `r skidays`.
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t <- (touren %>% filter(sport == "Skitour" & season == paste("Winter ", s - 1, "/", s, sep = "")) %>% hm_print())
+```
+
+- Anzahl Tourentage: `r length(unique(t$date))`. 
+- Total Hoehenmeter: `r disp(sum(t$hm_diff), 0)`.
+
+::: {.panel-tabset .nav-pills}
+
+## Nach Datum
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t1 <- (t %>% arrange(date) %>% rowid_to_column("Nr") %>% select(-beg))
+pander(t1)
+```
+
+## Nach Hoehenmeter
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t1 <- (t %>% arrange(desc(hm_diff)) %>% select(-beg) %>% rowid_to_column("Nr"))
+pander(t1)
+```
+
+## Nach Hoehenmeter pro Stunde
+
+Dieser Abschnitt sortiert die Touren absteigend nach Hoehenmetern pro Stunde, wobei fuer jede Tour nur die schnellste genommen wird.
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t1 <- (t %>% group_by(paste(start, end, sep = "")) %>% arrange(desc(hm_h)) %>% slice(1) %>% ungroup())
+t1 <- (t1 %>% hm_print())
+t1 <- (t1 %>% select(-beg) %>% rowid_to_column("Nr"))
+pander(t1)
+```
+
+
+## Mit Papa, nach Hoehenmeter pro Stunde
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t1 <- (t %>% filter(grepl("Papa", beg)) %>% select(-beg) %>% arrange(desc(hm_h))) %>% rowid_to_column("Nr")
+pander(t1)
+```
+
+## Mit Alexander, nach Hoehenmeter pro Stunde
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t1 <- (t %>% filter(grepl("Alexander", beg)) %>% select(-beg) %>% arrange(desc(hm_h))) %>% rowid_to_column("Nr")
+pander(t1)
+```
+
+## Alleine, nach Hoehenmeter pro Stunde
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t1 <- (t %>% filter(beg == "NA NA NA NA") %>% select(-beg) %>% arrange(desc(hm_h))) %>% rowid_to_column("Nr")
+pander(t1)
+```
+
+:::
+
+# Skimodell
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+all_m0 <- all[all$date >= "2003-12-31" & all$date <= "2025-08-31", ]
+all_m <- (all_m0 %>% arrange(date) %>% group_by(date) %>% slice(1) %>% select(-season))
+cuts <- parse_date_time(x = "2003-07-31", orders = "ymd") + years(x = seq.int(from = 0, to = s - 3, by = 1))
+labs <- c(paste("Winter 0", 3:8, "/0", 4:9, sep = ""), "Winter 09/10", paste("Winter ", 10:(s - 1), "/", 11:s, sep = ""))
+
+all_m$season <- cut.POSIXt(x = parse_date_time(x = all_m$date, orders = "ymd"), breaks = cuts, labels = labs)
+
+with(all_m, ctable(x = season, y = modell, useNA = "no", 
+       prop = "t", totals = TRUE, headings = FALSE, method = "render"))
+```
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+sum_mod <- (all_m %>% arrange(modell) %>% group_by(modell) %>% summarise(Hm = sum(hm_diff, na.rm = TRUE)))
+kable(sum_mod)
+```
+
+
+# Skischuh
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+all_m0 <- all[all$date >= "2019-02-14" & all$date <= "2025-08-31", ]
+all_m <- (all_m0 %>% arrange(date) %>% group_by(date) %>% slice(1) %>% select(-season))
+cuts <- parse_date_time(x = "2003-06-30", orders = "ymd") + years(x = seq.int(from = 0, to = s - 3, by = 1))
+labs <- c(paste("Winter 0", 3:8, "/0", 4:9, sep = ""), "Winter 09/10", paste("Winter ", 10:(s - 1), "/", 11:s, sep = ""))
+
+all_m$season <- cut.POSIXt(x = parse_date_time(x = all_m$date, orders = "ymd"), breaks = cuts, labels = labs)
+
+with(all_m, ctable(x = season, y = schuh, useNA = "no", 
+       prop = "t", totals = TRUE, headings = FALSE, method = "render"))
+```
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+sum_mod <- (all_m %>% arrange(schuh) %>% group_by(schuh) %>% summarise(Hm = sum(hm_diff, na.rm = TRUE)))
+kable(sum_mod)
+```
+
+# Touren nach Ziel
+
+Dieser Abschnitt listet die Touren auf, chronologisch oder nach Laufzeit. Fuer die Listen nach Zeit werden die Touren ohne Zeitangabe nicht aufgefuehrt.
+
+```{r echo = FALSE, message = FALSE, warning = FALSE, results = "asis"}
+
+# how to do this with child documents: https://gist.github.com/rmoff/a043676a2f084b81a434
+
+out <- NULL
+for (i in 1:length(tour)){
+  out <- c(out, knit_expand('_tour_summary.qmd'))
+}
+
+cat(knit(text = unlist(paste(out, collapse = '\n')), quiet = TRUE))
+```
+
+# Hoehenmeter pro Stunde
+
+Dieser Abschnitt sortiert die Touren absteigend nach Hoehenmetern pro Stunde, wobei fuer jede Tour nur die schnellste genommen wird.
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t <- (touren %>% filter(is.na(hm_h) == FALSE & sport == "Skitour"))
+t <- (t %>% group_by(paste(start, end, sep = "")) %>% arrange(desc(hm_h)) %>% slice(1) %>% ungroup())
+t1 <- (t %>% hm_print())
+pander(t1)
+```
+

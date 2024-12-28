@@ -1,0 +1,137 @@
+---
+title: "Kieser Training"
+author: 
+- name: Kaspar Rufibach
+  affiliation: Meiringen
+date: "Letzte Aenderung: `r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  rmarkdown::html_document:
+    highlight: pygments
+    number_sections: yes
+    self_contained: yes
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+---
+
+```{r setup, include=FALSE}
+## load packages
+packs.html <- c("knitr", "pander", "reporttools", "dplyr", "readxl")
+for (i in 1:length(packs.html)){library(packs.html[i], character.only = TRUE)}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+path <- paste(getwd(), "/", sep = "")
+
+## =================================================================
+## input uebu data
+## =================================================================
+suppressWarnings(uebu <- as.data.frame(read_excel(paste(path, "data/kieser.xls", sep = ""), 
+                     col_types = c(rep("numeric", 2),      # 
+                                     rep("text", 1),       # 
+                                     rep("numeric", 73)
+                     ))))
+date <- as.Date(uebu$Datum, origin = "1899-12-30")
+zeit <- select(uebu, Zeit)
+firma <- select(uebu, Firma)
+kieser <- subset(uebu, Firma == 1)
+exer <- subset(uebu, Firma == 2)
+kieser2 <- subset(uebu, Firma == 3)
+first <- min(grep("A1", colnames(uebu)))
+```
+
+
+# Analyse
+
+```{r, echo = FALSE, results = 'asis', message = FALSE}
+tab <- data.frame(matrix(NA, ncol = 5, nrow = 1))
+colnames(tab) <- c("", "Kieser", "Exersuisse", "Kieser 2", "Total")
+tab[1, 1:4] <- c("Anzahl Programme", with(kieser, length(Programm) / 2), with(exer, length(Programm) / 2), with(kieser2, length(Programm) / 2))
+tab[2, 1:4] <- c("Anzahl Trainings", with(kieser, sum(Besuche, na.rm = TRUE)), with(exer, sum(Besuche, na.rm = TRUE)), with(kieser2, sum(Besuche, na.rm = TRUE)))
+tab[3, 1:4] <- c("Erstes Training", as.character(with(kieser, as.Date(min(Datum), origin = "1899-12-30"))), 
+                                    as.character(with(exer, as.Date(min(Datum), origin = "1899-12-30"))),
+                                    as.character(with(kieser2, as.Date(min(Datum), origin = "1899-12-30"))))
+tab[4, 1:4] <- c("Bisher letztes Training", as.character(with(kieser, as.Date(max(Datum), origin = "1899-12-30"))), 
+                                    as.character(with(exer, as.Date(max(Datum), origin = "1899-12-30"))),
+                                    as.character(with(kieser2, as.Date(max(Datum), origin = "1899-12-30"))))
+
+i <- c(1, 2)
+tab[i, 5] <- as.numeric(tab[i, 2]) + as.numeric(tab[i, 3]) + as.numeric(tab[i, 4])
+tab[is.na(tab)] <- ""
+pander(tab, digits = 1) 
+```
+
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 4.5}
+par(mfrow = c(1, 1), las = 1)
+boxplot(with(kieser, unlist(lapply(split(Datum, Programm), diff)) / 7), 
+        with(exer, unlist(lapply(split(Datum, Programm), diff)) / 7), 
+        with(kieser2, unlist(lapply(split(Datum, Programm), diff)) / 7),
+        main = "Programmdauer", ylab = "Anzahl Wochen", 
+        names = c("Kieser", "Exersuisse", "Kieser 2"))
+```
+
+# Uebungen des letzten absolvierten Programms
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 3.5}
+par(mfrow = c(1, 2), mar = c(3.5, 3.5, 3, 1), las = 1)
+last1 <- uebu[, first:ncol(uebu)]
+last2 <- colnames(last1)[is.na(apply(tail(last1, 2), 2, sum)) == FALSE]
+last3 <- last1[, last2]
+
+for (i in 1:ncol(last3)){
+    v <- last3[, i]
+    dat <- data.frame(date, v, firma, zeit)
+    dat[dat == 0] <- NA
+
+    plot(dat$date, dat$v, type = "n", pch = 1, 
+           main = paste(colnames(last3)[i], sep = ""), 
+           xlab = "", ylab = "", col = 2)
+    lines(subset(dat, firma == 1 & zeit == "60-90")$date, subset(dat, firma == 1 & zeit == "60-90")$v, pch = 1, col = 2, lty = 3)
+    points(subset(dat, firma == 1 & zeit == "60-90")$date, subset(dat, firma == 1 & zeit == "60-90")$v, pch = 19, col = 2, lty = 3)
+
+    lines(subset(dat, firma == 2 & zeit == "60-90")$date, subset(dat, firma == 2 & zeit == "60-90")$v, pch = 1, col = 4, lty = 3)
+    points(subset(dat, firma == 2 & zeit == "60-90")$date, subset(dat, firma == 2 & zeit == "60-90")$v, pch = 19, col = 4, lty = 3)
+    
+    lines(subset(dat, firma == 3 & zeit == "60-90")$date, subset(dat, firma == 3 & zeit == "60-90")$v, pch = 1, col = 2, lty = 3)
+    points(subset(dat, firma == 3 & zeit == "60-90")$date, subset(dat, firma == 3 & zeit == "60-90")$v, pch = 19, col = 2, lty = 3)
+    
+    lines(subset(dat, firma == 3 & zeit == "90-120")$date, subset(dat, firma == 3 & zeit == "90-120")$v, pch = 1, col = 2)
+    points(subset(dat, firma == 3 & zeit == "90-120")$date, subset(dat, firma == 3 & zeit == "90-120")$v, pch = 19, col = 2)
+} # end i
+```
+
+# Alle Uebungen
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 3.5}
+par(mfrow = c(1, 2), mar = c(3.5, 3.5, 3, 1), las = 1)
+
+for (i in first:ncol(uebu)){
+    v <- uebu[, i]
+    dat <- data.frame(date, v, firma)
+    dat[dat == 0] <- NA
+
+    if (all(is.na(dat$v)) == FALSE){
+          plot(dat$date, dat$v, type = "n", pch = 1, 
+               main = paste(colnames(uebu)[i], sep = ""), 
+               xlab = "", ylab = "", col = 2)
+    lines(subset(dat, firma == 1 & zeit == "60-90")$date, subset(dat, firma == 1 & zeit == "60-90")$v, pch = 1, col = 2, lty = 3)
+    points(subset(dat, firma == 1 & zeit == "60-90")$date, subset(dat, firma == 1 & zeit == "60-90")$v, pch = 19, col = 2, lty = 3)
+
+    lines(subset(dat, firma == 2 & zeit == "60-90")$date, subset(dat, firma == 2 & zeit == "60-90")$v, pch = 1, col = 4, lty = 3)
+    points(subset(dat, firma == 2 & zeit == "60-90")$date, subset(dat, firma == 2 & zeit == "60-90")$v, pch = 19, col = 4, lty = 3)
+    
+    lines(subset(dat, firma == 3 & zeit == "60-90")$date, subset(dat, firma == 3 & zeit == "60-90")$v, pch = 1, col = 2, lty = 3)
+    points(subset(dat, firma == 3 & zeit == "60-90")$date, subset(dat, firma == 3 & zeit == "60-90")$v, pch = 19, col = 2, lty = 3)
+    
+    lines(subset(dat, firma == 3 & zeit == "90-120")$date, subset(dat, firma == 3 & zeit == "90-120")$v, pch = 1, col = 2)
+    points(subset(dat, firma == 3 & zeit == "90-120")$date, subset(dat, firma == 3 & zeit == "90-120")$v, pch = 19, col = 2)
+          }
+} # end i
+```
+
+
+
+
+
+

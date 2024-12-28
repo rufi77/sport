@@ -1,0 +1,47 @@
+project:
+  type: website
+  output-dir: public
+  render:
+    - wettkaempfe.qmd
+    - bike.qmd
+    - run.qmd
+    - hike.qmd
+    - bikerun.qmd
+    - skitouren.qmd
+    - kieser.qmd
+    - zusammenfassungen.qmd
+    
+website:
+  title: "Sport Kaspar"
+  navbar:
+    left:
+    - text: "Wettkaempfe"
+      href: wettkaempfe.html
+    - text: "Ausdauer"
+      menu:
+        - text: "Bike"
+          href: bike.html
+        - text: "Run"
+          href: run.html
+        - text: "Wandern"
+          href: hike.html
+        - text: "Bike & Run"
+          href: bikerun.html
+        - text: "Skitouren"
+          href: skitouren.html
+    - text: "Kieser"
+      href: kieser.html
+    - text: "Zusammenfassungen"
+      href: zusammenfassungen.html
+    right:
+      - icon: github
+        href: https://github.com/numbersman77/litreview
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: source
+
