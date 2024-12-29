@@ -30,11 +30,11 @@ input_touren <- function(path){
                               labels = c(paste("Winter 0", 0:8, "/0", 1:9, sep = ""), 
                                          "Winter 09/10", paste("Winter ", 10:49, "/", 11:50, sep = "")))
   touren <- (touren %>% mutate(date = as.Date(date, origin = "1899-12-30")))
-  touren <- (touren %>% mutate(beg = paste(begleitung1, begleitung2, begleitung3, begleitung4)))
+  touren <- (touren %>% mutate(beg = paste(begleitung1, begleitung2, begleitung3, begleitung4, begleitung5)))
 
   touren <- as.data.frame(touren)
-  char_cols <- c("sport", "region", "start", "via1", "via2", "end", "date", "time", "begleitung1", "begleitung2", 
-                 "begleitung3", "begleitung4", "kommentar", "beg")
+  char_cols <- c("sport", "region", "start", "via1", "via2", "end", "date", "time", 
+                 paste("begleitung", 1:5, sep = ""), "kommentar", "beg")
   touren[, char_cols][apply(touren[, char_cols], 1:2, function(x){is.na(x)})] <- ""
   
   return(touren)
