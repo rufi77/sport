@@ -166,13 +166,8 @@ pander(t1)
 # Skimodell
 
 ```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
-all_m0 <- all[all$date >= "2003-12-31" & all$date <= "2025-08-31", ]
-all_m <- (all_m0 %>% arrange(date) %>% group_by(date) %>% slice(1) %>% select(-season))
-cuts <- parse_date_time(x = "2003-07-31", orders = "ymd") + years(x = seq.int(from = 0, to = s - 3, by = 1))
-labs <- c(paste("Winter 0", 3:8, "/0", 4:9, sep = ""), "Winter 09/10", paste("Winter ", 10:(s - 1), "/", 11:s, sep = ""))
-
-all_m$season <- cut.POSIXt(x = parse_date_time(x = all_m$date, orders = "ymd"), breaks = cuts, labels = labs)
-
+all_m <- (all %>% filter(date >= "2012-12-31" & date <= "2025-08-31") %>% arrange(date) %>% group_by(date) %>% slice(1) %>% 
+            mutate(season = as.character(season)) %>% arrange(season))
 with(all_m, ctable(x = season, y = modell, useNA = "no", 
        prop = "t", totals = TRUE, headings = FALSE, method = "render"))
 ```
@@ -186,13 +181,8 @@ kable(sum_mod)
 # Skischuh
 
 ```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
-all_m0 <- all[all$date >= "2019-02-14" & all$date <= "2025-08-31", ]
-all_m <- (all_m0 %>% arrange(date) %>% group_by(date) %>% slice(1) %>% select(-season))
-cuts <- parse_date_time(x = "2018-06-30", orders = "ymd") + years(x = seq.int(from = 0, to = s - 18, by = 1))
-labs <- c(paste("Winter ", 18:(s - 1), "/", 19:s, sep = ""))
-
-all_m$season <- cut.POSIXt(x = parse_date_time(x = all_m$date, orders = "ymd"), breaks = cuts, labels = labs)
-
+all_m <- (all %>% filter(date >= "2018-12-31" & date <= "2025-08-31") %>% arrange(date) %>% group_by(date) %>% slice(1) %>% 
+            mutate(season = as.character(season)) %>% arrange(season))
 with(all_m, ctable(x = season, y = schuh, useNA = "no", 
        prop = "t", totals = TRUE, headings = FALSE, method = "render"))
 ```
