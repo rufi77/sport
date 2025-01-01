@@ -16,7 +16,7 @@ output:
 
 ```{r setup, include=FALSE}
 ## load packages
-packs.html <- c("knitr", "pander", "reporttools", "dplyr", "lubridate", "readxl", "tibble", "summarytools")
+packs.html <- c("knitr", "pander", "reporttools", "dplyr", "lubridate", "readxl", "tibble", "summarytools", "ggplot2")
 for (i in 1:length(packs.html)){library(packs.html[i], character.only = TRUE)}
 
 knitr::opts_chunk$set(echo = TRUE)
@@ -41,11 +41,37 @@ touren <- input_touren(path)
 # skitouren
 all <- (touren %>% mutate(skihalbtag = NULL, skihalbtag_fam = NULL, begleitung1 = NULL, 
                           begleitung2 = NULL, begleitung3 = NULL, begleitung4 = NULL, beg = NULL,
-                          region = NULL, kommentar = NULL) %>% filter(sport == "Skitour") %>% arrange(end, time) )
-
+                          region = NULL, kommentar = NULL) %>% filter(sport == "Skitour") %>% arrange(end, time))
 ski <- (all %>% select(start, end, date, time, startend))
 tour <- sort(unique(ski$startend))
+
+ski_season <- (all %>% filter(date >= "2012-12-31") %>% arrange(season) %>% group_by(season) %>% 
+                 summarise(Hm = sum(hm_diff, na.rm = TRUE), n = sum(is.na(unique(date)) == FALSE))) %>% 
+                 add_row(season = c("Winter 13/14", "Winter 14/15"), Hm = 0, n = 0) %>% arrange(season)
 ```
+
+# Anzahl Touren pro Saison
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 5, fig.height = 3}
+ggplot(data = ski_season, aes(x = season, y = n, group = 1)) +
+geom_line(color = "red") +
+geom_point() +
+theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) +
+labs(x = "Saison", y = "Anzahl Touren")
+```
+
+# Höhenmeter pro Saison
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 5, fig.height = 3}
+ggplot(data = ski_season, aes(x = season, y = Hm, group = 1)) +
+geom_line(color = "red") +
+geom_point() +
+theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) +
+labs(x = "Saison", y = "Höhenmeter")
+```
+
+
+
 
 # Aktuelle Saison {.tabset .tabset-fade .tabset-pills}
 
@@ -84,8 +110,8 @@ Total Skitage: `r skidays`.
 t <- (touren %>% filter(sport == "Skitour" & season == paste("Winter ", s - 1, "/", s, sep = "")) %>% hm_print())
 ```
 
-- Anzahl Tourentage: `r length(unique(t$date))`. 
-- Total Hoehenmeter: `r disp(sum(t$hm_diff), 0)`.
+- Anzahl Tourentage: `r tail(ski_season, 1)$n`. 
+- Total Hoehenmeter: `r tail(ski_season, 1)$Hm`.
 
 ::: {.panel-tabset .nav-pills}
 
@@ -114,14 +140,12 @@ t1 <- (t1 %>% select(-beg) %>% rowid_to_column("Nr"))
 pander(t1)
 ```
 
-
 ## Mit Papa, nach Hoehenmeter pro Stunde
 
 ```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
 t1 <- (t %>% filter(grepl("Papa", beg)) %>% select(-beg) %>% arrange(desc(hm_h))) %>% rowid_to_column("Nr")
 pander(t1)
 ```
-
 ## Mit Alexander, nach Hoehenmeter pro Stunde
 
 ```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
@@ -132,11 +156,12 @@ pander(t1)
 ## Alleine, nach Hoehenmeter pro Stunde
 
 ```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
-t1 <- (t %>% filter(beg == "NA NA NA NA") %>% select(-beg) %>% arrange(desc(hm_h))) %>% rowid_to_column("Nr")
+t1 <- (t %>% filter(beg == "NA NA NA NA NA") %>% select(-beg) %>% arrange(desc(hm_h))) %>% rowid_to_column("Nr")
 pander(t1)
 ```
-
 :::
+
+
 
 # Skimodell
 
@@ -163,8 +188,8 @@ kable(sum_mod)
 ```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
 all_m0 <- all[all$date >= "2019-02-14" & all$date <= "2025-08-31", ]
 all_m <- (all_m0 %>% arrange(date) %>% group_by(date) %>% slice(1) %>% select(-season))
-cuts <- parse_date_time(x = "2003-06-30", orders = "ymd") + years(x = seq.int(from = 0, to = s - 3, by = 1))
-labs <- c(paste("Winter 0", 3:8, "/0", 4:9, sep = ""), "Winter 09/10", paste("Winter ", 10:(s - 1), "/", 11:s, sep = ""))
+cuts <- parse_date_time(x = "2018-06-30", orders = "ymd") + years(x = seq.int(from = 0, to = s - 18, by = 1))
+labs <- c(paste("Winter ", 18:(s - 1), "/", 19:s, sep = ""))
 
 all_m$season <- cut.POSIXt(x = parse_date_time(x = all_m$date, orders = "ymd"), breaks = cuts, labels = labs)
 

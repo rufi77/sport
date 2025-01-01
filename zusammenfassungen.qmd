@@ -72,6 +72,22 @@ skal.nam <- c(" pro Jahr", " pro Woche")
 
 # monthly ascent
 ascent <- as.data.frame(read_excel(paste(path, "data/ascentmonthly.xlsx", sep = ""), col_types = NULL))
+
+# check numbers for skitours
+# I summarize per year, for simplicity
+packs.html <- c("lubridate") #, "tibble", "summarytools")
+for (i in 1:length(packs.html)){library(packs.html[i], character.only = TRUE)}
+source(paste(path, "/functions/input_touren.r", sep = ""))
+path <- paste(getwd(), "/", sep = "")
+touren <- input_touren(path)
+                  
+# skitouren
+ski <- (touren %>% mutate(skihalbtag = NULL, skihalbtag_fam = NULL, begleitung1 = NULL, 
+                          begleitung2 = NULL, begleitung3 = NULL, begleitung4 = NULL, beg = NULL,
+                          region = NULL, kommentar = NULL) %>% filter(sport == "Skitour") %>% arrange(end, time) )
+
+ski_season <- (ski %>% arrange(season) %>% group_by(season) %>% summarise(Hm = sum(hm_diff, na.rm = TRUE)))
+ski_year <- (ski %>% arrange(year(date)) %>% group_by(year(date)) %>% summarise(Hm = sum(hm_diff, na.rm = TRUE), n = sum(is.na(unique(date)) == FALSE)))
 ```
 
 <!-- Numbers labelled `r tail(colnames(dat), 1)` are linearly extrapolated from `r toda` to the full year of `r tail(colnames(dat), 2)[1]`. -->
