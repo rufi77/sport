@@ -46,8 +46,9 @@ ski <- (all %>% select(start, end, date, time, startend))
 tour <- sort(unique(ski$startend))
 
 ski_season <- (all %>% filter(date >= "2012-12-31") %>% arrange(season) %>% group_by(season) %>% 
-                 summarise(Hm = sum(hm_diff, na.rm = TRUE), n = sum(is.na(unique(date)) == FALSE))) %>% 
-                 add_row(season = c("Winter 13/14", "Winter 14/15"), Hm = 0, n = 0) %>% arrange(season)
+                 summarise(n = sum(is.na(unique(date)) == FALSE), Hm = sum(hm_diff, na.rm = TRUE))) %>% 
+                 mutate(Hm_tour = round(Hm / n)) %>%
+                 add_row(season = c("Winter 13/14", "Winter 14/15"), Hm = 0, n = 0, Hm_tour = 10^5) %>% arrange(season)
 ```
 
 # Anzahl Touren pro Saison
@@ -70,6 +71,19 @@ theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) +
 labs(x = "Saison", y = "Höhenmeter")
 ```
 
+# Höhenmeter pro Tour pro Saison
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 5, fig.height = 3}
+ggplot(data = ski_season, aes(x = season, y = Hm_tour, group = 1)) +
+geom_line(color = "red") +
+geom_point() +
+theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) +
+labs(x = "Saison", y = "Höhenmeter pro Tour") + ylim(0, 2000)
+```
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+pander(ski_season)
+```
 
 
 
@@ -181,7 +195,7 @@ kable(sum_mod)
 # Skischuh
 
 ```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
-all_m <- (all %>% filter(date >= "2018-12-31" & date <= "2025-08-31") %>% arrange(date) %>% group_by(date) %>% slice(1) %>% 
+all_m <- (all %>% filter(date >= "2019-02-14" & date <= "2025-08-31") %>% arrange(date) %>% group_by(date) %>% slice(1) %>% 
             mutate(season = as.character(season)) %>% arrange(season))
 with(all_m, ctable(x = season, y = schuh, useNA = "no", 
        prop = "t", totals = TRUE, headings = FALSE, method = "render"))
