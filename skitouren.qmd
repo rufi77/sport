@@ -45,7 +45,8 @@ all <- (touren %>% mutate(skihalbtag = NULL, skihalbtag_fam = NULL, begleitung1 
 ski <- (all %>% select(start, end, date, time, startend))
 tour <- sort(unique(ski$startend))
 
-ski_season <- (all %>% filter(date >= "2012-12-31") %>% arrange(season) %>% group_by(season) %>% 
+ski_season <- (all %>% filter(date >= "2012-12-31") %>% arrange(date, desc(time)) %>% group_by(date) %>% slice(1) %>%
+                 arrange(season) %>% group_by(season) %>% 
                  summarise(n = sum(is.na(unique(date)) == FALSE), Hm = sum(hm_diff, na.rm = TRUE))) %>% 
                  mutate(Hm_tour = round(Hm / n)) %>%
                  add_row(season = c("Winter 13/14", "Winter 14/15"), Hm = 0, n = 0, Hm_tour = NA) %>% arrange(season)
@@ -125,7 +126,7 @@ t <- (touren %>% filter(sport == "Skitour" & season == paste("Winter ", s - 1, "
 ```
 
 - Anzahl Tourentage: `r tail(ski_season, 1)$n`. 
-- Total Hoehenmeter: `r tail(ski_season, 1)$Hm`.
+- Total Hoehenmeter: `r disp(tail(ski_season, 1)$Hm, 0)`.
 
 ::: {.panel-tabset .nav-pills}
 
