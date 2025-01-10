@@ -1754,7 +1754,7 @@
     "href": "run.html",
     "title": "Run",
     "section": "",
-    "text": "Anzahl Touren: 0.\n\nNach DatumNach HoehenmeterNach Hoehenmeter pro Stunde\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\nhm_diff\ntime\nhm_h\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\nhm_diff\ntime\nhm_h\n\n\n\n\n\n\nDieser Abschnitt sortiert die Touren absteigend nach Hoehenmetern pro Stunde, wobei fuer jede Tour nur die schnellste genommen wird.\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\nhm_diff\ntime\nhm_h"
+    "text": "Anzahl Touren: 2.\n\nNach DatumNach HoehenmeterNach Hoehenmeter pro Stunde\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\nhm_diff\ntime\nhm_h\n\n\n\n\n1\nSandstrasse\nSchwendichehrrun\n2025-01-09\nNA\n\nNA\n\n\n2\nSandstrasse\nReuti Station\n2025-01-10\n447\n00:38:08.7\n703\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\nhm_diff\ntime\nhm_h\n\n\n\n\n1\nSandstrasse\nReuti Station\n2025-01-10\n447\n00:38:08.7\n703\n\n\n\n\n\n\nDieser Abschnitt sortiert die Touren absteigend nach Hoehenmetern pro Stunde, wobei fuer jede Tour nur die schnellste genommen wird.\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\nhm_diff\ntime\nhm_h\n\n\n\n\n1\nSandstrasse\nReuti Station\n2025-01-10\n447\n00:38:08.7\n703"
   },
   {
     "objectID": "run.html#talboden-na-23-hm",
@@ -2090,7 +2090,7 @@
     "href": "run.html#sandstrasse-milifloeh-reuti-station-447-hm",
     "title": "Run",
     "section": "Sandstrasse –> Milifloeh –> Reuti Station (447 Hm)",
-    "text": "Sandstrasse –&gt; Milifloeh –&gt; Reuti Station (447 Hm)\n\nChronologischNach Zeit\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nReuti Station\n2024-09-30\n\nNA\n\n\nSandstrasse\nReuti Station\n2024-09-10\n\nNA\n\n\nSandstrasse\nReuti Station\n2024-09-05\n\nNA\n\n\nSandstrasse\nReuti Station\n2023-10-26\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Sandstrasse –&gt; Milifloeh –&gt; Reuti Station (447 Hm)\n\nChronologischNach Zeit\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nReuti Station\n2025-01-10\n00:38:08.7\n703\n\n\nSandstrasse\nReuti Station\n2024-09-30\n\nNA\n\n\nSandstrasse\nReuti Station\n2024-09-10\n\nNA\n\n\nSandstrasse\nReuti Station\n2024-09-05\n\nNA\n\n\nSandstrasse\nReuti Station\n2023-10-26\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nSandstrasse\nReuti Station\n2025-01-10\n00:38:08.7\n703"
   },
   {
     "objectID": "run.html#sandstrasse-reuti-station-472-hm",
@@ -2378,5 +2378,12 @@
     "title": "Kieser Training",
     "section": "",
     "text": "Analyse\n\n\n\n\n\n\n\n\n\n\n\n \nKieser\nExersuisse\nKieser 2\nTotal\n\n\n\n\nAnzahl Programme\n16\n27\n10\n53\n\n\nAnzahl Trainings\n305\n506\n162\n973\n\n\nErstes Training\n2005-05-07\n2011-01-12\n2017-11-23\n\n\n\nBisher letztes Training\n2011-01-10\n2017-11-15\n2023-04-12\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUebungen des letzten absolvierten Programms\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAlle Uebungen"
+  },
+  {
+    "objectID": "run.html#sandstrasse-schwendichehrrunde-na-hm",
+    "href": "run.html#sandstrasse-schwendichehrrunde-na-hm",
+    "title": "Run",
+    "section": "Sandstrasse –> Schwendichehrrunde (NA Hm)",
+    "text": "Sandstrasse –&gt; Schwendichehrrunde (NA Hm)\n\nChronologischNach Zeit\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nSchwendichehrrunde\n2025-01-09\n\nNA\n\n\nSandstrasse\nSchwendichehrrunde\n2024-12-18\n00:38:48.8\n408\n\n\nSandstrasse\nSchwendichehrrunde\n2024-11-21\n00:46:43.0\n342\n\n\nSandstrasse\nSchwendichehrrunde\n2024-07-21\n00:41:01.0\nNA\n\n\nSandstrasse\nSchwendichehrrunde\n2024-06-15\n00:44:36.0\nNA\n\n\nSandstrasse\nSchwendichehrrunde\n2024-06-05\n00:40:22.1\nNA\n\n\nSandstrasse\nSchwendichehrrunde\n2024-03-29\n00:43:07.0\nNA\n\n\nSandstrasse\nSchwendichehrrunde\n2024-03-19\n00:49:19.0\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nSandstrasse\nSchwendichehrru\n2024-12-18\n00:38:48.8\n408\n\n\n\n2\nSandstrasse\nSchwendichehrru\n2024-06-05\n00:40:22.1\nNA\n1m33s\n\n\n3\nSandstrasse\nSchwendichehrru\n2024-07-21\n00:41:01.0\nNA\n2m12s\n\n\n4\nSandstrasse\nSchwendichehrru\n2024-03-29\n00:43:07.0\nNA\n4m18s\n\n\n5\nSandstrasse\nSchwendichehrru\n2024-06-15\n00:44:36.0\nNA\n5m47s\n\n\n6\nSandstrasse\nSchwendichehrru\n2024-11-21\n00:46:43.0\n342\n7m54s\n\n\n7\nSandstrasse\nSchwendichehrru\n2024-03-19\n00:49:19.0\nNA\n10m30s"
   }
 ]
