@@ -230,7 +230,46 @@ Dieser Abschnitt sortiert die Touren absteigend nach Hoehenmetern pro Stunde, wo
 ```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
 t <- (touren %>% filter(is.na(hm_h) == FALSE & sport == "Skitour"))
 t <- (t %>% group_by(paste(start, end, sep = "")) %>% arrange(desc(hm_h)) %>% slice(1) %>% ungroup())
-t1 <- (t %>% hm_print())
+t1 <- (t %>% hm_print() %>% select(start, end, date, hm_diff, time, hm_h))
 pander(t1)
 ```
+# All time {.tabset .tabset-fade .tabset-pills}
+
+## Nach Datum
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t <- (touren %>% filter(sport == "Skitour") %>% hm_print())
+t1 <- (t %>% arrange(date, desc(time)) %>% group_by(date) %>% slice(1) %>% rowid_to_column("Nr") %>% select(-beg, -time))
+pander(t1)
+```
+
+## Nach Hoehenmeter
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t1 <- (t %>% arrange(desc(hm_diff)) %>% rowid_to_column("Nr") %>% select(-time, -beg))
+pander(t1)
+```
+
+## Mit Papa, nach Datum
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t1 <- (t %>% filter(grepl("Papa", beg)) %>% arrange(desc(date))) %>% rowid_to_column("Nr") %>% select(, -beg)
+pander(t1)
+```
+
+## Mit Papa, nach Hoehenmeter pro Stunde
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t1 <- (t %>% filter(grepl("Papa", beg)) %>% arrange(desc(hm_h))) %>% rowid_to_column("Nr") %>% select(, -beg)
+pander(t1)
+```
+
+## Alleine, nach Hoehenmeter pro Stunde
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t1 <- (t %>% filter(beg == "NA NA NA NA NA") %>% arrange(desc(hm_h))) %>% rowid_to_column("Nr") %>% select(, -beg)
+pander(t1)
+```
+
+:::
 
