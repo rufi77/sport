@@ -9,6 +9,7 @@ project:
     - bikerun.qmd
     - skitouren.qmd
     - kieser.qmd
+    - langlauf.qmd
     - zusammenfassungen.qmd
     
 website:
@@ -29,6 +30,8 @@ website:
           href: bikerun.html
         - text: "Skitouren"
           href: skitouren.html
+        - text: "Langlauf"
+          href: langlauf.html
     - text: "Kieser"
       href: kieser.html
     - text: "Zusammenfassungen"
