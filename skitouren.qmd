@@ -149,7 +149,7 @@ pander(t1)
 Dieser Abschnitt sortiert die Touren absteigend nach Hoehenmetern pro Stunde, wobei fuer jede Tour nur die schnellste genommen wird.
 
 ```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
-t1 <- (t %>% group_by(paste(start, end, sep = "")) %>% arrange(desc(hm_h)) %>% slice(1) %>% ungroup())
+t1 <- (t %>% group_by(paste(start, end, sep = "")) %>% arrange(desc(hm_h))  %>% ungroup())   #%>% slice(1)
 t1 <- (t1 %>% hm_print())
 t1 <- (t1 %>% select(-beg) %>% rowid_to_column("Nr"))
 pander(t1)

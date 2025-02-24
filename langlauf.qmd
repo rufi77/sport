@@ -46,7 +46,7 @@ tour <- sort(unique(ski$startend))
 
 ski_season <- (all %>% filter(date >= "2013-12-31") %>% arrange(date, desc(time)) %>% group_by(date) %>% slice(1) %>%
                  arrange(season) %>% group_by(season) %>% 
-                 summarise(n = sum(is.na(unique(date)) == FALSE), Hm = sum(hm_diff, na.rm = TRUE))) %>% 
+                 summarise(n = sum(is.na(unique(date)) == FALSE), Hm = sum(hm_diff, na.rm = TRUE), Km = sum(km_manual, na.rm = TRUE))) %>% 
                  mutate(Hm_tour = round(Hm / n)) %>% arrange(season)
 ```
 
@@ -90,7 +90,7 @@ t <- (touren %>% filter(sport == "Langlauf" & season == paste("Winter ", s - 1, 
 
 - Anzahl Tourentage: `r tail(ski_season, 1)$n`. 
 - Total Hoehenmeter: `r disp(tail(ski_season, 1)$Hm, 0)`.
-
+- Total Kilometer: `r disp(tail(ski_season, 1)$Km, 1)`.
 
 ## Nach Datum
 
