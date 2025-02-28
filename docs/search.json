@@ -2440,14 +2440,14 @@
     "href": "langlauf.html#tage-auf-langlauf-ski-total",
     "title": "Langlauf",
     "section": "Tage auf Langlauf-Ski total",
-    "text": "Tage auf Langlauf-Ski total\nTotal Langlauftage: 6.\n\nAnzahl Tourentage: 6.\nTotal Hoehenmeter: 1724.\nTotal Kilometer: 93.6."
+    "text": "Tage auf Langlauf-Ski total\nTotal Langlauftage: 7.\n\nAnzahl Tourentage: 7.\nTotal Hoehenmeter: 2040.\nTotal Kilometer: 105.6."
   },
   {
     "objectID": "langlauf.html#nach-datum",
     "href": "langlauf.html#nach-datum",
     "title": "Langlauf",
     "section": "Nach Datum",
-    "text": "Nach Datum\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\nhm_diff\nkm\n\n\n\n\nGadmen\n\n2025-01-20\n382\n14.44\n\n\nGadmen\n\n2025-01-21\n234\n14.27\n\n\nGadmen\n\n2025-02-05\n399\n20.31\n\n\nGadmen\n\n2025-02-16\n289\n20.01\n\n\nGadmen\n\n2025-02-19\n277\n17.51\n\n\nBidmi\n\n2025-02-22\n143\n7.08"
+    "text": "Nach Datum\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\nhm_diff\nkm\n\n\n\n\nGadmen\n\n2025-01-20\n382\n14.44\n\n\nGadmen\n\n2025-01-21\n234\n14.27\n\n\nGadmen\n\n2025-02-05\n399\n20.31\n\n\nGadmen\n\n2025-02-16\n289\n20.01\n\n\nGadmen\n\n2025-02-19\n277\n17.51\n\n\nBidmi\n\n2025-02-22\n143\n7.08\n\n\nGadmen\n\n2025-02-27\n316\n12"
   },
   {
     "objectID": "langlauf.html#bidmi-na-143-hm",
@@ -2457,10 +2457,10 @@
     "text": "Bidmi –&gt; NA (143 Hm)\n\nChronologischNach Zeit\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nBidmi\n\n2025-02-22\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
-    "objectID": "langlauf.html#gadmen-na-277-hm",
-    "href": "langlauf.html#gadmen-na-277-hm",
+    "objectID": "langlauf.html#gadmen-na-316-hm",
+    "href": "langlauf.html#gadmen-na-316-hm",
     "title": "Langlauf",
-    "section": "Gadmen –> NA (277 Hm)",
-    "text": "Gadmen –&gt; NA (277 Hm)\n\nChronologischNach Zeit\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nGadmen\n\n2025-02-19\n\nNA\n\n\nGadmen\n\n2025-02-16\n\nNA\n\n\nGadmen\n\n2025-02-05\n\nNA\n\n\nGadmen\n\n2025-01-21\n\nNA\n\n\nGadmen\n\n2025-01-20\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "section": "Gadmen –> NA (316 Hm)",
+    "text": "Gadmen –&gt; NA (316 Hm)\n\nChronologischNach Zeit\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nGadmen\n\n2025-02-27\n\nNA\n\n\nGadmen\n\n2025-02-19\n\nNA\n\n\nGadmen\n\n2025-02-16\n\nNA\n\n\nGadmen\n\n2025-02-05\n\nNA\n\n\nGadmen\n\n2025-01-21\n\nNA\n\n\nGadmen\n\n2025-01-20\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   }
 ]
