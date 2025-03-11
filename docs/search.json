@@ -60,7 +60,7 @@
     "href": "run.html",
     "title": "Run",
     "section": "",
-    "text": "Anzahl Touren: 3.\n\nNach DatumNach HoehenmeterNach Hoehenmeter pro Stunde\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\nhm_diff\ntime\nhm_h\n\n\n\n\n1\nSandstrasse\nSchwendichehrrun\n2025-01-09\nNA\n\nNA\n\n\n2\nSandstrasse\nReuti Station\n2025-01-10\n447\n00:38:08.7\n703\n\n\n3\nSandstrasse\nReuti Station\n2025-02-14\n447\n00:32:11.4\n833\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\nhm_diff\ntime\nhm_h\n\n\n\n\n1\nSandstrasse\nReuti Station\n2025-02-14\n447\n00:32:11.4\n833\n\n\n2\nSandstrasse\nReuti Station\n2025-01-10\n447\n00:38:08.7\n703\n\n\n\n\n\n\nDieser Abschnitt sortiert die Touren absteigend nach Hoehenmetern pro Stunde, wobei fuer jede Tour nur die schnellste genommen wird.\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\nhm_diff\ntime\nhm_h\n\n\n\n\n1\nSandstrasse\nReuti Station\n2025-02-14\n447\n00:32:11.4\n833"
+    "text": "Anzahl Touren: 5.\n\nNach DatumNach HoehenmeterNach Hoehenmeter pro Stunde\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\nhm_diff\ntime\nhm_h\n\n\n\n\n1\nSandstrasse\nSchwendichehrrun\n2025-01-09\nNA\n\nNA\n\n\n2\nSandstrasse\nReuti Station\n2025-01-10\n447\n00:38:08.7\n703\n\n\n3\nSandstrasse\nReuti Station\n2025-02-14\n447\n00:32:11.4\n833\n\n\n4\nHochdorf\n\n2025-03-10\n92\n\nNA\n\n\n5\nHochdorf\n\n2025-03-11\n63\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\nhm_diff\ntime\nhm_h\n\n\n\n\n1\nSandstrasse\nReuti Station\n2025-02-14\n447\n00:32:11.4\n833\n\n\n2\nSandstrasse\nReuti Station\n2025-01-10\n447\n00:38:08.7\n703\n\n\n3\nHochdorf\n\n2025-03-10\n92\n\nNA\n\n\n4\nHochdorf\n\n2025-03-11\n63\n\nNA\n\n\n\n\n\n\nDieser Abschnitt sortiert die Touren absteigend nach Hoehenmetern pro Stunde, wobei fuer jede Tour nur die schnellste genommen wird.\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\nhm_diff\ntime\nhm_h\n\n\n\n\n1\nSandstrasse\nReuti Station\n2025-02-14\n447\n00:32:11.4\n833"
   },
   {
     "objectID": "run.html#talboden-na-23-hm",
@@ -75,6 +75,13 @@
     "title": "Run",
     "section": "Yetihuette –> NA (NA Hm)",
     "text": "Yetihuette –&gt; NA (NA Hm)\n\nChronologischNach Zeit\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nYetihuette\n\n2024-12-04\n\nNA\n\n\nYetihuette\n\n2024-12-03\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+  },
+  {
+    "objectID": "run.html#hochdorf-na-63-hm",
+    "href": "run.html#hochdorf-na-63-hm",
+    "title": "Run",
+    "section": "Hochdorf –> NA (63 Hm)",
+    "text": "Hochdorf –&gt; NA (63 Hm)\n\nChronologischNach Zeit\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nHochdorf\n\n2025-03-11\n\nNA\n\n\nHochdorf\n\n2025-03-10\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#ostermundigen-rueti-bantiger-na-hm",
