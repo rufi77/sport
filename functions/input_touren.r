@@ -32,6 +32,9 @@ input_touren <- function(path){
   touren <- (touren %>% mutate(date = as.Date(date, origin = "1899-12-30")))
   touren <- (touren %>% mutate(beg = paste(begleitung1, begleitung2, begleitung3, begleitung4, begleitung5)))
 
+  # add year
+  touren <- (touren %>% mutate(year = year(date)))
+             
   touren <- as.data.frame(touren)
   char_cols <- c("sport", "region", "start", "via1", "via2", "end", "date", "time", 
                  paste("begleitung", 1:5, sep = ""), "kommentar", "beg")

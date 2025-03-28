@@ -11,6 +11,7 @@ project:
     - kieser.qmd
     - langlauf.qmd
     - zusammenfassungen.qmd
+    - saisonstart.qmd
     
 website:
   title: "Sport Kaspar"
@@ -36,6 +37,8 @@ website:
       href: kieser.html
     - text: "Zusammenfassungen"
       href: zusammenfassungen.html
+    - text: "Saisonlänge"
+      href: saisonstart.html
     right:
       - icon: github
         href: https://github.com/numbersman77/litreview

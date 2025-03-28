@@ -1,0 +1,96 @@
+---
+title: "Saisonstart"
+author: 
+- name: Kaspar Rufibach
+  affiliation: Meiringen
+date: "Letzte Aenderung: `r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  rmarkdown::html_document:
+    highlight: pygments
+    number_sections: yes
+    self_contained: yes
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+---
+
+```{r setup, include=FALSE}
+## load packages
+packs.html <- c("knitr", "pander", "reporttools", "tidyr", "dplyr", "readxl", "ggplot2", "lubridate")
+for (i in 1:length(packs.html)){library(packs.html[i], character.only = TRUE)}
+
+knitr::opts_chunk$set(echo = TRUE)
+options(warn = -1)
+path <- paste(getwd(), "/", sep = "")
+
+source(paste(path, "/functions/input_touren.r", sep = ""))
+source(paste(path, "/functions/hm_print.r", sep = ""))
+
+## =================================================================
+## input data
+## =================================================================
+cy <- as.character(read_excel(paste(path, "data/currentyear.xlsx", sep = "")))
+s <- as.numeric(substr(cy, 3, 4))
+
+# delete when in 2024
+#s <- s - 1
+
+touren <- input_touren(path)
+                  
+# skitouren
+all <- (touren %>% mutate(skihalbtag = NULL, skihalbtag_fam = NULL, begleitung1 = NULL, 
+                          begleitung2 = NULL, begleitung3 = NULL, begleitung4 = NULL, beg = NULL,
+                          region = NULL, kommentar = NULL) %>% filter(sport == "Skitour") %>% arrange(end, time))
+ski <- (all %>% select(start, end, date, time, startend))
+
+ski_season <- (all %>% filter(date >= "2012-12-31") %>% arrange(date, desc(time)) %>% group_by(date) %>% slice(1) %>%
+                 arrange(season) %>% group_by(season) %>% 
+                 summarise(n = sum(is.na(unique(date)) == FALSE), Hm = sum(hm_diff, na.rm = TRUE), first = min(date), 
+                           last = max(date))) %>% 
+                 mutate(Hm_tour = round(Hm / n)) %>%
+                 add_row(season = c("Winter 13/14", "Winter 14/15"), Hm = 0, n = 0, Hm_tour = NA) %>% 
+                 mutate(seasonstart = as.Date(paste("20", substr(season, 8, 9), "-07-31", sep = ""), origin = "1899-12-30")) %>%
+                 arrange(season)
+ski_season_long <- ski_season %>% gather(key = "which", value = "date", first:last) %>% mutate(diff = date - seasonstart) %>% arrange(date)
+
+# bike
+all <- (touren %>% mutate(skihalbtag = NULL, skihalbtag_fam = NULL, begleitung1 = NULL, begleitung2 = NULL, begleitung3 = NULL, begleitung4 = NULL,
+                          beg = NULL, region = NULL, kommentar = NULL) %>% filter(sport == "Bike"))
+
+bike <- (all %>% select(start, end, date, time, startend))
+
+bike_season <- (all %>% arrange(date, desc(time)) %>% group_by(date) %>% slice(1) %>%
+                 arrange(year) %>% group_by(year) %>% 
+                 summarise(first = min(date), last = max(date)))
+bike_season_long <- bike_season %>% gather(key = "which", value = "date", first:last) %>% mutate(diff = yday(date)) %>% arrange(date)
+
+```
+
+
+
+# Saisonlänge 
+
+## Skitour
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 5}
+xs <- c(31, 30, 31, 30, 31, 31, 28, 31, 30, 31, 30, 31)
+xs_lab <- substr(as.character(as.Date(paste("2000-07-31", sep = ""), origin = "1899-12-30") + cumsum(xs)), 6, 10)
+ggplot(ski_season_long, aes(diff, season)) +
+        geom_line(aes(group = season)) +
+        geom_point(aes(color = which)) + scale_x_continuous(limits = c(100, 365), breaks = cumsum(xs), 
+                          labels = xs_lab) + 
+       labs(x = "Datum", y = "Saison", title = "Erste und letzte Skitour pro Saison") + theme(legend.position="none")
+```
+
+
+## Bike
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 5}
+xs <- c(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31)
+xs_lab <- paste(xs, ".", c("Jan", "Feb", "Mar", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"), sep = "")
+ggplot(bike_season_long, aes(diff, year)) +
+        geom_line(aes(group = year)) +
+        geom_point(aes(color = which)) + scale_x_continuous(limits = c(0, 365), breaks = c(0, cumsum(xs)), 
+                          labels = c("1. Jan", xs_lab)) + 
+       labs(x = "Datum", y = "Jahr", title = "Erste und letzte Biketour pro Saison") + theme(legend.position = "none")
+```
