@@ -29,4 +29,13 @@ t <- (t %>% mutate(start = substr(start, 1, cut), end = substr(end, 1, cut)))
 pander(t)
 ```
 
+### Schnellste Zeit pro Jahr
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t0 <- (all %>% filter(startend == tour[i] & time != "") %>% group_by(year) %>% slice_min(order_by = time) %>% arrange(desc(date)))
+
+t <- (t0 %>% select(start, end, date, time, hm_h))
+pander(t)
+```
+
 :::

@@ -35,11 +35,12 @@ touren <- input_touren(path)
                   
 # Bike
 all <- (touren %>% mutate(skihalbtag = NULL, skihalbtag_fam = NULL, begleitung1 = NULL, begleitung2 = NULL, begleitung3 = NULL, begleitung4 = NULL,
-                          beg = NULL, region = NULL, kommentar = NULL) %>% filter(sport == "Bike"))
+                          beg = NULL, region = NULL, kommentar = NULL, year = year(date)) %>% filter(sport == "Bike"))
 
 ski <- (all %>% select(start, end, date, time, startend))
 tour <- sort(unique(ski$startend))
 ```
+
 
 # Aktuelles Jahr {.tabset .tabset-fade .tabset-pills}
 
@@ -114,7 +115,7 @@ cat(knit(text = unlist(paste(out, collapse = '\n')), quiet = TRUE))
 
 Dieser Abschnitt sortiert die Touren absteigend nach Hoehenmetern pro Stunde, wobei fuer jede Tour nur die schnellste genommen wird.
 
-```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+```{r hm_h, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
 t <- (touren %>% filter(is.na(hm_h) == FALSE & sport == "Bike"))
 t <- (t %>% group_by(paste(start, end, sep = "")) %>% arrange(desc(hm_h)) %>% slice(1) %>% ungroup())
 t <- (t %>% hm_print())
