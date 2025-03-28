@@ -21,12 +21,12 @@ pander(t)
 ```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
 t <- (all %>% filter(startend == tour[i] & time != "") %>% arrange(time, desc(date))) %>% mutate(d = 60 * (time_h - first(time_h))) %>% mutate(Rueckst = paste(floor(d), "m", round((1 - (ceiling(d) - d)) * 60), "s", sep = "")) %>% select(start, end, date, time, hm_h, Rueckst) %>% rowid_to_column("Nr")
 
-t[1, "Rueckst"] <- ""
-
-cut <- 15
-t <- (t %>% mutate(start = substr(start, 1, cut), end = substr(end, 1, cut)))
-
-pander(t)
+if (nrow(t) > 0){
+  
+  cut <- 15
+  t <- (t %>% mutate(start = substr(start, 1, cut), end = substr(end, 1, cut)))
+  pander(t)
+}
 ```
 
 ### Schnellste Zeit pro Jahr
@@ -35,7 +35,7 @@ pander(t)
 t0 <- (all %>% filter(startend == tour[i] & time != "") %>% group_by(year) %>% slice_min(order_by = time) %>% arrange(desc(date)))
 
 t <- (t0 %>% select(start, end, date, time, hm_h))
-pander(t)
+if (nrow(t) > 0){pander(t)}
 ```
 
 :::
