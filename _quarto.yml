@@ -12,6 +12,7 @@ project:
     - langlauf.qmd
     - zusammenfassungen.qmd
     - saisonstart.qmd
+    - travel.qmd
     
 website:
   title: "Sport Kaspar"
