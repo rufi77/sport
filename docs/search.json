@@ -501,140 +501,140 @@
     "href": "run.html",
     "title": "Run",
     "section": "",
-    "text": "Anzahl Touren: 15.\n\nNach DatumNach HoehenmeterNach Hoehenmeter pro Stunde\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\nhm_diff\ntime\nhm_h\n\n\n\n\n1\nSandstrasse\nSchwendichehrrun\n2025-01-09\nNA\n\nNA\n\n\n2\nSandstrasse\nReuti Station\n2025-01-10\n447\n00:38:08.7\n703\n\n\n3\nSandstrasse\nReuti Station\n2025-02-14\n447\n00:32:11.4\n833\n\n\n4\nHochdorf\n\n2025-03-10\n92\n\nNA\n\n\n5\nHochdorf\n\n2025-03-11\n63\n\nNA\n\n\n6\nSandstrasse\nReuti Station\n2025-03-13\n524\n00:54:05.4\n581\n\n\n7\nSandstrasse\nSchwendichehrrun\n2025-03-27\n259\n00:40:48.5\n381\n\n\n8\nSandstrasse\nBruenig 1013\n2025-03-28\n559\n00:56:52.0\n590\n\n\n9\nSandstrasse\nSchraendli\n2025-03-31\n259\n\nNA\n\n\n10\nRettershof\nAtzelberg\n2025-04-02\n303\n\nNA\n\n\n11\nRettershof\n\n2025-04-03\n37\n\nNA\n\n\n12\nAlpbaechli\nMilifloeh\n2025-04-07\n380\n\nNA\n\n\n13\nSandstrasse\nReuti Station\n2025-04-08\n447\n00:29:46.4\n901\n\n\n14\nVilla Tivoli\nDorf Tirol\n2025-04-16\n321\n\nNA\n\n\n15\nVilla Tivoli\nDorf Tirol\n2025-04-19\n298\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\nhm_diff\ntime\nhm_h\n\n\n\n\n1\nSandstrasse\nBruenig 1013\n2025-03-28\n559\n00:56:52.0\n590\n\n\n2\nSandstrasse\nReuti Station\n2025-03-13\n524\n00:54:05.4\n581\n\n\n3\nSandstrasse\nReuti Station\n2025-04-08\n447\n00:29:46.4\n901\n\n\n4\nSandstrasse\nReuti Station\n2025-02-14\n447\n00:32:11.4\n833\n\n\n5\nSandstrasse\nReuti Station\n2025-01-10\n447\n00:38:08.7\n703\n\n\n6\nAlpbaechli\nMilifloeh\n2025-04-07\n380\n\nNA\n\n\n7\nVilla Tivoli\nDorf Tirol\n2025-04-16\n321\n\nNA\n\n\n8\nRettershof\nAtzelberg\n2025-04-02\n303\n\nNA\n\n\n9\nVilla Tivoli\nDorf Tirol\n2025-04-19\n298\n\nNA\n\n\n10\nSandstrasse\nSchwendichehrrun\n2025-03-27\n259\n00:40:48.5\n381\n\n\n11\nSandstrasse\nSchraendli\n2025-03-31\n259\n\nNA\n\n\n12\nHochdorf\n\n2025-03-10\n92\n\nNA\n\n\n13\nHochdorf\n\n2025-03-11\n63\n\nNA\n\n\n14\nRettershof\n\n2025-04-03\n37\n\nNA\n\n\n\n\n\nDieser Abschnitt sortiert die Touren absteigend nach Hoehenmetern pro Stunde, wobei fuer jede Tour nur die schnellste genommen wird.\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\nhm_diff\ntime\nhm_h\n\n\n\n\n1\nSandstrasse\nReuti Station\n2025-04-08\n447\n00:29:46.4\n901\n\n\n2\nSandstrasse\nBruenig 1013\n2025-03-28\n559\n00:56:52.0\n590\n\n\n3\nSandstrasse\nSchwendichehrrun\n2025-03-27\n259\n00:40:48.5\n381"
+    "text": "Anzahl Touren: 16.\n\nNach DatumNach HoehenmeterNach Hoehenmeter pro Stunde\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\nhm_diff\ntime\nhm_h\n\n\n\n\n1\nSandstrasse\nSchwendichehrrun\n2025-01-09\nNA\n\nNA\n\n\n2\nSandstrasse\nReuti Station\n2025-01-10\n447\n00:38:08.7\n703\n\n\n3\nSandstrasse\nReuti Station\n2025-02-14\n447\n00:32:11.4\n833\n\n\n4\nHochdorf\n\n2025-03-10\n92\n\nNA\n\n\n5\nHochdorf\n\n2025-03-11\n63\n\nNA\n\n\n6\nSandstrasse\nReuti Station\n2025-03-13\n524\n00:54:05.4\n581\n\n\n7\nSandstrasse\nSchwendichehrrun\n2025-03-27\n259\n00:40:48.5\n381\n\n\n8\nSandstrasse\nBruenig 1013\n2025-03-28\n559\n00:56:52.0\n590\n\n\n9\nSandstrasse\nSchraendli\n2025-03-31\n259\n\nNA\n\n\n10\nRettershof\nAtzelberg\n2025-04-02\n303\n\nNA\n\n\n11\nRettershof\n\n2025-04-03\n37\n\nNA\n\n\n12\nAlpbaechli\nMilifloeh\n2025-04-07\n380\n\nNA\n\n\n13\nSandstrasse\nReuti Station\n2025-04-08\n447\n00:29:46.4\n901\n\n\n14\nVilla Tivoli\nDorf Tirol\n2025-04-16\n321\n\nNA\n\n\n15\nVilla Tivoli\nDorf Tirol\n2025-04-19\n298\n\nNA\n\n\n16\nSandstrasse\nBruenig 1013\n2025-04-20\n567\n00:56:30.6\n602\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\nhm_diff\ntime\nhm_h\n\n\n\n\n1\nSandstrasse\nBruenig 1013\n2025-04-20\n567\n00:56:30.6\n602\n\n\n2\nSandstrasse\nBruenig 1013\n2025-03-28\n559\n00:56:52.0\n590\n\n\n3\nSandstrasse\nReuti Station\n2025-03-13\n524\n00:54:05.4\n581\n\n\n4\nSandstrasse\nReuti Station\n2025-04-08\n447\n00:29:46.4\n901\n\n\n5\nSandstrasse\nReuti Station\n2025-02-14\n447\n00:32:11.4\n833\n\n\n6\nSandstrasse\nReuti Station\n2025-01-10\n447\n00:38:08.7\n703\n\n\n7\nAlpbaechli\nMilifloeh\n2025-04-07\n380\n\nNA\n\n\n8\nVilla Tivoli\nDorf Tirol\n2025-04-16\n321\n\nNA\n\n\n9\nRettershof\nAtzelberg\n2025-04-02\n303\n\nNA\n\n\n10\nVilla Tivoli\nDorf Tirol\n2025-04-19\n298\n\nNA\n\n\n11\nSandstrasse\nSchwendichehrrun\n2025-03-27\n259\n00:40:48.5\n381\n\n\n12\nSandstrasse\nSchraendli\n2025-03-31\n259\n\nNA\n\n\n13\nHochdorf\n\n2025-03-10\n92\n\nNA\n\n\n14\nHochdorf\n\n2025-03-11\n63\n\nNA\n\n\n15\nRettershof\n\n2025-04-03\n37\n\nNA\n\n\n\n\n\n\nDieser Abschnitt sortiert die Touren absteigend nach Hoehenmetern pro Stunde, wobei fuer jede Tour nur die schnellste genommen wird.\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\nhm_diff\ntime\nhm_h\n\n\n\n\n1\nSandstrasse\nReuti Station\n2025-04-08\n447\n00:29:46.4\n901\n\n\n2\nSandstrasse\nBruenig 1013\n2025-04-20\n567\n00:56:30.6\n602\n\n\n3\nSandstrasse\nSchwendichehrrun\n2025-03-27\n259\n00:40:48.5\n381"
   },
   {
     "objectID": "run.html#talboden-na-23-hm",
     "href": "run.html#talboden-na-23-hm",
     "title": "Run",
     "section": "Talboden –> NA (23 Hm)",
-    "text": "Talboden –&gt; NA (23 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nTalboden\n\n2024-11-01\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Talboden –&gt; NA (23 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nTalboden\n\n2024-11-01\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#yetihuette-na-na-hm",
     "href": "run.html#yetihuette-na-na-hm",
     "title": "Run",
     "section": "Yetihuette –> NA (NA Hm)",
-    "text": "Yetihuette –&gt; NA (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nYetihuette\n\n2024-12-04\n\nNA\n\n\nYetihuette\n\n2024-12-03\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Yetihuette –&gt; NA (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nYetihuette\n\n2024-12-04\n\nNA\n\n\nYetihuette\n\n2024-12-03\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#hochdorf-na-63-hm",
     "href": "run.html#hochdorf-na-63-hm",
     "title": "Run",
     "section": "Hochdorf –> NA (63 Hm)",
-    "text": "Hochdorf –&gt; NA (63 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nHochdorf\n\n2025-03-11\n\nNA\n\n\nHochdorf\n\n2025-03-10\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Hochdorf –&gt; NA (63 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nHochdorf\n\n2025-03-11\n\nNA\n\n\nHochdorf\n\n2025-03-10\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#rettershof-na-37-hm",
     "href": "run.html#rettershof-na-37-hm",
     "title": "Run",
     "section": "Rettershof –> NA (37 Hm)",
-    "text": "Rettershof –&gt; NA (37 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nRettershof\n\n2025-04-03\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Rettershof –&gt; NA (37 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nRettershof\n\n2025-04-03\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#rettershof-atzelberg-303-hm",
     "href": "run.html#rettershof-atzelberg-303-hm",
     "title": "Run",
     "section": "Rettershof –> Atzelberg (303 Hm)",
-    "text": "Rettershof –&gt; Atzelberg (303 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nRettershof\nAtzelberg\n2025-04-02\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Rettershof –&gt; Atzelberg (303 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nRettershof\nAtzelberg\n2025-04-02\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#ostermundigen-rueti-bantiger-na-hm",
     "href": "run.html#ostermundigen-rueti-bantiger-na-hm",
     "title": "Run",
     "section": "Ostermundigen Rueti –> Bantiger (NA Hm)",
-    "text": "Ostermundigen Rueti –&gt; Bantiger (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nOstermundigen Rueti\nBantiger\n2021-07-31\n00:37:56.0\nNA\n\n\nOstermundigen Rueti\nBantiger\n2018-07-09\n00:38:18.4\nNA\n\n\nOstermundigen Rueti\nBantiger\n2018-03-31\n00:39:01.7\nNA\n\n\nOstermundigen Rueti\nBantiger\n2018-01-13\n00:39:03.6\nNA\n\n\nOstermundigen Rueti\nBantiger\n2017-12-17\n00:40:30.0\nNA\n\n\nOstermundigen Rueti\nBantiger\n2017-07-02\n00:37:54.9\nNA\n\n\nOstermundigen Rueti\nBantiger\n2017-06-16\n00:34:44.3\nNA\n\n\nOstermundigen Rueti\nBantiger\n2017-05-29\n00:36:53.0\nNA\n\n\nOstermundigen Rueti\nBantiger\n2017-04-30\n00:41:29.7\nNA\n\n\nOstermundigen Rueti\nBantiger\n2017-03-24\n00:39:00.0\nNA\n\n\nOstermundigen Rueti\nBantiger\n2017-03-03\n00:37:30.0\nNA\n\n\nOstermundigen Rueti\nBantiger\n2017-02-26\n00:37:16.4\nNA\n\n\nOstermundigen Rueti\nBantiger\n2017-02-10\n00:39:59.3\nNA\n\n\nOstermundigen Rueti\nBantiger\n2017-01-29\n00:43:06.4\nNA\n\n\nOstermundigen Rueti\nBantiger\n2017-01-27\n00:40:26.0\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nOstermundigen R\nBantiger\n2017-06-16\n00:34:44.3\nNA\n\n\n\n2\nOstermundigen R\nBantiger\n2017-05-29\n00:36:53.0\nNA\n2m9s\n\n\n3\nOstermundigen R\nBantiger\n2017-02-26\n00:37:16.4\nNA\n2m32s\n\n\n4\nOstermundigen R\nBantiger\n2017-03-03\n00:37:30.0\nNA\n2m46s\n\n\n5\nOstermundigen R\nBantiger\n2017-07-02\n00:37:54.9\nNA\n3m11s\n\n\n6\nOstermundigen R\nBantiger\n2021-07-31\n00:37:56.0\nNA\n3m12s\n\n\n7\nOstermundigen R\nBantiger\n2018-07-09\n00:38:18.4\nNA\n3m34s\n\n\n8\nOstermundigen R\nBantiger\n2017-03-24\n00:39:00.0\nNA\n4m16s\n\n\n9\nOstermundigen R\nBantiger\n2018-03-31\n00:39:01.7\nNA\n4m17s\n\n\n10\nOstermundigen R\nBantiger\n2018-01-13\n00:39:03.6\nNA\n4m19s\n\n\n11\nOstermundigen R\nBantiger\n2017-02-10\n00:39:59.3\nNA\n5m15s\n\n\n12\nOstermundigen R\nBantiger\n2017-01-27\n00:40:26.0\nNA\n5m42s\n\n\n13\nOstermundigen R\nBantiger\n2017-12-17\n00:40:30.0\nNA\n5m46s\n\n\n14\nOstermundigen R\nBantiger\n2017-04-30\n00:41:29.7\nNA\n6m45s\n\n\n15\nOstermundigen R\nBantiger\n2017-01-29\n00:43:06.4\nNA\n8m22s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2021\nOstermundigen Rueti\nBantiger\n2021-07-31\n00:37:56.0\nNA\n\n\n2018\nOstermundigen Rueti\nBantiger\n2018-07-09\n00:38:18.4\nNA\n\n\n2017\nOstermundigen Rueti\nBantiger\n2017-06-16\n00:34:44.3\nNA"
+    "text": "Ostermundigen Rueti –&gt; Bantiger (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nOstermundigen Rueti\nBantiger\n2021-07-31\n00:37:56.0\nNA\n\n\nOstermundigen Rueti\nBantiger\n2018-07-09\n00:38:18.4\nNA\n\n\nOstermundigen Rueti\nBantiger\n2018-03-31\n00:39:01.7\nNA\n\n\nOstermundigen Rueti\nBantiger\n2018-01-13\n00:39:03.6\nNA\n\n\nOstermundigen Rueti\nBantiger\n2017-12-17\n00:40:30.0\nNA\n\n\nOstermundigen Rueti\nBantiger\n2017-07-02\n00:37:54.9\nNA\n\n\nOstermundigen Rueti\nBantiger\n2017-06-16\n00:34:44.3\nNA\n\n\nOstermundigen Rueti\nBantiger\n2017-05-29\n00:36:53.0\nNA\n\n\nOstermundigen Rueti\nBantiger\n2017-04-30\n00:41:29.7\nNA\n\n\nOstermundigen Rueti\nBantiger\n2017-03-24\n00:39:00.0\nNA\n\n\nOstermundigen Rueti\nBantiger\n2017-03-03\n00:37:30.0\nNA\n\n\nOstermundigen Rueti\nBantiger\n2017-02-26\n00:37:16.4\nNA\n\n\nOstermundigen Rueti\nBantiger\n2017-02-10\n00:39:59.3\nNA\n\n\nOstermundigen Rueti\nBantiger\n2017-01-29\n00:43:06.4\nNA\n\n\nOstermundigen Rueti\nBantiger\n2017-01-27\n00:40:26.0\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nOstermundigen R\nBantiger\n2017-06-16\n00:34:44.3\nNA\n\n\n\n2\nOstermundigen R\nBantiger\n2017-05-29\n00:36:53.0\nNA\n2m9s\n\n\n3\nOstermundigen R\nBantiger\n2017-02-26\n00:37:16.4\nNA\n2m32s\n\n\n4\nOstermundigen R\nBantiger\n2017-03-03\n00:37:30.0\nNA\n2m46s\n\n\n5\nOstermundigen R\nBantiger\n2017-07-02\n00:37:54.9\nNA\n3m11s\n\n\n6\nOstermundigen R\nBantiger\n2021-07-31\n00:37:56.0\nNA\n3m12s\n\n\n7\nOstermundigen R\nBantiger\n2018-07-09\n00:38:18.4\nNA\n3m34s\n\n\n8\nOstermundigen R\nBantiger\n2017-03-24\n00:39:00.0\nNA\n4m16s\n\n\n9\nOstermundigen R\nBantiger\n2018-03-31\n00:39:01.7\nNA\n4m17s\n\n\n10\nOstermundigen R\nBantiger\n2018-01-13\n00:39:03.6\nNA\n4m19s\n\n\n11\nOstermundigen R\nBantiger\n2017-02-10\n00:39:59.3\nNA\n5m15s\n\n\n12\nOstermundigen R\nBantiger\n2017-01-27\n00:40:26.0\nNA\n5m42s\n\n\n13\nOstermundigen R\nBantiger\n2017-12-17\n00:40:30.0\nNA\n5m46s\n\n\n14\nOstermundigen R\nBantiger\n2017-04-30\n00:41:29.7\nNA\n6m45s\n\n\n15\nOstermundigen R\nBantiger\n2017-01-29\n00:43:06.4\nNA\n8m22s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2021\nOstermundigen Rueti\nBantiger\n2021-07-31\n00:37:56.0\nNA\n\n\n2018\nOstermundigen Rueti\nBantiger\n2018-07-09\n00:38:18.4\nNA\n\n\n2017\nOstermundigen Rueti\nBantiger\n2017-06-16\n00:34:44.3\nNA"
   },
   {
     "objectID": "run.html#riederalp-west-bettmerhorn-bergstation-na-hm",
     "href": "run.html#riederalp-west-bettmerhorn-bergstation-na-hm",
     "title": "Run",
     "section": "Riederalp West –> Bettmerhorn Bergstation (NA Hm)",
-    "text": "Riederalp West –&gt; Bettmerhorn Bergstation (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nRiederalp West\nBettmerhorn Bergstation\n2021-09-30\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Riederalp West –&gt; Bettmerhorn Bergstation (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nRiederalp West\nBettmerhorn Bergstation\n2021-09-30\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#alpbach-bidmi-805-hm",
     "href": "run.html#alpbach-bidmi-805-hm",
     "title": "Run",
     "section": "Alpbach –> Bidmi (805 Hm)",
-    "text": "Alpbach –&gt; Bidmi (805 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbach\nBidmi\n2024-09-16\n00:53:46.9\n898\n\n\nAlpbach\nBidmi\n2021-08-30\n00:54:24.9\n888\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbach\nBidmi\n2024-09-16\n00:53:46.9\n898\n\n\n\n2\nAlpbach\nBidmi\n2021-08-30\n00:54:24.9\n888\n0m38s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2024\nAlpbach\nBidmi\n2024-09-16\n00:53:46.9\n898\n\n\n2021\nAlpbach\nBidmi\n2021-08-30\n00:54:24.9\n888"
+    "text": "Alpbach –&gt; Bidmi (805 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbach\nBidmi\n2024-09-16\n00:53:46.9\n898\n\n\nAlpbach\nBidmi\n2021-08-30\n00:54:24.9\n888\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbach\nBidmi\n2024-09-16\n00:53:46.9\n898\n\n\n\n2\nAlpbach\nBidmi\n2021-08-30\n00:54:24.9\n888\n0m38s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2024\nAlpbach\nBidmi\n2024-09-16\n00:53:46.9\n898\n\n\n2021\nAlpbach\nBidmi\n2021-08-30\n00:54:24.9\n888"
   },
   {
     "objectID": "run.html#sandstrasse-bidmi-830-hm",
     "href": "run.html#sandstrasse-bidmi-830-hm",
     "title": "Run",
     "section": "Sandstrasse –> Bidmi (830 Hm)",
-    "text": "Sandstrasse –&gt; Bidmi (830 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nBidmi\n2024-09-16\n00:55:49.6\n892\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nSandstrasse\nBidmi\n2024-09-16\n00:55:49.6\n892\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2024\nSandstrasse\nBidmi\n2024-09-16\n00:55:49.6\n892"
+    "text": "Sandstrasse –&gt; Bidmi (830 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nBidmi\n2024-09-16\n00:55:49.6\n892\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nSandstrasse\nBidmi\n2024-09-16\n00:55:49.6\n892\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2024\nSandstrasse\nBidmi\n2024-09-16\n00:55:49.6\n892"
   },
   {
     "objectID": "run.html#alpbaechli-bidmi-818-hm",
     "href": "run.html#alpbaechli-bidmi-818-hm",
     "title": "Run",
     "section": "Alpbaechli –> Bidmi (818 Hm)",
-    "text": "Alpbaechli –&gt; Bidmi (818 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nBidmi\n2021-08-30\n00:56:04.9\n875\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbaechli\nBidmi\n2021-08-30\n00:56:04.9\n875\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2021\nAlpbaechli\nBidmi\n2021-08-30\n00:56:04.9\n875"
+    "text": "Alpbaechli –&gt; Bidmi (818 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nBidmi\n2021-08-30\n00:56:04.9\n875\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbaechli\nBidmi\n2021-08-30\n00:56:04.9\n875\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2021\nAlpbaechli\nBidmi\n2021-08-30\n00:56:04.9\n875"
   },
   {
     "objectID": "run.html#alpbach-reuti-bidmi-805-hm",
     "href": "run.html#alpbach-reuti-bidmi-805-hm",
     "title": "Run",
     "section": "Alpbach –> Reuti –> Bidmi (805 Hm)",
-    "text": "Alpbach –&gt; Reuti –&gt; Bidmi (805 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbach\nBidmi\n2020-10-06\n00:56:08.7\n860\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbach\nBidmi\n2020-10-06\n00:56:08.7\n860\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2020\nAlpbach\nBidmi\n2020-10-06\n00:56:08.7\n860"
+    "text": "Alpbach –&gt; Reuti –&gt; Bidmi (805 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbach\nBidmi\n2020-10-06\n00:56:08.7\n860\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbach\nBidmi\n2020-10-06\n00:56:08.7\n860\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2020\nAlpbach\nBidmi\n2020-10-06\n00:56:08.7\n860"
   },
   {
     "objectID": "run.html#alpbaechli-reuti-bidmi-818-hm",
     "href": "run.html#alpbaechli-reuti-bidmi-818-hm",
     "title": "Run",
     "section": "Alpbaechli –> Reuti –> Bidmi (818 Hm)",
-    "text": "Alpbaechli –&gt; Reuti –&gt; Bidmi (818 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nBidmi\n2020-10-06\n00:59:01.7\n831\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbaechli\nBidmi\n2020-10-06\n00:59:01.7\n831\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2020\nAlpbaechli\nBidmi\n2020-10-06\n00:59:01.7\n831"
+    "text": "Alpbaechli –&gt; Reuti –&gt; Bidmi (818 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nBidmi\n2020-10-06\n00:59:01.7\n831\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbaechli\nBidmi\n2020-10-06\n00:59:01.7\n831\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2020\nAlpbaechli\nBidmi\n2020-10-06\n00:59:01.7\n831"
   },
   {
     "objectID": "run.html#sandstrasse-wylerli-bielti-na-hm",
     "href": "run.html#sandstrasse-wylerli-bielti-na-hm",
     "title": "Run",
     "section": "Sandstrasse –> Wylerli –> Bielti (NA Hm)",
-    "text": "Sandstrasse –&gt; Wylerli –&gt; Bielti (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nBielti\n2023-09-12\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Sandstrasse –&gt; Wylerli –&gt; Bielti (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nBielti\n2023-09-12\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#brienz-bhf-brienzer-rothorn-1781-hm",
     "href": "run.html#brienz-bhf-brienzer-rothorn-1781-hm",
     "title": "Run",
     "section": "Brienz Bhf –> Brienzer Rothorn (1781 Hm)",
-    "text": "Brienz Bhf –&gt; Brienzer Rothorn (1781 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nBrienz Bhf\nBrienzer Rothorn\n2019-07-06\n02:16:07.3\n785\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nBrienz Bhf\nBrienzer Rothor\n2019-07-06\n02:16:07.3\n785\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2019\nBrienz Bhf\nBrienzer Rothorn\n2019-07-06\n02:16:07.3\n785"
+    "text": "Brienz Bhf –&gt; Brienzer Rothorn (1781 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nBrienz Bhf\nBrienzer Rothorn\n2019-07-06\n02:16:07.3\n785\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nBrienz Bhf\nBrienzer Rothor\n2019-07-06\n02:16:07.3\n785\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2019\nBrienz Bhf\nBrienzer Rothorn\n2019-07-06\n02:16:07.3\n785"
   },
   {
     "objectID": "run.html#sandstrasse-brienzwiler-bahnhof-17-hm",
     "href": "run.html#sandstrasse-brienzwiler-bahnhof-17-hm",
     "title": "Run",
     "section": "Sandstrasse –> Brienzwiler Bahnhof (17 Hm)",
-    "text": "Sandstrasse –&gt; Brienzwiler Bahnhof (17 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nBrienzwiler Bahnhof\n2024-11-28\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Sandstrasse –&gt; Brienzwiler Bahnhof (17 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nBrienzwiler Bahnhof\n2024-11-28\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#alpbaechli-naturperlenweg-brienzwiler-bahnhof--28-hm",
     "href": "run.html#alpbaechli-naturperlenweg-brienzwiler-bahnhof--28-hm",
     "title": "Run",
     "section": "Alpbaechli –> Naturperlenweg –> Brienzwiler Bahnhof (-28 Hm)",
-    "text": "Alpbaechli –&gt; Naturperlenweg –&gt; Brienzwiler Bahnhof (-28 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nBrienzwiler Bahnhof\n2021-09-13\n00:53:06.0\n-32\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbaechli\nBrienzwiler Bah\n2021-09-13\n00:53:06.0\n-32\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2021\nAlpbaechli\nBrienzwiler Bahnhof\n2021-09-13\n00:53:06.0\n-32"
+    "text": "Alpbaechli –&gt; Naturperlenweg –&gt; Brienzwiler Bahnhof (-28 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nBrienzwiler Bahnhof\n2021-09-13\n00:53:06.0\n-32\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbaechli\nBrienzwiler Bah\n2021-09-13\n00:53:06.0\n-32\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2021\nAlpbaechli\nBrienzwiler Bahnhof\n2021-09-13\n00:53:06.0\n-32"
   },
   {
     "objectID": "run.html#alpbaechli-bruenig-1013-411-hm",
     "href": "run.html#alpbaechli-bruenig-1013-411-hm",
     "title": "Run",
     "section": "Alpbaechli –> Bruenig 1013 (411 Hm)",
-    "text": "Alpbaechli –&gt; Bruenig 1013 (411 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nBruenig 1013\n2023-03-26\n\nNA\n\n\nAlpbaechli\nBruenig 1013\n2022-01-02\n01:04:30.0\n382\n\n\nAlpbaechli\nBruenig 1013\n2021-12-31\n00:59:31.8\n414\n\n\nAlpbaechli\nBruenig 1013\n2021-12-18\n01:13:34.0\n335\n\n\nAlpbaechli\nBruenig 1013\n2021-11-27\n00:58:34.0\n421\n\n\nAlpbaechli\nBruenig 1013\n2021-11-14\n01:02:14.0\n396\n\n\nAlpbaechli\nBruenig 1013\n2021-09-01\n\nNA\n\n\nAlpbaechli\nBruenig 1013\n2021-08-04\n\nNA\n\n\nAlpbaechli\nBruenig 1013\n2021-05-19\n00:59:50.1\n412\n\n\nAlpbaechli\nBruenig 1013\n2020-11-05\n00:55:06.0\n448\n\n\nAlpbaechli\nBruenig 1013\n2020-07-11\n01:00:01.0\n411\n\n\nAlpbaechli\nBruenig 1013\n2020-02-17\n01:00:48.0\n406\n\n\nAlpbaechli\nBruenig 1013\n2019-11-30\n00:59:41.8\n413\n\n\nAlpbaechli\nBruenig 1013\n2019-05-01\n00:57:00.9\n433\n\n\nAlpbaechli\nBruenig 1013\n2019-03-17\n01:00:06.0\n410\n\n\nAlpbaechli\nBruenig 1013\n2019-02-26\n01:00:24.0\n408\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbaechli\nBruenig 1013\n2020-11-05\n00:55:06.0\n448\n\n\n\n2\nAlpbaechli\nBruenig 1013\n2019-05-01\n00:57:00.9\n433\n1m55s\n\n\n3\nAlpbaechli\nBruenig 1013\n2021-11-27\n00:58:34.0\n421\n3m28s\n\n\n4\nAlpbaechli\nBruenig 1013\n2021-12-31\n00:59:31.8\n414\n4m26s\n\n\n5\nAlpbaechli\nBruenig 1013\n2019-11-30\n00:59:41.8\n413\n4m36s\n\n\n6\nAlpbaechli\nBruenig 1013\n2021-05-19\n00:59:50.1\n412\n4m44s\n\n\n7\nAlpbaechli\nBruenig 1013\n2020-07-11\n01:00:01.0\n411\n4m55s\n\n\n8\nAlpbaechli\nBruenig 1013\n2019-03-17\n01:00:06.0\n410\n5m0s\n\n\n9\nAlpbaechli\nBruenig 1013\n2019-02-26\n01:00:24.0\n408\n5m18s\n\n\n10\nAlpbaechli\nBruenig 1013\n2020-02-17\n01:00:48.0\n406\n5m42s\n\n\n11\nAlpbaechli\nBruenig 1013\n2021-11-14\n01:02:14.0\n396\n7m8s\n\n\n12\nAlpbaechli\nBruenig 1013\n2022-01-02\n01:04:30.0\n382\n9m24s\n\n\n13\nAlpbaechli\nBruenig 1013\n2021-12-18\n01:13:34.0\n335\n18m28s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2022\nAlpbaechli\nBruenig 1013\n2022-01-02\n01:04:30.0\n382\n\n\n2021\nAlpbaechli\nBruenig 1013\n2021-11-27\n00:58:34.0\n421\n\n\n2020\nAlpbaechli\nBruenig 1013\n2020-11-05\n00:55:06.0\n448\n\n\n2019\nAlpbaechli\nBruenig 1013\n2019-05-01\n00:57:00.9\n433"
+    "text": "Alpbaechli –&gt; Bruenig 1013 (411 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nBruenig 1013\n2023-03-26\n\nNA\n\n\nAlpbaechli\nBruenig 1013\n2022-01-02\n01:04:30.0\n382\n\n\nAlpbaechli\nBruenig 1013\n2021-12-31\n00:59:31.8\n414\n\n\nAlpbaechli\nBruenig 1013\n2021-12-18\n01:13:34.0\n335\n\n\nAlpbaechli\nBruenig 1013\n2021-11-27\n00:58:34.0\n421\n\n\nAlpbaechli\nBruenig 1013\n2021-11-14\n01:02:14.0\n396\n\n\nAlpbaechli\nBruenig 1013\n2021-09-01\n\nNA\n\n\nAlpbaechli\nBruenig 1013\n2021-08-04\n\nNA\n\n\nAlpbaechli\nBruenig 1013\n2021-05-19\n00:59:50.1\n412\n\n\nAlpbaechli\nBruenig 1013\n2020-11-05\n00:55:06.0\n448\n\n\nAlpbaechli\nBruenig 1013\n2020-07-11\n01:00:01.0\n411\n\n\nAlpbaechli\nBruenig 1013\n2020-02-17\n01:00:48.0\n406\n\n\nAlpbaechli\nBruenig 1013\n2019-11-30\n00:59:41.8\n413\n\n\nAlpbaechli\nBruenig 1013\n2019-05-01\n00:57:00.9\n433\n\n\nAlpbaechli\nBruenig 1013\n2019-03-17\n01:00:06.0\n410\n\n\nAlpbaechli\nBruenig 1013\n2019-02-26\n01:00:24.0\n408\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbaechli\nBruenig 1013\n2020-11-05\n00:55:06.0\n448\n\n\n\n2\nAlpbaechli\nBruenig 1013\n2019-05-01\n00:57:00.9\n433\n1m55s\n\n\n3\nAlpbaechli\nBruenig 1013\n2021-11-27\n00:58:34.0\n421\n3m28s\n\n\n4\nAlpbaechli\nBruenig 1013\n2021-12-31\n00:59:31.8\n414\n4m26s\n\n\n5\nAlpbaechli\nBruenig 1013\n2019-11-30\n00:59:41.8\n413\n4m36s\n\n\n6\nAlpbaechli\nBruenig 1013\n2021-05-19\n00:59:50.1\n412\n4m44s\n\n\n7\nAlpbaechli\nBruenig 1013\n2020-07-11\n01:00:01.0\n411\n4m55s\n\n\n8\nAlpbaechli\nBruenig 1013\n2019-03-17\n01:00:06.0\n410\n5m0s\n\n\n9\nAlpbaechli\nBruenig 1013\n2019-02-26\n01:00:24.0\n408\n5m18s\n\n\n10\nAlpbaechli\nBruenig 1013\n2020-02-17\n01:00:48.0\n406\n5m42s\n\n\n11\nAlpbaechli\nBruenig 1013\n2021-11-14\n01:02:14.0\n396\n7m8s\n\n\n12\nAlpbaechli\nBruenig 1013\n2022-01-02\n01:04:30.0\n382\n9m24s\n\n\n13\nAlpbaechli\nBruenig 1013\n2021-12-18\n01:13:34.0\n335\n18m28s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2022\nAlpbaechli\nBruenig 1013\n2022-01-02\n01:04:30.0\n382\n\n\n2021\nAlpbaechli\nBruenig 1013\n2021-11-27\n00:58:34.0\n421\n\n\n2020\nAlpbaechli\nBruenig 1013\n2020-11-05\n00:55:06.0\n448\n\n\n2019\nAlpbaechli\nBruenig 1013\n2019-05-01\n00:57:00.9\n433"
   },
   {
     "objectID": "run.html#aarmatte-bruenig-1013-417-hm",
     "href": "run.html#aarmatte-bruenig-1013-417-hm",
     "title": "Run",
     "section": "Aarmatte –> Bruenig 1013 (417 Hm)",
-    "text": "Aarmatte –&gt; Bruenig 1013 (417 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAarmatte\nBruenig 1013\n2023-04-15\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Aarmatte –&gt; Bruenig 1013 (417 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAarmatte\nBruenig 1013\n2023-04-15\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#amtshaus-bsangtenfluh-bruenig-1013-582-hm",
     "href": "run.html#amtshaus-bsangtenfluh-bruenig-1013-582-hm",
     "title": "Run",
     "section": "Amtshaus –> Bsangtenfluh –> Bruenig 1013 (582 Hm)",
-    "text": "Amtshaus –&gt; Bsangtenfluh –&gt; Bruenig 1013 (582 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAmtshaus\nBruenig 1013\n2024-11-16\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Amtshaus –&gt; Bsangtenfluh –&gt; Bruenig 1013 (582 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAmtshaus\nBruenig 1013\n2024-11-16\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#sandstrasse-bruenig-1013-559-hm",
@@ -648,462 +648,462 @@
     "href": "run.html#strobl-brustwand-na-hm",
     "title": "Run",
     "section": "Strobl –> Brustwand (NA Hm)",
-    "text": "Strobl –&gt; Brustwand (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nStrobl\nBrustwand\n2024-06-28\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Strobl –&gt; Brustwand (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nStrobl\nBrustwand\n2024-06-28\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#scuol-clemgia-na-hm",
     "href": "run.html#scuol-clemgia-na-hm",
     "title": "Run",
     "section": "Scuol –> Clemgia (NA Hm)",
-    "text": "Scuol –&gt; Clemgia (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nScuol\nClemgia\n2024-07-19\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Scuol –&gt; Clemgia (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nScuol\nClemgia\n2024-07-19\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#villa-tivoli-dorf-tirol-298-hm",
     "href": "run.html#villa-tivoli-dorf-tirol-298-hm",
     "title": "Run",
     "section": "Villa Tivoli –> Dorf Tirol (298 Hm)",
-    "text": "Villa Tivoli –&gt; Dorf Tirol (298 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nVilla Tivoli\nDorf Tirol\n2025-04-19\n\nNA\n\n\nVilla Tivoli\nDorf Tirol\n2025-04-16\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Villa Tivoli –&gt; Dorf Tirol (298 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nVilla Tivoli\nDorf Tirol\n2025-04-19\n\nNA\n\n\nVilla Tivoli\nDorf Tirol\n2025-04-16\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#alpbaechli-5km-funtenen--20-hm",
     "href": "run.html#alpbaechli-5km-funtenen--20-hm",
     "title": "Run",
     "section": "Alpbaechli –> 5km –> Funtenen (-20 Hm)",
-    "text": "Alpbaechli –&gt; 5km –&gt; Funtenen (-20 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nFuntenen\n2021-01-03\n00:21:13.1\n-57\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbaechli\nFuntenen\n2021-01-03\n00:21:13.1\n-57\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2021\nAlpbaechli\nFuntenen\n2021-01-03\n00:21:13.1\n-57"
+    "text": "Alpbaechli –&gt; 5km –&gt; Funtenen (-20 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nFuntenen\n2021-01-03\n00:21:13.1\n-57\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbaechli\nFuntenen\n2021-01-03\n00:21:13.1\n-57\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2021\nAlpbaechli\nFuntenen\n2021-01-03\n00:21:13.1\n-57"
   },
   {
     "objectID": "run.html#alpbaechli-winterlicke-gadmen-603-hm",
     "href": "run.html#alpbaechli-winterlicke-gadmen-603-hm",
     "title": "Run",
     "section": "Alpbaechli –> Winterlicke –> Gadmen (603 Hm)",
-    "text": "Alpbaechli –&gt; Winterlicke –&gt; Gadmen (603 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nGadmen\n2020-09-17\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Alpbaechli –&gt; Winterlicke –&gt; Gadmen (603 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nGadmen\n2020-09-17\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#alpbaechli-hundschipfi-gadmen-603-hm",
     "href": "run.html#alpbaechli-hundschipfi-gadmen-603-hm",
     "title": "Run",
     "section": "Alpbaechli –> Hundschipfi –> Gadmen (603 Hm)",
-    "text": "Alpbaechli –&gt; Hundschipfi –&gt; Gadmen (603 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nGadmen\n2020-10-03\n01:59:43.7\n302\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbaechli\nGadmen\n2020-10-03\n01:59:43.7\n302\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2020\nAlpbaechli\nGadmen\n2020-10-03\n01:59:43.7\n302"
+    "text": "Alpbaechli –&gt; Hundschipfi –&gt; Gadmen (603 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nGadmen\n2020-10-03\n01:59:43.7\n302\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbaechli\nGadmen\n2020-10-03\n01:59:43.7\n302\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2020\nAlpbaechli\nGadmen\n2020-10-03\n01:59:43.7\n302"
   },
   {
     "objectID": "run.html#rohrmatten-gaulihuette-1154-hm",
     "href": "run.html#rohrmatten-gaulihuette-1154-hm",
     "title": "Run",
     "section": "Rohrmatten –> Gaulihuette (1154 Hm)",
-    "text": "Rohrmatten –&gt; Gaulihuette (1154 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nRohrmatten\nGaulihuette\n2020-07-25\n01:54:00.0\n607\n\n\nRohrmatten\nGaulihuette\n2019-10-07\n02:37:51.2\n439\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nRohrmatten\nGaulihuette\n2020-07-25\n01:54:00.0\n607\n\n\n\n2\nRohrmatten\nGaulihuette\n2019-10-07\n02:37:51.2\n439\n43m51s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2020\nRohrmatten\nGaulihuette\n2020-07-25\n01:54:00.0\n607\n\n\n2019\nRohrmatten\nGaulihuette\n2019-10-07\n02:37:51.2\n439"
+    "text": "Rohrmatten –&gt; Gaulihuette (1154 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nRohrmatten\nGaulihuette\n2020-07-25\n01:54:00.0\n607\n\n\nRohrmatten\nGaulihuette\n2019-10-07\n02:37:51.2\n439\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nRohrmatten\nGaulihuette\n2020-07-25\n01:54:00.0\n607\n\n\n\n2\nRohrmatten\nGaulihuette\n2019-10-07\n02:37:51.2\n439\n43m51s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2020\nRohrmatten\nGaulihuette\n2020-07-25\n01:54:00.0\n607\n\n\n2019\nRohrmatten\nGaulihuette\n2019-10-07\n02:37:51.2\n439"
   },
   {
     "objectID": "run.html#kunzentennlen-gelmerhuette-815-hm",
     "href": "run.html#kunzentennlen-gelmerhuette-815-hm",
     "title": "Run",
     "section": "Kunzentennlen –> Gelmerhuette (815 Hm)",
-    "text": "Kunzentennlen –&gt; Gelmerhuette (815 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nKunzentennlen\nGelmerhuette\n2021-09-07\n01:19:37.0\n614\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nKunzentennlen\nGelmerhuette\n2021-09-07\n01:19:37.0\n614\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2021\nKunzentennlen\nGelmerhuette\n2021-09-07\n01:19:37.0\n614"
+    "text": "Kunzentennlen –&gt; Gelmerhuette (815 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nKunzentennlen\nGelmerhuette\n2021-09-07\n01:19:37.0\n614\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nKunzentennlen\nGelmerhuette\n2021-09-07\n01:19:37.0\n614\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2021\nKunzentennlen\nGelmerhuette\n2021-09-07\n01:19:37.0\n614"
   },
   {
     "objectID": "run.html#kaeppeli-gempen-480-hm",
     "href": "run.html#kaeppeli-gempen-480-hm",
     "title": "Run",
     "section": "Kaeppeli –> Gempen (480 Hm)",
-    "text": "Kaeppeli –&gt; Gempen (480 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nKaeppeli\nGempen\n2016-03-11\n00:48:56.0\n589\n\n\nKaeppeli\nGempen\n2016-02-15\n00:49:13.3\n585\n\n\nKaeppeli\nGempen\n2016-02-10\n00:52:08.0\n552\n\n\nKaeppeli\nGempen\n2016-01-27\n00:50:28.5\n571\n\n\nKaeppeli\nGempen\n2016-01-06\n00:52:59.1\n544\n\n\nKaeppeli\nGempen\n2015-11-21\n00:50:25.4\n571\n\n\nKaeppeli\nGempen\n2015-11-14\n00:48:05.0\n599\n\n\nKaeppeli\nGempen\n2015-03-28\n00:51:58.0\n554\n\n\nKaeppeli\nGempen\n2014-05-24\n00:50:22.0\n572\n\n\nKaeppeli\nGempen\n2013-11-16\n00:53:18.5\n540\n\n\nKaeppeli\nGempen\n2013-10-02\n00:50:37.4\n569\n\n\nKaeppeli\nGempen\n2013-09-14\n00:48:47.3\n590\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nKaeppeli\nGempen\n2015-11-14\n00:48:05.0\n599\n\n\n\n2\nKaeppeli\nGempen\n2013-09-14\n00:48:47.3\n590\n0m42s\n\n\n3\nKaeppeli\nGempen\n2016-03-11\n00:48:56.0\n589\n0m51s\n\n\n4\nKaeppeli\nGempen\n2016-02-15\n00:49:13.3\n585\n1m8s\n\n\n5\nKaeppeli\nGempen\n2014-05-24\n00:50:22.0\n572\n2m17s\n\n\n6\nKaeppeli\nGempen\n2015-11-21\n00:50:25.4\n571\n2m20s\n\n\n7\nKaeppeli\nGempen\n2016-01-27\n00:50:28.5\n571\n2m24s\n\n\n8\nKaeppeli\nGempen\n2013-10-02\n00:50:37.4\n569\n2m32s\n\n\n9\nKaeppeli\nGempen\n2015-03-28\n00:51:58.0\n554\n3m53s\n\n\n10\nKaeppeli\nGempen\n2016-02-10\n00:52:08.0\n552\n4m3s\n\n\n11\nKaeppeli\nGempen\n2016-01-06\n00:52:59.1\n544\n4m54s\n\n\n12\nKaeppeli\nGempen\n2013-11-16\n00:53:18.5\n540\n5m13s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2016\nKaeppeli\nGempen\n2016-03-11\n00:48:56.0\n589\n\n\n2015\nKaeppeli\nGempen\n2015-11-14\n00:48:05.0\n599\n\n\n2014\nKaeppeli\nGempen\n2014-05-24\n00:50:22.0\n572\n\n\n2013\nKaeppeli\nGempen\n2013-09-14\n00:48:47.3\n590"
+    "text": "Kaeppeli –&gt; Gempen (480 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nKaeppeli\nGempen\n2016-03-11\n00:48:56.0\n589\n\n\nKaeppeli\nGempen\n2016-02-15\n00:49:13.3\n585\n\n\nKaeppeli\nGempen\n2016-02-10\n00:52:08.0\n552\n\n\nKaeppeli\nGempen\n2016-01-27\n00:50:28.5\n571\n\n\nKaeppeli\nGempen\n2016-01-06\n00:52:59.1\n544\n\n\nKaeppeli\nGempen\n2015-11-21\n00:50:25.4\n571\n\n\nKaeppeli\nGempen\n2015-11-14\n00:48:05.0\n599\n\n\nKaeppeli\nGempen\n2015-03-28\n00:51:58.0\n554\n\n\nKaeppeli\nGempen\n2014-05-24\n00:50:22.0\n572\n\n\nKaeppeli\nGempen\n2013-11-16\n00:53:18.5\n540\n\n\nKaeppeli\nGempen\n2013-10-02\n00:50:37.4\n569\n\n\nKaeppeli\nGempen\n2013-09-14\n00:48:47.3\n590\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nKaeppeli\nGempen\n2015-11-14\n00:48:05.0\n599\n\n\n\n2\nKaeppeli\nGempen\n2013-09-14\n00:48:47.3\n590\n0m42s\n\n\n3\nKaeppeli\nGempen\n2016-03-11\n00:48:56.0\n589\n0m51s\n\n\n4\nKaeppeli\nGempen\n2016-02-15\n00:49:13.3\n585\n1m8s\n\n\n5\nKaeppeli\nGempen\n2014-05-24\n00:50:22.0\n572\n2m17s\n\n\n6\nKaeppeli\nGempen\n2015-11-21\n00:50:25.4\n571\n2m20s\n\n\n7\nKaeppeli\nGempen\n2016-01-27\n00:50:28.5\n571\n2m24s\n\n\n8\nKaeppeli\nGempen\n2013-10-02\n00:50:37.4\n569\n2m32s\n\n\n9\nKaeppeli\nGempen\n2015-03-28\n00:51:58.0\n554\n3m53s\n\n\n10\nKaeppeli\nGempen\n2016-02-10\n00:52:08.0\n552\n4m3s\n\n\n11\nKaeppeli\nGempen\n2016-01-06\n00:52:59.1\n544\n4m54s\n\n\n12\nKaeppeli\nGempen\n2013-11-16\n00:53:18.5\n540\n5m13s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2016\nKaeppeli\nGempen\n2016-03-11\n00:48:56.0\n589\n\n\n2015\nKaeppeli\nGempen\n2015-11-14\n00:48:05.0\n599\n\n\n2014\nKaeppeli\nGempen\n2014-05-24\n00:50:22.0\n572\n\n\n2013\nKaeppeli\nGempen\n2013-09-14\n00:48:47.3\n590"
   },
   {
     "objectID": "run.html#wabern-gurten-na-hm",
     "href": "run.html#wabern-gurten-na-hm",
     "title": "Run",
     "section": "Wabern –> Gurten (NA Hm)",
-    "text": "Wabern –&gt; Gurten (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nWabern\nGurten\n2023-05-13\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Wabern –&gt; Gurten (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nWabern\nGurten\n2023-05-13\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#bundeshaus-gurten-396-hm",
     "href": "run.html#bundeshaus-gurten-396-hm",
     "title": "Run",
     "section": "Bundeshaus –> Gurten (396 Hm)",
-    "text": "Bundeshaus –&gt; Gurten (396 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nBundeshaus\nGurten\n2024-11-03\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Bundeshaus –&gt; Gurten (396 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nBundeshaus\nGurten\n2024-11-03\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#hochdorf-hochdorf-85-hm",
     "href": "run.html#hochdorf-hochdorf-85-hm",
     "title": "Run",
     "section": "Hochdorf –> Hochdorf (85 Hm)",
-    "text": "Hochdorf –&gt; Hochdorf (85 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nHochdorf\nHochdorf\n2024-12-26\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Hochdorf –&gt; Hochdorf (85 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nHochdorf\nHochdorf\n2024-12-26\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#eriz-saege-hohgant-west-1123-hm",
     "href": "run.html#eriz-saege-hohgant-west-1123-hm",
     "title": "Run",
     "section": "Eriz Saege –> Hohgant West (1123 Hm)",
-    "text": "Eriz Saege –&gt; Hohgant West (1123 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nEriz Saege\nHohgant West\n2004-09-21\n01:25:00.0\n793\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nEriz Saege\nHohgant West\n2004-09-21\n01:25:00.0\n793\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2004\nEriz Saege\nHohgant West\n2004-09-21\n01:25:00.0\n793"
+    "text": "Eriz Saege –&gt; Hohgant West (1123 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nEriz Saege\nHohgant West\n2004-09-21\n01:25:00.0\n793\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nEriz Saege\nHohgant West\n2004-09-21\n01:25:00.0\n793\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2004\nEriz Saege\nHohgant West\n2004-09-21\n01:25:00.0\n793"
   },
   {
     "objectID": "run.html#sandstrasse-lammi-innertkirchen-142-hm",
     "href": "run.html#sandstrasse-lammi-innertkirchen-142-hm",
     "title": "Run",
     "section": "Sandstrasse –> Lammi –> Innertkirchen (142 Hm)",
-    "text": "Sandstrasse –&gt; Lammi –&gt; Innertkirchen (142 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nInnertkirchen\n2024-10-24\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Sandstrasse –&gt; Lammi –&gt; Innertkirchen (142 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nInnertkirchen\n2024-10-24\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#sandstrasse-milifloeh-358-hm",
     "href": "run.html#sandstrasse-milifloeh-358-hm",
     "title": "Run",
     "section": "Sandstrasse –> Milifloeh (358 Hm)",
-    "text": "Sandstrasse –&gt; Milifloeh (358 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nMilifloeh\n2024-07-01\n00:27:16.5\n788\n\n\nSandstrasse\nMilifloeh\n2024-03-21\n00:27:18.0\n787\n\n\nSandstrasse\nMilifloeh\n2023-11-12\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nSandstrasse\nMilifloeh\n2024-07-01\n00:27:16.5\n788\n\n\n\n2\nSandstrasse\nMilifloeh\n2024-03-21\n00:27:18.0\n787\n0m2s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2024\nSandstrasse\nMilifloeh\n2024-07-01\n00:27:16.5\n788"
+    "text": "Sandstrasse –&gt; Milifloeh (358 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nMilifloeh\n2024-07-01\n00:27:16.5\n788\n\n\nSandstrasse\nMilifloeh\n2024-03-21\n00:27:18.0\n787\n\n\nSandstrasse\nMilifloeh\n2023-11-12\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nSandstrasse\nMilifloeh\n2024-07-01\n00:27:16.5\n788\n\n\n\n2\nSandstrasse\nMilifloeh\n2024-03-21\n00:27:18.0\n787\n0m2s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2024\nSandstrasse\nMilifloeh\n2024-07-01\n00:27:16.5\n788"
   },
   {
     "objectID": "run.html#alpbaechli-milifloeh-380-hm",
     "href": "run.html#alpbaechli-milifloeh-380-hm",
     "title": "Run",
     "section": "Alpbaechli –> Milifloeh (380 Hm)",
-    "text": "Alpbaechli –&gt; Milifloeh (380 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nMilifloeh\n2025-04-07\n\nNA\n\n\nAlpbaechli\nMilifloeh\n2023-09-16\n00:26:06.0\n860\n\n\nAlpbaechli\nMilifloeh\n2023-09-01\n00:25:45.4\n871\n\n\nAlpbaechli\nMilifloeh\n2023-08-31\n00:25:19.4\n886\n\n\nAlpbaechli\nMilifloeh\n2023-07-22\n00:25:36.0\n877\n\n\nAlpbaechli\nMilifloeh\n2023-07-05\n00:24:51.5\n903\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbaechli\nMilifloeh\n2023-07-05\n00:24:51.5\n903\n\n\n\n2\nAlpbaechli\nMilifloeh\n2023-08-31\n00:25:19.4\n886\n0m28s\n\n\n3\nAlpbaechli\nMilifloeh\n2023-07-22\n00:25:36.0\n877\n0m45s\n\n\n4\nAlpbaechli\nMilifloeh\n2023-09-01\n00:25:45.4\n871\n0m54s\n\n\n5\nAlpbaechli\nMilifloeh\n2023-09-16\n00:26:06.0\n860\n1m15s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2023\nAlpbaechli\nMilifloeh\n2023-07-05\n00:24:51.5\n903"
+    "text": "Alpbaechli –&gt; Milifloeh (380 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nMilifloeh\n2025-04-07\n\nNA\n\n\nAlpbaechli\nMilifloeh\n2023-09-16\n00:26:06.0\n860\n\n\nAlpbaechli\nMilifloeh\n2023-09-01\n00:25:45.4\n871\n\n\nAlpbaechli\nMilifloeh\n2023-08-31\n00:25:19.4\n886\n\n\nAlpbaechli\nMilifloeh\n2023-07-22\n00:25:36.0\n877\n\n\nAlpbaechli\nMilifloeh\n2023-07-05\n00:24:51.5\n903\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbaechli\nMilifloeh\n2023-07-05\n00:24:51.5\n903\n\n\n\n2\nAlpbaechli\nMilifloeh\n2023-08-31\n00:25:19.4\n886\n0m28s\n\n\n3\nAlpbaechli\nMilifloeh\n2023-07-22\n00:25:36.0\n877\n0m45s\n\n\n4\nAlpbaechli\nMilifloeh\n2023-09-01\n00:25:45.4\n871\n0m54s\n\n\n5\nAlpbaechli\nMilifloeh\n2023-09-16\n00:26:06.0\n860\n1m15s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2023\nAlpbaechli\nMilifloeh\n2023-07-05\n00:24:51.5\n903"
   },
   {
     "objectID": "run.html#mullen-mullen-na-hm",
     "href": "run.html#mullen-mullen-na-hm",
     "title": "Run",
     "section": "Mullen –> Mullen (NA Hm)",
-    "text": "Mullen –&gt; Mullen (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nMullen\nMullen\n2023-05-14\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Mullen –&gt; Mullen (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nMullen\nMullen\n2023-05-14\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#mullen-jolimont-mullen-na-hm",
     "href": "run.html#mullen-jolimont-mullen-na-hm",
     "title": "Run",
     "section": "Mullen –> Jolimont –> Mullen (NA Hm)",
-    "text": "Mullen –&gt; Jolimont –&gt; Mullen (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nMullen\nMullen\n2023-09-06\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Mullen –&gt; Jolimont –&gt; Mullen (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nMullen\nMullen\n2023-09-06\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#muelenen-parkplatz-niesen-plattform-1671-hm",
     "href": "run.html#muelenen-parkplatz-niesen-plattform-1671-hm",
     "title": "Run",
     "section": "Muelenen Parkplatz –> Niesen Plattform (1671 Hm)",
-    "text": "Muelenen Parkplatz –&gt; Niesen Plattform (1671 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nMuelenen Parkplatz\nNiesen Plattform\n2024-08-26\n01:40:52.8\n994\n\n\nMuelenen Parkplatz\nNiesen Plattform\n2017-08-16\n01:43:32.0\n968\n\n\nMuelenen Parkplatz\nNiesen Plattform\n2017-06-21\n01:48:41.0\n922\n\n\nMuelenen Parkplatz\nNiesen Plattform\n2017-06-11\n01:45:44.0\n948\n\n\nMuelenen Parkplatz\nNiesen Plattform\n2013-06-22\n01:39:44.0\n1005\n\n\nMuelenen Parkplatz\nNiesen Plattform\n2012-05-28\n01:40:42.0\n996\n\n\nMuelenen Parkplatz\nNiesen Plattform\n2011-08-06\n01:38:09.0\n1021\n\n\nMuelenen Parkplatz\nNiesen Plattform\n2011-05-22\n01:50:24.0\n908\n\n\nMuelenen Parkplatz\nNiesen Plattform\n2011-04-25\n01:48:05.0\n928\n\n\nMuelenen Parkplatz\nNiesen Plattform\n2010-06-26\n01:47:44.0\n931\n\n\nMuelenen Parkplatz\nNiesen Plattform\n2009-05-31\n01:41:40.0\n986\n\n\nMuelenen Parkplatz\nNiesen Plattform\n2008-08-09\n01:41:00.0\n993\n\n\nMuelenen Parkplatz\nNiesen Plattform\n2008-06-28\n01:54:00.0\n879\n\n\nMuelenen Parkplatz\nNiesen Plattform\n2004-07-29\n01:55:00.0\n872\n\n\nMuelenen Parkplatz\nNiesen Plattform\n2002-10-01\n02:00:00.0\n836\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nMuelenen Parkpl\nNiesen Plattfor\n2011-08-06\n01:38:09.0\n1021\n\n\n\n2\nMuelenen Parkpl\nNiesen Plattfor\n2013-06-22\n01:39:44.0\n1005\n1m35s\n\n\n3\nMuelenen Parkpl\nNiesen Plattfor\n2012-05-28\n01:40:42.0\n996\n2m33s\n\n\n4\nMuelenen Parkpl\nNiesen Plattfor\n2024-08-26\n01:40:52.8\n994\n2m44s\n\n\n5\nMuelenen Parkpl\nNiesen Plattfor\n2008-08-09\n01:41:00.0\n993\n2m51s\n\n\n6\nMuelenen Parkpl\nNiesen Plattfor\n2009-05-31\n01:41:40.0\n986\n3m31s\n\n\n7\nMuelenen Parkpl\nNiesen Plattfor\n2017-08-16\n01:43:32.0\n968\n5m23s\n\n\n8\nMuelenen Parkpl\nNiesen Plattfor\n2017-06-11\n01:45:44.0\n948\n7m35s\n\n\n9\nMuelenen Parkpl\nNiesen Plattfor\n2010-06-26\n01:47:44.0\n931\n9m35s\n\n\n10\nMuelenen Parkpl\nNiesen Plattfor\n2011-04-25\n01:48:05.0\n928\n9m56s\n\n\n11\nMuelenen Parkpl\nNiesen Plattfor\n2017-06-21\n01:48:41.0\n922\n10m32s\n\n\n12\nMuelenen Parkpl\nNiesen Plattfor\n2011-05-22\n01:50:24.0\n908\n12m15s\n\n\n13\nMuelenen Parkpl\nNiesen Plattfor\n2008-06-28\n01:54:00.0\n879\n15m51s\n\n\n14\nMuelenen Parkpl\nNiesen Plattfor\n2004-07-29\n01:55:00.0\n872\n16m51s\n\n\n15\nMuelenen Parkpl\nNiesen Plattfor\n2002-10-01\n02:00:00.0\n836\n21m51s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2024\nMuelenen Parkplatz\nNiesen Plattform\n2024-08-26\n01:40:52.8\n994\n\n\n2017\nMuelenen Parkplatz\nNiesen Plattform\n2017-08-16\n01:43:32.0\n968\n\n\n2013\nMuelenen Parkplatz\nNiesen Plattform\n2013-06-22\n01:39:44.0\n1005\n\n\n2012\nMuelenen Parkplatz\nNiesen Plattform\n2012-05-28\n01:40:42.0\n996\n\n\n2011\nMuelenen Parkplatz\nNiesen Plattform\n2011-08-06\n01:38:09.0\n1021\n\n\n2010\nMuelenen Parkplatz\nNiesen Plattform\n2010-06-26\n01:47:44.0\n931\n\n\n2009\nMuelenen Parkplatz\nNiesen Plattform\n2009-05-31\n01:41:40.0\n986\n\n\n2008\nMuelenen Parkplatz\nNiesen Plattform\n2008-08-09\n01:41:00.0\n993\n\n\n2004\nMuelenen Parkplatz\nNiesen Plattform\n2004-07-29\n01:55:00.0\n872\n\n\n2002\nMuelenen Parkplatz\nNiesen Plattform\n2002-10-01\n02:00:00.0\n836"
+    "text": "Muelenen Parkplatz –&gt; Niesen Plattform (1671 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nMuelenen Parkplatz\nNiesen Plattform\n2024-08-26\n01:40:52.8\n994\n\n\nMuelenen Parkplatz\nNiesen Plattform\n2017-08-16\n01:43:32.0\n968\n\n\nMuelenen Parkplatz\nNiesen Plattform\n2017-06-21\n01:48:41.0\n922\n\n\nMuelenen Parkplatz\nNiesen Plattform\n2017-06-11\n01:45:44.0\n948\n\n\nMuelenen Parkplatz\nNiesen Plattform\n2013-06-22\n01:39:44.0\n1005\n\n\nMuelenen Parkplatz\nNiesen Plattform\n2012-05-28\n01:40:42.0\n996\n\n\nMuelenen Parkplatz\nNiesen Plattform\n2011-08-06\n01:38:09.0\n1021\n\n\nMuelenen Parkplatz\nNiesen Plattform\n2011-05-22\n01:50:24.0\n908\n\n\nMuelenen Parkplatz\nNiesen Plattform\n2011-04-25\n01:48:05.0\n928\n\n\nMuelenen Parkplatz\nNiesen Plattform\n2010-06-26\n01:47:44.0\n931\n\n\nMuelenen Parkplatz\nNiesen Plattform\n2009-05-31\n01:41:40.0\n986\n\n\nMuelenen Parkplatz\nNiesen Plattform\n2008-08-09\n01:41:00.0\n993\n\n\nMuelenen Parkplatz\nNiesen Plattform\n2008-06-28\n01:54:00.0\n879\n\n\nMuelenen Parkplatz\nNiesen Plattform\n2004-07-29\n01:55:00.0\n872\n\n\nMuelenen Parkplatz\nNiesen Plattform\n2002-10-01\n02:00:00.0\n836\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nMuelenen Parkpl\nNiesen Plattfor\n2011-08-06\n01:38:09.0\n1021\n\n\n\n2\nMuelenen Parkpl\nNiesen Plattfor\n2013-06-22\n01:39:44.0\n1005\n1m35s\n\n\n3\nMuelenen Parkpl\nNiesen Plattfor\n2012-05-28\n01:40:42.0\n996\n2m33s\n\n\n4\nMuelenen Parkpl\nNiesen Plattfor\n2024-08-26\n01:40:52.8\n994\n2m44s\n\n\n5\nMuelenen Parkpl\nNiesen Plattfor\n2008-08-09\n01:41:00.0\n993\n2m51s\n\n\n6\nMuelenen Parkpl\nNiesen Plattfor\n2009-05-31\n01:41:40.0\n986\n3m31s\n\n\n7\nMuelenen Parkpl\nNiesen Plattfor\n2017-08-16\n01:43:32.0\n968\n5m23s\n\n\n8\nMuelenen Parkpl\nNiesen Plattfor\n2017-06-11\n01:45:44.0\n948\n7m35s\n\n\n9\nMuelenen Parkpl\nNiesen Plattfor\n2010-06-26\n01:47:44.0\n931\n9m35s\n\n\n10\nMuelenen Parkpl\nNiesen Plattfor\n2011-04-25\n01:48:05.0\n928\n9m56s\n\n\n11\nMuelenen Parkpl\nNiesen Plattfor\n2017-06-21\n01:48:41.0\n922\n10m32s\n\n\n12\nMuelenen Parkpl\nNiesen Plattfor\n2011-05-22\n01:50:24.0\n908\n12m15s\n\n\n13\nMuelenen Parkpl\nNiesen Plattfor\n2008-06-28\n01:54:00.0\n879\n15m51s\n\n\n14\nMuelenen Parkpl\nNiesen Plattfor\n2004-07-29\n01:55:00.0\n872\n16m51s\n\n\n15\nMuelenen Parkpl\nNiesen Plattfor\n2002-10-01\n02:00:00.0\n836\n21m51s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2024\nMuelenen Parkplatz\nNiesen Plattform\n2024-08-26\n01:40:52.8\n994\n\n\n2017\nMuelenen Parkplatz\nNiesen Plattform\n2017-08-16\n01:43:32.0\n968\n\n\n2013\nMuelenen Parkplatz\nNiesen Plattform\n2013-06-22\n01:39:44.0\n1005\n\n\n2012\nMuelenen Parkplatz\nNiesen Plattform\n2012-05-28\n01:40:42.0\n996\n\n\n2011\nMuelenen Parkplatz\nNiesen Plattform\n2011-08-06\n01:38:09.0\n1021\n\n\n2010\nMuelenen Parkplatz\nNiesen Plattform\n2010-06-26\n01:47:44.0\n931\n\n\n2009\nMuelenen Parkplatz\nNiesen Plattform\n2009-05-31\n01:41:40.0\n986\n\n\n2008\nMuelenen Parkplatz\nNiesen Plattform\n2008-08-09\n01:41:00.0\n993\n\n\n2004\nMuelenen Parkplatz\nNiesen Plattform\n2004-07-29\n01:55:00.0\n872\n\n\n2002\nMuelenen Parkplatz\nNiesen Plattform\n2002-10-01\n02:00:00.0\n836"
   },
   {
     "objectID": "run.html#niesen-treppenlauf-niesen-plattform-lauf-1671-hm",
     "href": "run.html#niesen-treppenlauf-niesen-plattform-lauf-1671-hm",
     "title": "Run",
     "section": "Niesen Treppenlauf –> Niesen Plattform (Lauf) (1671 Hm)",
-    "text": "Niesen Treppenlauf –&gt; Niesen Plattform (Lauf) (1671 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nNiesen Treppenlauf\nNiesen Plattform (Lauf)\n2019-06-15\n01:22:52.0\n1210\n\n\nNiesen Treppenlauf\nNiesen Plattform (Lauf)\n2018-06-02\n01:21:02.0\n1237\n\n\nNiesen Treppenlauf\nNiesen Plattform (Lauf)\n2016-06-04\n01:24:40.0\n1184\n\n\nNiesen Treppenlauf\nNiesen Plattform (Lauf)\n2015-06-06\n01:26:16.0\n1162\n\n\nNiesen Treppenlauf\nNiesen Plattform (Lauf)\n2014-06-07\n01:24:37.0\n1185\n\n\nNiesen Treppenlauf\nNiesen Plattform (Lauf)\n2012-06-02\n01:22:30.0\n1215\n\n\nNiesen Treppenlauf\nNiesen Plattform (Lauf)\n2011-06-04\n01:24:00.0\n1194\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nNiesen Treppenl\nNiesen Plattfor\n2018-06-02\n01:21:02.0\n1237\n\n\n\n2\nNiesen Treppenl\nNiesen Plattfor\n2012-06-02\n01:22:30.0\n1215\n1m28s\n\n\n3\nNiesen Treppenl\nNiesen Plattfor\n2019-06-15\n01:22:52.0\n1210\n1m50s\n\n\n4\nNiesen Treppenl\nNiesen Plattfor\n2011-06-04\n01:24:00.0\n1194\n2m58s\n\n\n5\nNiesen Treppenl\nNiesen Plattfor\n2014-06-07\n01:24:37.0\n1185\n3m35s\n\n\n6\nNiesen Treppenl\nNiesen Plattfor\n2016-06-04\n01:24:40.0\n1184\n3m38s\n\n\n7\nNiesen Treppenl\nNiesen Plattfor\n2015-06-06\n01:26:16.0\n1162\n5m14s\n\n\n\n\n\n\nTable continues below\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\n\n\n\n\n2019\nNiesen Treppenlauf\nNiesen Plattform (Lauf)\n2019-06-15\n01:22:52.0\n\n\n2018\nNiesen Treppenlauf\nNiesen Plattform (Lauf)\n2018-06-02\n01:21:02.0\n\n\n2016\nNiesen Treppenlauf\nNiesen Plattform (Lauf)\n2016-06-04\n01:24:40.0\n\n\n2015\nNiesen Treppenlauf\nNiesen Plattform (Lauf)\n2015-06-06\n01:26:16.0\n\n\n2014\nNiesen Treppenlauf\nNiesen Plattform (Lauf)\n2014-06-07\n01:24:37.0\n\n\n2012\nNiesen Treppenlauf\nNiesen Plattform (Lauf)\n2012-06-02\n01:22:30.0\n\n\n2011\nNiesen Treppenlauf\nNiesen Plattform (Lauf)\n2011-06-04\n01:24:00.0\n\n\n\n\n\n\n\n\n\nhm_h\n\n\n\n\n1210\n\n\n1237\n\n\n1184\n\n\n1162\n\n\n1185\n\n\n1215\n\n\n1194"
+    "text": "Niesen Treppenlauf –&gt; Niesen Plattform (Lauf) (1671 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nNiesen Treppenlauf\nNiesen Plattform (Lauf)\n2019-06-15\n01:22:52.0\n1210\n\n\nNiesen Treppenlauf\nNiesen Plattform (Lauf)\n2018-06-02\n01:21:02.0\n1237\n\n\nNiesen Treppenlauf\nNiesen Plattform (Lauf)\n2016-06-04\n01:24:40.0\n1184\n\n\nNiesen Treppenlauf\nNiesen Plattform (Lauf)\n2015-06-06\n01:26:16.0\n1162\n\n\nNiesen Treppenlauf\nNiesen Plattform (Lauf)\n2014-06-07\n01:24:37.0\n1185\n\n\nNiesen Treppenlauf\nNiesen Plattform (Lauf)\n2012-06-02\n01:22:30.0\n1215\n\n\nNiesen Treppenlauf\nNiesen Plattform (Lauf)\n2011-06-04\n01:24:00.0\n1194\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nNiesen Treppenl\nNiesen Plattfor\n2018-06-02\n01:21:02.0\n1237\n\n\n\n2\nNiesen Treppenl\nNiesen Plattfor\n2012-06-02\n01:22:30.0\n1215\n1m28s\n\n\n3\nNiesen Treppenl\nNiesen Plattfor\n2019-06-15\n01:22:52.0\n1210\n1m50s\n\n\n4\nNiesen Treppenl\nNiesen Plattfor\n2011-06-04\n01:24:00.0\n1194\n2m58s\n\n\n5\nNiesen Treppenl\nNiesen Plattfor\n2014-06-07\n01:24:37.0\n1185\n3m35s\n\n\n6\nNiesen Treppenl\nNiesen Plattfor\n2016-06-04\n01:24:40.0\n1184\n3m38s\n\n\n7\nNiesen Treppenl\nNiesen Plattfor\n2015-06-06\n01:26:16.0\n1162\n5m14s\n\n\n\n\n\n\n\n\nTable continues below\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\n\n\n\n\n2019\nNiesen Treppenlauf\nNiesen Plattform (Lauf)\n2019-06-15\n01:22:52.0\n\n\n2018\nNiesen Treppenlauf\nNiesen Plattform (Lauf)\n2018-06-02\n01:21:02.0\n\n\n2016\nNiesen Treppenlauf\nNiesen Plattform (Lauf)\n2016-06-04\n01:24:40.0\n\n\n2015\nNiesen Treppenlauf\nNiesen Plattform (Lauf)\n2015-06-06\n01:26:16.0\n\n\n2014\nNiesen Treppenlauf\nNiesen Plattform (Lauf)\n2014-06-07\n01:24:37.0\n\n\n2012\nNiesen Treppenlauf\nNiesen Plattform (Lauf)\n2012-06-02\n01:22:30.0\n\n\n2011\nNiesen Treppenlauf\nNiesen Plattform (Lauf)\n2011-06-04\n01:24:00.0\n\n\n\n\n\n\n\n\n\nhm_h\n\n\n\n\n1210\n\n\n1237\n\n\n1184\n\n\n1162\n\n\n1185\n\n\n1215\n\n\n1194"
   },
   {
     "objectID": "run.html#ze-hiischere-ober-flue-598-hm",
     "href": "run.html#ze-hiischere-ober-flue-598-hm",
     "title": "Run",
     "section": "Ze Hiischere –> Ober Flue (598 Hm)",
-    "text": "Ze Hiischere –&gt; Ober Flue (598 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nZe Hiischere\nOber Flue\n2021-09-28\n01:28:58.0\n403\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nZe Hiischere\nOber Flue\n2021-09-28\n01:28:58.0\n403\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2021\nZe Hiischere\nOber Flue\n2021-09-28\n01:28:58.0\n403"
+    "text": "Ze Hiischere –&gt; Ober Flue (598 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nZe Hiischere\nOber Flue\n2021-09-28\n01:28:58.0\n403\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nZe Hiischere\nOber Flue\n2021-09-28\n01:28:58.0\n403\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2021\nZe Hiischere\nOber Flue\n2021-09-28\n01:28:58.0\n403"
   },
   {
     "objectID": "run.html#kunzentennlen-gelmerhuette-ofenhoren-1352-hm",
     "href": "run.html#kunzentennlen-gelmerhuette-ofenhoren-1352-hm",
     "title": "Run",
     "section": "Kunzentennlen –> Gelmerhuette –> Ofenhoren (1352 Hm)",
-    "text": "Kunzentennlen –&gt; Gelmerhuette –&gt; Ofenhoren (1352 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nKunzentennlen\nOfenhoren\n2021-09-07\n02:43:52.0\n495\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nKunzentennlen\nOfenhoren\n2021-09-07\n02:43:52.0\n495\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2021\nKunzentennlen\nOfenhoren\n2021-09-07\n02:43:52.0\n495"
+    "text": "Kunzentennlen –&gt; Gelmerhuette –&gt; Ofenhoren (1352 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nKunzentennlen\nOfenhoren\n2021-09-07\n02:43:52.0\n495\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nKunzentennlen\nOfenhoren\n2021-09-07\n02:43:52.0\n495\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2021\nKunzentennlen\nOfenhoren\n2021-09-07\n02:43:52.0\n495"
   },
   {
     "objectID": "run.html#bidmi-planplatten-799-hm",
     "href": "run.html#bidmi-planplatten-799-hm",
     "title": "Run",
     "section": "Bidmi –> Planplatten (799 Hm)",
-    "text": "Bidmi –&gt; Planplatten (799 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nBidmi\nPlanplatten\n2024-08-21\n00:55:38.0\n862\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nBidmi\nPlanplatten\n2024-08-21\n00:55:38.0\n862\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2024\nBidmi\nPlanplatten\n2024-08-21\n00:55:38.0\n862"
+    "text": "Bidmi –&gt; Planplatten (799 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nBidmi\nPlanplatten\n2024-08-21\n00:55:38.0\n862\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nBidmi\nPlanplatten\n2024-08-21\n00:55:38.0\n862\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2024\nBidmi\nPlanplatten\n2024-08-21\n00:55:38.0\n862"
   },
   {
     "objectID": "run.html#sandstrasse-wylerli-resti-127-hm",
     "href": "run.html#sandstrasse-wylerli-resti-127-hm",
     "title": "Run",
     "section": "Sandstrasse –> Wylerli –> Resti (127 Hm)",
-    "text": "Sandstrasse –&gt; Wylerli –&gt; Resti (127 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nResti\n2024-10-23\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Sandstrasse –&gt; Wylerli –&gt; Resti (127 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nResti\n2024-10-23\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#obersteinstrasse-hundschipfi-reuti-hotel-na-hm",
     "href": "run.html#obersteinstrasse-hundschipfi-reuti-hotel-na-hm",
     "title": "Run",
     "section": "Obersteinstrasse –> Hundschipfi –> Reuti Hotel (NA Hm)",
-    "text": "Obersteinstrasse –&gt; Hundschipfi –&gt; Reuti Hotel (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nObersteinstrasse\nReuti Hotel\n2019-05-04\n00:56:54.3\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nObersteinstrass\nReuti Hotel\n2019-05-04\n00:56:54.3\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2019\nObersteinstrasse\nReuti Hotel\n2019-05-04\n00:56:54.3\nNA"
+    "text": "Obersteinstrasse –&gt; Hundschipfi –&gt; Reuti Hotel (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nObersteinstrasse\nReuti Hotel\n2019-05-04\n00:56:54.3\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nObersteinstrass\nReuti Hotel\n2019-05-04\n00:56:54.3\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2019\nObersteinstrasse\nReuti Hotel\n2019-05-04\n00:56:54.3\nNA"
   },
   {
     "objectID": "run.html#alpbach-reuti-post-437-hm",
     "href": "run.html#alpbach-reuti-post-437-hm",
     "title": "Run",
     "section": "Alpbach –> Reuti Post (437 Hm)",
-    "text": "Alpbach –&gt; Reuti Post (437 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbach\nReuti Post\n2018-06-22\n00:26:29.2\n990\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbach\nReuti Post\n2018-06-22\n00:26:29.2\n990\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2018\nAlpbach\nReuti Post\n2018-06-22\n00:26:29.2\n990"
+    "text": "Alpbach –&gt; Reuti Post (437 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbach\nReuti Post\n2018-06-22\n00:26:29.2\n990\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbach\nReuti Post\n2018-06-22\n00:26:29.2\n990\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2018\nAlpbach\nReuti Post\n2018-06-22\n00:26:29.2\n990"
   },
   {
     "objectID": "run.html#sandstrasse-reuti-post-443-hm",
     "href": "run.html#sandstrasse-reuti-post-443-hm",
     "title": "Run",
     "section": "Sandstrasse –> Reuti Post (443 Hm)",
-    "text": "Sandstrasse –&gt; Reuti Post (443 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nReuti Post\n2024-10-18\n00:31:02.2\n856\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nSandstrasse\nReuti Post\n2024-10-18\n00:31:02.2\n856\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2024\nSandstrasse\nReuti Post\n2024-10-18\n00:31:02.2\n856"
+    "text": "Sandstrasse –&gt; Reuti Post (443 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nReuti Post\n2024-10-18\n00:31:02.2\n856\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nSandstrasse\nReuti Post\n2024-10-18\n00:31:02.2\n856\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2024\nSandstrasse\nReuti Post\n2024-10-18\n00:31:02.2\n856"
   },
   {
     "objectID": "run.html#alpbaechli-reuti-station-463-hm",
     "href": "run.html#alpbaechli-reuti-station-463-hm",
     "title": "Run",
     "section": "Alpbaechli –> Reuti Station (463 Hm)",
-    "text": "Alpbaechli –&gt; Reuti Station (463 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nReuti Station\n2023-07-29\n00:29:00.1\n958\n\n\nAlpbaechli\nReuti Station\n2023-04-28\n00:29:32.4\n940\n\n\nAlpbaechli\nReuti Station\n2023-01-01\n\nNA\n\n\nAlpbaechli\nReuti Station\n2022-12-29\n\nNA\n\n\nAlpbaechli\nReuti Station\n2022-04-26\n00:31:28.8\n882\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbaechli\nReuti Station\n2023-07-29\n00:29:00.1\n958\n\n\n\n2\nAlpbaechli\nReuti Station\n2023-04-28\n00:29:32.4\n940\n0m32s\n\n\n3\nAlpbaechli\nReuti Station\n2022-04-26\n00:31:28.8\n882\n2m29s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2023\nAlpbaechli\nReuti Station\n2023-07-29\n00:29:00.1\n958\n\n\n2022\nAlpbaechli\nReuti Station\n2022-04-26\n00:31:28.8\n882"
+    "text": "Alpbaechli –&gt; Reuti Station (463 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nReuti Station\n2023-07-29\n00:29:00.1\n958\n\n\nAlpbaechli\nReuti Station\n2023-04-28\n00:29:32.4\n940\n\n\nAlpbaechli\nReuti Station\n2023-01-01\n\nNA\n\n\nAlpbaechli\nReuti Station\n2022-12-29\n\nNA\n\n\nAlpbaechli\nReuti Station\n2022-04-26\n00:31:28.8\n882\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbaechli\nReuti Station\n2023-07-29\n00:29:00.1\n958\n\n\n\n2\nAlpbaechli\nReuti Station\n2023-04-28\n00:29:32.4\n940\n0m32s\n\n\n3\nAlpbaechli\nReuti Station\n2022-04-26\n00:31:28.8\n882\n2m29s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2023\nAlpbaechli\nReuti Station\n2023-07-29\n00:29:00.1\n958\n\n\n2022\nAlpbaechli\nReuti Station\n2022-04-26\n00:31:28.8\n882"
   },
   {
     "objectID": "run.html#alpbaechli-milifloeh-reuti-station-463-hm",
     "href": "run.html#alpbaechli-milifloeh-reuti-station-463-hm",
     "title": "Run",
     "section": "Alpbaechli –> Milifloeh –> Reuti Station (463 Hm)",
-    "text": "Alpbaechli –&gt; Milifloeh –&gt; Reuti Station (463 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nReuti Station\n2023-06-23\n\nNA\n\n\nAlpbaechli\nReuti Station\n2023-04-04\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Alpbaechli –&gt; Milifloeh –&gt; Reuti Station (463 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nReuti Station\n2023-06-23\n\nNA\n\n\nAlpbaechli\nReuti Station\n2023-04-04\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#aarmatte-reuti-station-469-hm",
     "href": "run.html#aarmatte-reuti-station-469-hm",
     "title": "Run",
     "section": "Aarmatte –> Reuti Station (469 Hm)",
-    "text": "Aarmatte –&gt; Reuti Station (469 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAarmatte\nReuti Station\n2023-04-16\n\nNA\n\n\nAarmatte\nReuti Station\n2023-04-14\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Aarmatte –&gt; Reuti Station (469 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAarmatte\nReuti Station\n2023-04-16\n\nNA\n\n\nAarmatte\nReuti Station\n2023-04-14\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#rueger-bärewägli-reuti-station-na-hm",
     "href": "run.html#rueger-bärewägli-reuti-station-na-hm",
     "title": "Run",
     "section": "Rueger –> Bärewägli –> Reuti Station (NA Hm)",
-    "text": "Rueger –&gt; Bärewägli –&gt; Reuti Station (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nRueger\nReuti Station\n2023-05-10\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Rueger –&gt; Bärewägli –&gt; Reuti Station (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nRueger\nReuti Station\n2023-05-10\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#sandstrasse-milifloeh-reuti-station-447-hm",
     "href": "run.html#sandstrasse-milifloeh-reuti-station-447-hm",
     "title": "Run",
     "section": "Sandstrasse –> Milifloeh –> Reuti Station (447 Hm)",
-    "text": "Sandstrasse –&gt; Milifloeh –&gt; Reuti Station (447 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nReuti Station\n2025-01-10\n00:38:08.7\n703\n\n\nSandstrasse\nReuti Station\n2024-09-30\n\nNA\n\n\nSandstrasse\nReuti Station\n2024-09-10\n\nNA\n\n\nSandstrasse\nReuti Station\n2024-09-05\n\nNA\n\n\nSandstrasse\nReuti Station\n2023-10-26\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nSandstrasse\nReuti Station\n2025-01-10\n00:38:08.7\n703\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2025\nSandstrasse\nReuti Station\n2025-01-10\n00:38:08.7\n703"
+    "text": "Sandstrasse –&gt; Milifloeh –&gt; Reuti Station (447 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nReuti Station\n2025-01-10\n00:38:08.7\n703\n\n\nSandstrasse\nReuti Station\n2024-09-30\n\nNA\n\n\nSandstrasse\nReuti Station\n2024-09-10\n\nNA\n\n\nSandstrasse\nReuti Station\n2024-09-05\n\nNA\n\n\nSandstrasse\nReuti Station\n2023-10-26\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nSandstrasse\nReuti Station\n2025-01-10\n00:38:08.7\n703\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2025\nSandstrasse\nReuti Station\n2025-01-10\n00:38:08.7\n703"
   },
   {
     "objectID": "run.html#sandstrasse-reuti-station-447-hm",
     "href": "run.html#sandstrasse-reuti-station-447-hm",
     "title": "Run",
     "section": "Sandstrasse –> Reuti Station (447 Hm)",
-    "text": "Sandstrasse –&gt; Reuti Station (447 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nReuti Station\n2025-04-08\n00:29:46.4\n901\n\n\nSandstrasse\nReuti Station\n2025-02-14\n00:32:11.4\n833\n\n\nSandstrasse\nReuti Station\n2024-11-24\n\nNA\n\n\nSandstrasse\nReuti Station\n2024-08-30\n00:27:26.6\n977\n\n\nSandstrasse\nReuti Station\n2024-03-04\n00:30:45.9\n872\n\n\nSandstrasse\nReuti Station\n2024-01-21\n00:28:21.5\n946\n\n\nSandstrasse\nReuti Station\n2024-01-11\n00:29:06.8\n921\n\n\nSandstrasse\nReuti Station\n2024-01-03\n00:29:20.4\n914\n\n\nSandstrasse\nReuti Station\n2023-11-09\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nSandstrasse\nReuti Station\n2024-08-30\n00:27:26.6\n977\n\n\n\n2\nSandstrasse\nReuti Station\n2024-01-21\n00:28:21.5\n946\n0m55s\n\n\n3\nSandstrasse\nReuti Station\n2024-01-11\n00:29:06.8\n921\n1m40s\n\n\n4\nSandstrasse\nReuti Station\n2024-01-03\n00:29:20.4\n914\n1m54s\n\n\n5\nSandstrasse\nReuti Station\n2025-04-08\n00:29:46.4\n901\n2m20s\n\n\n6\nSandstrasse\nReuti Station\n2024-03-04\n00:30:45.9\n872\n3m19s\n\n\n7\nSandstrasse\nReuti Station\n2025-02-14\n00:32:11.4\n833\n4m45s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2025\nSandstrasse\nReuti Station\n2025-04-08\n00:29:46.4\n901\n\n\n2024\nSandstrasse\nReuti Station\n2024-08-30\n00:27:26.6\n977"
+    "text": "Sandstrasse –&gt; Reuti Station (447 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nReuti Station\n2025-04-08\n00:29:46.4\n901\n\n\nSandstrasse\nReuti Station\n2025-02-14\n00:32:11.4\n833\n\n\nSandstrasse\nReuti Station\n2024-11-24\n\nNA\n\n\nSandstrasse\nReuti Station\n2024-08-30\n00:27:26.6\n977\n\n\nSandstrasse\nReuti Station\n2024-03-04\n00:30:45.9\n872\n\n\nSandstrasse\nReuti Station\n2024-01-21\n00:28:21.5\n946\n\n\nSandstrasse\nReuti Station\n2024-01-11\n00:29:06.8\n921\n\n\nSandstrasse\nReuti Station\n2024-01-03\n00:29:20.4\n914\n\n\nSandstrasse\nReuti Station\n2023-11-09\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nSandstrasse\nReuti Station\n2024-08-30\n00:27:26.6\n977\n\n\n\n2\nSandstrasse\nReuti Station\n2024-01-21\n00:28:21.5\n946\n0m55s\n\n\n3\nSandstrasse\nReuti Station\n2024-01-11\n00:29:06.8\n921\n1m40s\n\n\n4\nSandstrasse\nReuti Station\n2024-01-03\n00:29:20.4\n914\n1m54s\n\n\n5\nSandstrasse\nReuti Station\n2025-04-08\n00:29:46.4\n901\n2m20s\n\n\n6\nSandstrasse\nReuti Station\n2024-03-04\n00:30:45.9\n872\n3m19s\n\n\n7\nSandstrasse\nReuti Station\n2025-02-14\n00:32:11.4\n833\n4m45s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2025\nSandstrasse\nReuti Station\n2025-04-08\n00:29:46.4\n901\n\n\n2024\nSandstrasse\nReuti Station\n2024-08-30\n00:27:26.6\n977"
   },
   {
     "objectID": "run.html#sandstrasse-hohfluh-reuti-station-579-hm",
     "href": "run.html#sandstrasse-hohfluh-reuti-station-579-hm",
     "title": "Run",
     "section": "Sandstrasse –> Hohfluh –> Reuti Station (579 Hm)",
-    "text": "Sandstrasse –&gt; Hohfluh –&gt; Reuti Station (579 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nReuti Station\n2024-11-02\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Sandstrasse –&gt; Hohfluh –&gt; Reuti Station (579 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nReuti Station\n2024-11-02\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#alpbach-reuti-station-467-hm",
     "href": "run.html#alpbach-reuti-station-467-hm",
     "title": "Run",
     "section": "Alpbach –> Reuti Station (467 Hm)",
-    "text": "Alpbach –&gt; Reuti Station (467 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbach\nReuti Station\n2025-04-08\n00:27:51.7\n1006\n\n\nAlpbach\nReuti Station\n2024-09-16\n00:28:58.4\n932\n\n\nAlpbach\nReuti Station\n2024-08-30\n00:25:29.0\n1060\n\n\nAlpbach\nReuti Station\n2024-01-11\n00:27:23.8\n986\n\n\nAlpbach\nReuti Station\n2024-01-03\n00:27:14.4\n991\n\n\nAlpbach\nReuti Station\n2023-10-19\n00:25:44.2\n1049\n\n\nAlpbach\nReuti Station\n2023-07-29\n00:26:19.1\n1026\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbach\nReuti Station\n2024-08-30\n00:25:29.0\n1060\n\n\n\n2\nAlpbach\nReuti Station\n2023-10-19\n00:25:44.2\n1049\n0m15s\n\n\n3\nAlpbach\nReuti Station\n2023-07-29\n00:26:19.1\n1026\n0m50s\n\n\n4\nAlpbach\nReuti Station\n2024-01-03\n00:27:14.4\n991\n1m45s\n\n\n5\nAlpbach\nReuti Station\n2024-01-11\n00:27:23.8\n986\n1m55s\n\n\n6\nAlpbach\nReuti Station\n2025-04-08\n00:27:51.7\n1006\n2m23s\n\n\n7\nAlpbach\nReuti Station\n2024-09-16\n00:28:58.4\n932\n3m29s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2025\nAlpbach\nReuti Station\n2025-04-08\n00:27:51.7\n1006\n\n\n2024\nAlpbach\nReuti Station\n2024-08-30\n00:25:29.0\n1060\n\n\n2023\nAlpbach\nReuti Station\n2023-10-19\n00:25:44.2\n1049"
+    "text": "Alpbach –&gt; Reuti Station (467 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbach\nReuti Station\n2025-04-08\n00:27:51.7\n1006\n\n\nAlpbach\nReuti Station\n2024-09-16\n00:28:58.4\n932\n\n\nAlpbach\nReuti Station\n2024-08-30\n00:25:29.0\n1060\n\n\nAlpbach\nReuti Station\n2024-01-11\n00:27:23.8\n986\n\n\nAlpbach\nReuti Station\n2024-01-03\n00:27:14.4\n991\n\n\nAlpbach\nReuti Station\n2023-10-19\n00:25:44.2\n1049\n\n\nAlpbach\nReuti Station\n2023-07-29\n00:26:19.1\n1026\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbach\nReuti Station\n2024-08-30\n00:25:29.0\n1060\n\n\n\n2\nAlpbach\nReuti Station\n2023-10-19\n00:25:44.2\n1049\n0m15s\n\n\n3\nAlpbach\nReuti Station\n2023-07-29\n00:26:19.1\n1026\n0m50s\n\n\n4\nAlpbach\nReuti Station\n2024-01-03\n00:27:14.4\n991\n1m45s\n\n\n5\nAlpbach\nReuti Station\n2024-01-11\n00:27:23.8\n986\n1m55s\n\n\n6\nAlpbach\nReuti Station\n2025-04-08\n00:27:51.7\n1006\n2m23s\n\n\n7\nAlpbach\nReuti Station\n2024-09-16\n00:28:58.4\n932\n3m29s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2025\nAlpbach\nReuti Station\n2025-04-08\n00:27:51.7\n1006\n\n\n2024\nAlpbach\nReuti Station\n2024-08-30\n00:25:29.0\n1060\n\n\n2023\nAlpbach\nReuti Station\n2023-10-19\n00:25:44.2\n1049"
   },
   {
     "objectID": "run.html#obersteinstrasse-hundschipfi-reuti-station-na-hm",
     "href": "run.html#obersteinstrasse-hundschipfi-reuti-station-na-hm",
     "title": "Run",
     "section": "Obersteinstrasse –> Hundschipfi –> Reuti Station (NA Hm)",
-    "text": "Obersteinstrasse –&gt; Hundschipfi –&gt; Reuti Station (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nObersteinstrasse\nReuti Station\n2018-09-08\n00:52:56.0\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nObersteinstrass\nReuti Station\n2018-09-08\n00:52:56.0\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2018\nObersteinstrasse\nReuti Station\n2018-09-08\n00:52:56.0\nNA"
+    "text": "Obersteinstrasse –&gt; Hundschipfi –&gt; Reuti Station (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nObersteinstrasse\nReuti Station\n2018-09-08\n00:52:56.0\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nObersteinstrass\nReuti Station\n2018-09-08\n00:52:56.0\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2018\nObersteinstrasse\nReuti Station\n2018-09-08\n00:52:56.0\nNA"
   },
   {
     "objectID": "run.html#sandstrasse-hundschipfi-reuti-station-524-hm",
     "href": "run.html#sandstrasse-hundschipfi-reuti-station-524-hm",
     "title": "Run",
     "section": "Sandstrasse –> Hundschipfi –> Reuti Station (524 Hm)",
-    "text": "Sandstrasse –&gt; Hundschipfi –&gt; Reuti Station (524 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nReuti Station\n2025-03-13\n00:54:05.4\n581\n\n\nSandstrasse\nReuti Station\n2024-10-15\n00:56:11.8\n569\n\n\nSandstrasse\nReuti Station\n2024-09-20\n00:56:40.7\n559\n\n\nSandstrasse\nReuti Station\n2024-08-20\n00:53:56.0\n563\n\n\nSandstrasse\nReuti Station\n2019-05-18\n00:56:06.6\n478\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nSandstrasse\nReuti Station\n2024-08-20\n00:53:56.0\n563\n\n\n\n2\nSandstrasse\nReuti Station\n2025-03-13\n00:54:05.4\n581\n0m9s\n\n\n3\nSandstrasse\nReuti Station\n2019-05-18\n00:56:06.6\n478\n2m11s\n\n\n4\nSandstrasse\nReuti Station\n2024-10-15\n00:56:11.8\n569\n2m16s\n\n\n5\nSandstrasse\nReuti Station\n2024-09-20\n00:56:40.7\n559\n2m45s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2025\nSandstrasse\nReuti Station\n2025-03-13\n00:54:05.4\n581\n\n\n2024\nSandstrasse\nReuti Station\n2024-08-20\n00:53:56.0\n563\n\n\n2019\nSandstrasse\nReuti Station\n2019-05-18\n00:56:06.6\n478"
+    "text": "Sandstrasse –&gt; Hundschipfi –&gt; Reuti Station (524 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nReuti Station\n2025-03-13\n00:54:05.4\n581\n\n\nSandstrasse\nReuti Station\n2024-10-15\n00:56:11.8\n569\n\n\nSandstrasse\nReuti Station\n2024-09-20\n00:56:40.7\n559\n\n\nSandstrasse\nReuti Station\n2024-08-20\n00:53:56.0\n563\n\n\nSandstrasse\nReuti Station\n2019-05-18\n00:56:06.6\n478\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nSandstrasse\nReuti Station\n2024-08-20\n00:53:56.0\n563\n\n\n\n2\nSandstrasse\nReuti Station\n2025-03-13\n00:54:05.4\n581\n0m9s\n\n\n3\nSandstrasse\nReuti Station\n2019-05-18\n00:56:06.6\n478\n2m11s\n\n\n4\nSandstrasse\nReuti Station\n2024-10-15\n00:56:11.8\n569\n2m16s\n\n\n5\nSandstrasse\nReuti Station\n2024-09-20\n00:56:40.7\n559\n2m45s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2025\nSandstrasse\nReuti Station\n2025-03-13\n00:54:05.4\n581\n\n\n2024\nSandstrasse\nReuti Station\n2024-08-20\n00:53:56.0\n563\n\n\n2019\nSandstrasse\nReuti Station\n2019-05-18\n00:56:06.6\n478"
   },
   {
     "objectID": "run.html#alpbaechli-hundschipfi-reuti-station-463-hm",
     "href": "run.html#alpbaechli-hundschipfi-reuti-station-463-hm",
     "title": "Run",
     "section": "Alpbaechli –> Hundschipfi –> Reuti Station (463 Hm)",
-    "text": "Alpbaechli –&gt; Hundschipfi –&gt; Reuti Station (463 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nReuti Station\n2018-09-01\n00:56:29.5\n492\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbaechli\nReuti Station\n2018-09-01\n00:56:29.5\n492\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2018\nAlpbaechli\nReuti Station\n2018-09-01\n00:56:29.5\n492"
+    "text": "Alpbaechli –&gt; Hundschipfi –&gt; Reuti Station (463 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nReuti Station\n2018-09-01\n00:56:29.5\n492\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbaechli\nReuti Station\n2018-09-01\n00:56:29.5\n492\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2018\nAlpbaechli\nReuti Station\n2018-09-01\n00:56:29.5\n492"
   },
   {
     "objectID": "run.html#alpbach-hundschipfi-reuti-station-450-hm",
     "href": "run.html#alpbach-hundschipfi-reuti-station-450-hm",
     "title": "Run",
     "section": "Alpbach –> Hundschipfi –> Reuti Station (450 Hm)",
-    "text": "Alpbach –&gt; Hundschipfi –&gt; Reuti Station (450 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbach\nReuti Station\n2019-03-19\n00:57:12.4\n472\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbach\nReuti Station\n2019-03-19\n00:57:12.4\n472\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2019\nAlpbach\nReuti Station\n2019-03-19\n00:57:12.4\n472"
+    "text": "Alpbach –&gt; Hundschipfi –&gt; Reuti Station (450 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbach\nReuti Station\n2019-03-19\n00:57:12.4\n472\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbach\nReuti Station\n2019-03-19\n00:57:12.4\n472\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2019\nAlpbach\nReuti Station\n2019-03-19\n00:57:12.4\n472"
   },
   {
     "objectID": "run.html#sandstrasse-reichenbachfall-rosenlaui-na-hm",
     "href": "run.html#sandstrasse-reichenbachfall-rosenlaui-na-hm",
     "title": "Run",
     "section": "Sandstrasse –> Reichenbachfall –> Rosenlaui (NA Hm)",
-    "text": "Sandstrasse –&gt; Reichenbachfall –&gt; Rosenlaui (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nRosenlaui\n2024-10-16\n01:04:44.0\nNA\n\n\nSandstrasse\nRosenlaui\n2024-09-21\n01:05:50.0\nNA\n\n\nSandstrasse\nRosenlaui\n2024-06-30\n01:10:48.0\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nSandstrasse\nRosenlaui\n2024-10-16\n01:04:44.0\nNA\n\n\n\n2\nSandstrasse\nRosenlaui\n2024-09-21\n01:05:50.0\nNA\n1m6s\n\n\n3\nSandstrasse\nRosenlaui\n2024-06-30\n01:10:48.0\nNA\n6m4s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2024\nSandstrasse\nRosenlaui\n2024-10-16\n01:04:44.0\nNA"
+    "text": "Sandstrasse –&gt; Reichenbachfall –&gt; Rosenlaui (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nRosenlaui\n2024-10-16\n01:04:44.0\nNA\n\n\nSandstrasse\nRosenlaui\n2024-09-21\n01:05:50.0\nNA\n\n\nSandstrasse\nRosenlaui\n2024-06-30\n01:10:48.0\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nSandstrasse\nRosenlaui\n2024-10-16\n01:04:44.0\nNA\n\n\n\n2\nSandstrasse\nRosenlaui\n2024-09-21\n01:05:50.0\nNA\n1m6s\n\n\n3\nSandstrasse\nRosenlaui\n2024-06-30\n01:10:48.0\nNA\n6m4s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2024\nSandstrasse\nRosenlaui\n2024-10-16\n01:04:44.0\nNA"
   },
   {
     "objectID": "run.html#sandstrasse-paradiesli-sandstrasse-0-hm",
     "href": "run.html#sandstrasse-paradiesli-sandstrasse-0-hm",
     "title": "Run",
     "section": "Sandstrasse –> Paradiesli –> Sandstrasse (0 Hm)",
-    "text": "Sandstrasse –&gt; Paradiesli –&gt; Sandstrasse (0 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nSandstrasse\n2024-05-16\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Sandstrasse –&gt; Paradiesli –&gt; Sandstrasse (0 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nSandstrasse\n2024-05-16\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#sandstrasse-landi-sandstrasse-28-hm",
     "href": "run.html#sandstrasse-landi-sandstrasse-28-hm",
     "title": "Run",
     "section": "Sandstrasse –> Landi –> Sandstrasse (28 Hm)",
-    "text": "Sandstrasse –&gt; Landi –&gt; Sandstrasse (28 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nSandstrasse\n2024-10-14\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Sandstrasse –&gt; Landi –&gt; Sandstrasse (28 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nSandstrasse\n2024-10-14\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#sandstrasse-alpbachschlucht-sandstrasse-199-hm",
     "href": "run.html#sandstrasse-alpbachschlucht-sandstrasse-199-hm",
     "title": "Run",
     "section": "Sandstrasse –> Alpbachschlucht –> Sandstrasse (199 Hm)",
-    "text": "Sandstrasse –&gt; Alpbachschlucht –&gt; Sandstrasse (199 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nSandstrasse\n2024-11-06\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Sandstrasse –&gt; Alpbachschlucht –&gt; Sandstrasse (199 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nSandstrasse\n2024-11-06\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#sandstrasse-baerewaegli-sandstrasse-243-hm",
     "href": "run.html#sandstrasse-baerewaegli-sandstrasse-243-hm",
     "title": "Run",
     "section": "Sandstrasse –> Baerewaegli –> Sandstrasse (243 Hm)",
-    "text": "Sandstrasse –&gt; Baerewaegli –&gt; Sandstrasse (243 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nSandstrasse\n2024-12-06\n\nNA\n\n\nSandstrasse\nSandstrasse\n2024-11-14\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Sandstrasse –&gt; Baerewaegli –&gt; Sandstrasse (243 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nSandstrasse\n2024-12-06\n\nNA\n\n\nSandstrasse\nSandstrasse\n2024-11-14\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#sandstrasse-huesen-sandstrasse-44-hm",
     "href": "run.html#sandstrasse-huesen-sandstrasse-44-hm",
     "title": "Run",
     "section": "Sandstrasse –> Huesen –> Sandstrasse (44 Hm)",
-    "text": "Sandstrasse –&gt; Huesen –&gt; Sandstrasse (44 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nSandstrasse\n2024-11-25\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Sandstrasse –&gt; Huesen –&gt; Sandstrasse (44 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nSandstrasse\n2024-11-25\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#sandstrasse-resti-sandstrasse-238-hm",
     "href": "run.html#sandstrasse-resti-sandstrasse-238-hm",
     "title": "Run",
     "section": "Sandstrasse –> Resti –> Sandstrasse (238 Hm)",
-    "text": "Sandstrasse –&gt; Resti –&gt; Sandstrasse (238 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nSandstrasse\n2024-11-26\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Sandstrasse –&gt; Resti –&gt; Sandstrasse (238 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nSandstrasse\n2024-11-26\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#sandstrasse-hausen-sandstrasse-35-hm",
     "href": "run.html#sandstrasse-hausen-sandstrasse-35-hm",
     "title": "Run",
     "section": "Sandstrasse –> Hausen –> Sandstrasse (35 Hm)",
-    "text": "Sandstrasse –&gt; Hausen –&gt; Sandstrasse (35 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nSandstrasse\n2024-12-22\n\nNA\n\n\nSandstrasse\nSandstrasse\n2024-12-09\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Sandstrasse –&gt; Hausen –&gt; Sandstrasse (35 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nSandstrasse\n2024-12-22\n\nNA\n\n\nSandstrasse\nSandstrasse\n2024-12-09\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#lauterbrunnen-bhf-schilthorn-terrasse-2172-hm",
     "href": "run.html#lauterbrunnen-bhf-schilthorn-terrasse-2172-hm",
     "title": "Run",
     "section": "Lauterbrunnen Bhf –> Schilthorn Terrasse (2172 Hm)",
-    "text": "Lauterbrunnen Bhf –&gt; Schilthorn Terrasse (2172 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nLauterbrunnen Bhf\nSchilthorn Terrasse\n2012-08-22\n02:55:40.0\n742\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nLauterbrunnen B\nSchilthorn Terr\n2012-08-22\n02:55:40.0\n742\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2012\nLauterbrunnen Bhf\nSchilthorn Terrasse\n2012-08-22\n02:55:40.0\n742"
+    "text": "Lauterbrunnen Bhf –&gt; Schilthorn Terrasse (2172 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nLauterbrunnen Bhf\nSchilthorn Terrasse\n2012-08-22\n02:55:40.0\n742\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nLauterbrunnen B\nSchilthorn Terr\n2012-08-22\n02:55:40.0\n742\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2012\nLauterbrunnen Bhf\nSchilthorn Terrasse\n2012-08-22\n02:55:40.0\n742"
   },
   {
     "objectID": "run.html#sandstrasse-bärewägli-schraendli-na-hm",
     "href": "run.html#sandstrasse-bärewägli-schraendli-na-hm",
     "title": "Run",
     "section": "Sandstrasse –> Bärewägli –> Schraendli (NA Hm)",
-    "text": "Sandstrasse –&gt; Bärewägli –&gt; Schraendli (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nSchraendli\n2024-02-15\n\nNA\n\n\nSandstrasse\nSchraendli\n2024-01-18\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Sandstrasse –&gt; Bärewägli –&gt; Schraendli (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nSchraendli\n2024-02-15\n\nNA\n\n\nSandstrasse\nSchraendli\n2024-01-18\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#sandstrasse-bergsturz-schraendli-259-hm",
     "href": "run.html#sandstrasse-bergsturz-schraendli-259-hm",
     "title": "Run",
     "section": "Sandstrasse –> Bergsturz –> Schraendli (259 Hm)",
-    "text": "Sandstrasse –&gt; Bergsturz –&gt; Schraendli (259 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nSchraendli\n2025-03-31\n\nNA\n\n\nSandstrasse\nSchraendli\n2024-10-27\n\nNA\n\n\nSandstrasse\nSchraendli\n2024-05-24\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Sandstrasse –&gt; Bergsturz –&gt; Schraendli (259 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nSchraendli\n2025-03-31\n\nNA\n\n\nSandstrasse\nSchraendli\n2024-10-27\n\nNA\n\n\nSandstrasse\nSchraendli\n2024-05-24\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#niesen-treppenlauf-schwandegg-926-hm",
     "href": "run.html#niesen-treppenlauf-schwandegg-926-hm",
     "title": "Run",
     "section": "Niesen Treppenlauf –> Schwandegg (926 Hm)",
-    "text": "Niesen Treppenlauf –&gt; Schwandegg (926 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nNiesen Treppenlauf\nSchwandegg\n2018-06-02\n00:45:00.0\n1235\n\n\nNiesen Treppenlauf\nSchwandegg\n2012-06-02\n00:47:00.0\n1182\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nNiesen Treppenl\nSchwandegg\n2018-06-02\n00:45:00.0\n1235\n\n\n\n2\nNiesen Treppenl\nSchwandegg\n2012-06-02\n00:47:00.0\n1182\n1m60s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2018\nNiesen Treppenlauf\nSchwandegg\n2018-06-02\n00:45:00.0\n1235\n\n\n2012\nNiesen Treppenlauf\nSchwandegg\n2012-06-02\n00:47:00.0\n1182"
+    "text": "Niesen Treppenlauf –&gt; Schwandegg (926 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nNiesen Treppenlauf\nSchwandegg\n2018-06-02\n00:45:00.0\n1235\n\n\nNiesen Treppenlauf\nSchwandegg\n2012-06-02\n00:47:00.0\n1182\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nNiesen Treppenl\nSchwandegg\n2018-06-02\n00:45:00.0\n1235\n\n\n\n2\nNiesen Treppenl\nSchwandegg\n2012-06-02\n00:47:00.0\n1182\n1m60s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2018\nNiesen Treppenlauf\nSchwandegg\n2018-06-02\n00:45:00.0\n1235\n\n\n2012\nNiesen Treppenlauf\nSchwandegg\n2012-06-02\n00:47:00.0\n1182"
   },
   {
     "objectID": "run.html#muelenen-parkplatz-schwandegg-bruecke-926-hm",
     "href": "run.html#muelenen-parkplatz-schwandegg-bruecke-926-hm",
     "title": "Run",
     "section": "Muelenen Parkplatz –> Schwandegg Bruecke (926 Hm)",
-    "text": "Muelenen Parkplatz –&gt; Schwandegg Bruecke (926 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nMuelenen Parkplatz\nSchwandegg Bruecke\n2024-08-26\n00:57:09.0\n972\n\n\nMuelenen Parkplatz\nSchwandegg Bruecke\n2017-08-16\n00:57:20.0\n969\n\n\nMuelenen Parkplatz\nSchwandegg Bruecke\n2017-06-21\n00:59:19.0\n937\n\n\nMuelenen Parkplatz\nSchwandegg Bruecke\n2017-06-11\n00:56:50.0\n978\n\n\nMuelenen Parkplatz\nSchwandegg Bruecke\n2013-06-22\n00:57:03.0\n974\n\n\nMuelenen Parkplatz\nSchwandegg Bruecke\n2012-05-28\n00:56:30.0\n983\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nMuelenen Parkpl\nSchwandegg Brue\n2012-05-28\n00:56:30.0\n983\n\n\n\n2\nMuelenen Parkpl\nSchwandegg Brue\n2017-06-11\n00:56:50.0\n978\n0m20s\n\n\n3\nMuelenen Parkpl\nSchwandegg Brue\n2013-06-22\n00:57:03.0\n974\n0m33s\n\n\n4\nMuelenen Parkpl\nSchwandegg Brue\n2024-08-26\n00:57:09.0\n972\n0m39s\n\n\n5\nMuelenen Parkpl\nSchwandegg Brue\n2017-08-16\n00:57:20.0\n969\n0m50s\n\n\n6\nMuelenen Parkpl\nSchwandegg Brue\n2017-06-21\n00:59:19.0\n937\n2m49s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2024\nMuelenen Parkplatz\nSchwandegg Bruecke\n2024-08-26\n00:57:09.0\n972\n\n\n2017\nMuelenen Parkplatz\nSchwandegg Bruecke\n2017-06-11\n00:56:50.0\n978\n\n\n2013\nMuelenen Parkplatz\nSchwandegg Bruecke\n2013-06-22\n00:57:03.0\n974\n\n\n2012\nMuelenen Parkplatz\nSchwandegg Bruecke\n2012-05-28\n00:56:30.0\n983"
+    "text": "Muelenen Parkplatz –&gt; Schwandegg Bruecke (926 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nMuelenen Parkplatz\nSchwandegg Bruecke\n2024-08-26\n00:57:09.0\n972\n\n\nMuelenen Parkplatz\nSchwandegg Bruecke\n2017-08-16\n00:57:20.0\n969\n\n\nMuelenen Parkplatz\nSchwandegg Bruecke\n2017-06-21\n00:59:19.0\n937\n\n\nMuelenen Parkplatz\nSchwandegg Bruecke\n2017-06-11\n00:56:50.0\n978\n\n\nMuelenen Parkplatz\nSchwandegg Bruecke\n2013-06-22\n00:57:03.0\n974\n\n\nMuelenen Parkplatz\nSchwandegg Bruecke\n2012-05-28\n00:56:30.0\n983\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nMuelenen Parkpl\nSchwandegg Brue\n2012-05-28\n00:56:30.0\n983\n\n\n\n2\nMuelenen Parkpl\nSchwandegg Brue\n2017-06-11\n00:56:50.0\n978\n0m20s\n\n\n3\nMuelenen Parkpl\nSchwandegg Brue\n2013-06-22\n00:57:03.0\n974\n0m33s\n\n\n4\nMuelenen Parkpl\nSchwandegg Brue\n2024-08-26\n00:57:09.0\n972\n0m39s\n\n\n5\nMuelenen Parkpl\nSchwandegg Brue\n2017-08-16\n00:57:20.0\n969\n0m50s\n\n\n6\nMuelenen Parkpl\nSchwandegg Brue\n2017-06-21\n00:59:19.0\n937\n2m49s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2024\nMuelenen Parkplatz\nSchwandegg Bruecke\n2024-08-26\n00:57:09.0\n972\n\n\n2017\nMuelenen Parkplatz\nSchwandegg Bruecke\n2017-06-11\n00:56:50.0\n978\n\n\n2013\nMuelenen Parkplatz\nSchwandegg Bruecke\n2013-06-22\n00:57:03.0\n974\n\n\n2012\nMuelenen Parkplatz\nSchwandegg Bruecke\n2012-05-28\n00:56:30.0\n983"
   },
   {
     "objectID": "run.html#alpbaechli-reichenbachfall-schwarzwaldalp-853-hm",
     "href": "run.html#alpbaechli-reichenbachfall-schwarzwaldalp-853-hm",
     "title": "Run",
     "section": "Alpbaechli –> Reichenbachfall –> Schwarzwaldalp (853 Hm)",
-    "text": "Alpbaechli –&gt; Reichenbachfall –&gt; Schwarzwaldalp (853 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nSchwarzwaldalp\n2020-09-15\n01:17:40.0\n659\n\n\nAlpbaechli\nSchwarzwaldalp\n2020-08-22\n01:13:46.0\n694\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbaechli\nSchwarzwaldalp\n2020-08-22\n01:13:46.0\n694\n\n\n\n2\nAlpbaechli\nSchwarzwaldalp\n2020-09-15\n01:17:40.0\n659\n3m54s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2020\nAlpbaechli\nSchwarzwaldalp\n2020-08-22\n01:13:46.0\n694"
+    "text": "Alpbaechli –&gt; Reichenbachfall –&gt; Schwarzwaldalp (853 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nSchwarzwaldalp\n2020-09-15\n01:17:40.0\n659\n\n\nAlpbaechli\nSchwarzwaldalp\n2020-08-22\n01:13:46.0\n694\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbaechli\nSchwarzwaldalp\n2020-08-22\n01:13:46.0\n694\n\n\n\n2\nAlpbaechli\nSchwarzwaldalp\n2020-09-15\n01:17:40.0\n659\n3m54s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2020\nAlpbaechli\nSchwarzwaldalp\n2020-08-22\n01:13:46.0\n694"
   },
   {
     "objectID": "run.html#alpbaechli-schwendi-schwarzwaldalp-853-hm",
     "href": "run.html#alpbaechli-schwendi-schwarzwaldalp-853-hm",
     "title": "Run",
     "section": "Alpbaechli –> Schwendi –> Schwarzwaldalp (853 Hm)",
-    "text": "Alpbaechli –&gt; Schwendi –&gt; Schwarzwaldalp (853 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nSchwarzwaldalp\n2020-03-01\n01:21:52.4\n625\n\n\nAlpbaechli\nSchwarzwaldalp\n2019-10-12\n01:14:59.2\n683\n\n\nAlpbaechli\nSchwarzwaldalp\n2019-08-18\n01:21:14.5\n630\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbaechli\nSchwarzwaldalp\n2019-10-12\n01:14:59.2\n683\n\n\n\n2\nAlpbaechli\nSchwarzwaldalp\n2019-08-18\n01:21:14.5\n630\n6m15s\n\n\n3\nAlpbaechli\nSchwarzwaldalp\n2020-03-01\n01:21:52.4\n625\n6m53s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2020\nAlpbaechli\nSchwarzwaldalp\n2020-03-01\n01:21:52.4\n625\n\n\n2019\nAlpbaechli\nSchwarzwaldalp\n2019-10-12\n01:14:59.2\n683"
+    "text": "Alpbaechli –&gt; Schwendi –&gt; Schwarzwaldalp (853 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nSchwarzwaldalp\n2020-03-01\n01:21:52.4\n625\n\n\nAlpbaechli\nSchwarzwaldalp\n2019-10-12\n01:14:59.2\n683\n\n\nAlpbaechli\nSchwarzwaldalp\n2019-08-18\n01:21:14.5\n630\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbaechli\nSchwarzwaldalp\n2019-10-12\n01:14:59.2\n683\n\n\n\n2\nAlpbaechli\nSchwarzwaldalp\n2019-08-18\n01:21:14.5\n630\n6m15s\n\n\n3\nAlpbaechli\nSchwarzwaldalp\n2020-03-01\n01:21:52.4\n625\n6m53s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2020\nAlpbaechli\nSchwarzwaldalp\n2020-03-01\n01:21:52.4\n625\n\n\n2019\nAlpbaechli\nSchwarzwaldalp\n2019-10-12\n01:14:59.2\n683"
   },
   {
     "objectID": "run.html#sandstrasse-reichenbachfall-schwarzwaldalp-850-hm",
     "href": "run.html#sandstrasse-reichenbachfall-schwarzwaldalp-850-hm",
     "title": "Run",
     "section": "Sandstrasse –> Reichenbachfall –> Schwarzwaldalp (850 Hm)",
-    "text": "Sandstrasse –&gt; Reichenbachfall –&gt; Schwarzwaldalp (850 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nSchwarzwaldalp\n2024-10-16\n01:17:28.0\n658\n\n\nSandstrasse\nSchwarzwaldalp\n2024-09-21\n01:18:10.3\n657\n\n\nSandstrasse\nSchwarzwaldalp\n2024-07-22\n01:19:43.0\n630\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nSandstrasse\nSchwarzwaldalp\n2024-10-16\n01:17:28.0\n658\n\n\n\n2\nSandstrasse\nSchwarzwaldalp\n2024-09-21\n01:18:10.3\n657\n0m42s\n\n\n3\nSandstrasse\nSchwarzwaldalp\n2024-07-22\n01:19:43.0\n630\n2m15s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2024\nSandstrasse\nSchwarzwaldalp\n2024-10-16\n01:17:28.0\n658"
+    "text": "Sandstrasse –&gt; Reichenbachfall –&gt; Schwarzwaldalp (850 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nSchwarzwaldalp\n2024-10-16\n01:17:28.0\n658\n\n\nSandstrasse\nSchwarzwaldalp\n2024-09-21\n01:18:10.3\n657\n\n\nSandstrasse\nSchwarzwaldalp\n2024-07-22\n01:19:43.0\n630\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nSandstrasse\nSchwarzwaldalp\n2024-10-16\n01:17:28.0\n658\n\n\n\n2\nSandstrasse\nSchwarzwaldalp\n2024-09-21\n01:18:10.3\n657\n0m42s\n\n\n3\nSandstrasse\nSchwarzwaldalp\n2024-07-22\n01:19:43.0\n630\n2m15s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2024\nSandstrasse\nSchwarzwaldalp\n2024-10-16\n01:17:28.0\n658"
   },
   {
     "objectID": "run.html#sandstrasse-schwendichehrrunde-259-hm",
     "href": "run.html#sandstrasse-schwendichehrrunde-259-hm",
     "title": "Run",
     "section": "Sandstrasse –> Schwendichehrrunde (259 Hm)",
-    "text": "Sandstrasse –&gt; Schwendichehrrunde (259 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nSchwendichehrrunde\n2025-03-27\n00:40:48.5\n381\n\n\nSandstrasse\nSchwendichehrrunde\n2025-01-09\n\nNA\n\n\nSandstrasse\nSchwendichehrrunde\n2024-12-18\n00:38:48.8\n408\n\n\nSandstrasse\nSchwendichehrrunde\n2024-11-21\n00:46:43.0\n342\n\n\nSandstrasse\nSchwendichehrrunde\n2024-07-21\n00:41:01.0\nNA\n\n\nSandstrasse\nSchwendichehrrunde\n2024-06-15\n00:44:36.0\nNA\n\n\nSandstrasse\nSchwendichehrrunde\n2024-06-05\n00:40:22.1\nNA\n\n\nSandstrasse\nSchwendichehrrunde\n2024-03-29\n00:43:07.0\nNA\n\n\nSandstrasse\nSchwendichehrrunde\n2024-03-19\n00:49:19.0\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nSandstrasse\nSchwendichehrru\n2024-12-18\n00:38:48.8\n408\n\n\n\n2\nSandstrasse\nSchwendichehrru\n2024-06-05\n00:40:22.1\nNA\n1m33s\n\n\n3\nSandstrasse\nSchwendichehrru\n2025-03-27\n00:40:48.5\n381\n1m60s\n\n\n4\nSandstrasse\nSchwendichehrru\n2024-07-21\n00:41:01.0\nNA\n2m12s\n\n\n5\nSandstrasse\nSchwendichehrru\n2024-03-29\n00:43:07.0\nNA\n4m18s\n\n\n6\nSandstrasse\nSchwendichehrru\n2024-06-15\n00:44:36.0\nNA\n5m47s\n\n\n7\nSandstrasse\nSchwendichehrru\n2024-11-21\n00:46:43.0\n342\n7m54s\n\n\n8\nSandstrasse\nSchwendichehrru\n2024-03-19\n00:49:19.0\nNA\n10m30s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2025\nSandstrasse\nSchwendichehrrunde\n2025-03-27\n00:40:48.5\n381\n\n\n2024\nSandstrasse\nSchwendichehrrunde\n2024-12-18\n00:38:48.8\n408"
+    "text": "Sandstrasse –&gt; Schwendichehrrunde (259 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nSchwendichehrrunde\n2025-03-27\n00:40:48.5\n381\n\n\nSandstrasse\nSchwendichehrrunde\n2025-01-09\n\nNA\n\n\nSandstrasse\nSchwendichehrrunde\n2024-12-18\n00:38:48.8\n408\n\n\nSandstrasse\nSchwendichehrrunde\n2024-11-21\n00:46:43.0\n342\n\n\nSandstrasse\nSchwendichehrrunde\n2024-07-21\n00:41:01.0\nNA\n\n\nSandstrasse\nSchwendichehrrunde\n2024-06-15\n00:44:36.0\nNA\n\n\nSandstrasse\nSchwendichehrrunde\n2024-06-05\n00:40:22.1\nNA\n\n\nSandstrasse\nSchwendichehrrunde\n2024-03-29\n00:43:07.0\nNA\n\n\nSandstrasse\nSchwendichehrrunde\n2024-03-19\n00:49:19.0\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nSandstrasse\nSchwendichehrru\n2024-12-18\n00:38:48.8\n408\n\n\n\n2\nSandstrasse\nSchwendichehrru\n2024-06-05\n00:40:22.1\nNA\n1m33s\n\n\n3\nSandstrasse\nSchwendichehrru\n2025-03-27\n00:40:48.5\n381\n1m60s\n\n\n4\nSandstrasse\nSchwendichehrru\n2024-07-21\n00:41:01.0\nNA\n2m12s\n\n\n5\nSandstrasse\nSchwendichehrru\n2024-03-29\n00:43:07.0\nNA\n4m18s\n\n\n6\nSandstrasse\nSchwendichehrru\n2024-06-15\n00:44:36.0\nNA\n5m47s\n\n\n7\nSandstrasse\nSchwendichehrru\n2024-11-21\n00:46:43.0\n342\n7m54s\n\n\n8\nSandstrasse\nSchwendichehrru\n2024-03-19\n00:49:19.0\nNA\n10m30s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2025\nSandstrasse\nSchwendichehrrunde\n2025-03-27\n00:40:48.5\n381\n\n\n2024\nSandstrasse\nSchwendichehrrunde\n2024-12-18\n00:38:48.8\n408"
   },
   {
     "objectID": "run.html#alpbaechli-schwendichehrrunde-na-hm",
     "href": "run.html#alpbaechli-schwendichehrrunde-na-hm",
     "title": "Run",
     "section": "Alpbaechli –> Schwendichehrrunde (NA Hm)",
-    "text": "Alpbaechli –&gt; Schwendichehrrunde (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nSchwendichehrrunde\n2021-03-08\n00:40:41.4\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbaechli\nSchwendichehrru\n2021-03-08\n00:40:41.4\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2021\nAlpbaechli\nSchwendichehrrunde\n2021-03-08\n00:40:41.4\nNA"
+    "text": "Alpbaechli –&gt; Schwendichehrrunde (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nSchwendichehrrunde\n2021-03-08\n00:40:41.4\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbaechli\nSchwendichehrru\n2021-03-08\n00:40:41.4\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2021\nAlpbaechli\nSchwendichehrrunde\n2021-03-08\n00:40:41.4\nNA"
   },
   {
     "objectID": "run.html#alpbaechli-seilialp-757-hm",
     "href": "run.html#alpbaechli-seilialp-757-hm",
     "title": "Run",
     "section": "Alpbaechli –> Seilialp (757 Hm)",
-    "text": "Alpbaechli –&gt; Seilialp (757 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nSeilialp\n2021-08-15\n00:53:07.5\n855\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbaechli\nSeilialp\n2021-08-15\n00:53:07.5\n855\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2021\nAlpbaechli\nSeilialp\n2021-08-15\n00:53:07.5\n855"
+    "text": "Alpbaechli –&gt; Seilialp (757 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nSeilialp\n2021-08-15\n00:53:07.5\n855\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbaechli\nSeilialp\n2021-08-15\n00:53:07.5\n855\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2021\nAlpbaechli\nSeilialp\n2021-08-15\n00:53:07.5\n855"
   },
   {
     "objectID": "run.html#geissholz-start-signal-signal-1203-hm",
     "href": "run.html#geissholz-start-signal-signal-1203-hm",
     "title": "Run",
     "section": "Geissholz Start Signal –> Signal (1203 Hm)",
-    "text": "Geissholz Start Signal –&gt; Signal (1203 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nGeissholz Start Signal\nSignal\n2024-08-22\n01:27:25.0\n826\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nGeissholz Start\nSignal\n2024-08-22\n01:27:25.0\n826\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2024\nGeissholz Start Signal\nSignal\n2024-08-22\n01:27:25.0\n826"
+    "text": "Geissholz Start Signal –&gt; Signal (1203 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nGeissholz Start Signal\nSignal\n2024-08-22\n01:27:25.0\n826\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nGeissholz Start\nSignal\n2024-08-22\n01:27:25.0\n826\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2024\nGeissholz Start Signal\nSignal\n2024-08-22\n01:27:25.0\n826"
   },
   {
     "objectID": "run.html#nessental-triftbahn-alter-windeggweg-triftbruecke-730-hm",
     "href": "run.html#nessental-triftbahn-alter-windeggweg-triftbruecke-730-hm",
     "title": "Run",
     "section": "Nessental Triftbahn –> alter Windeggweg –> Triftbruecke (730 Hm)",
-    "text": "Nessental Triftbahn –&gt; alter Windeggweg –&gt; Triftbruecke (730 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nNessental Triftbahn\nTriftbruecke\n2020-10-05\n01:26:03.0\n509\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nNessental Trift\nTriftbruecke\n2020-10-05\n01:26:03.0\n509\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2020\nNessental Triftbahn\nTriftbruecke\n2020-10-05\n01:26:03.0\n509"
+    "text": "Nessental Triftbahn –&gt; alter Windeggweg –&gt; Triftbruecke (730 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nNessental Triftbahn\nTriftbruecke\n2020-10-05\n01:26:03.0\n509\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nNessental Trift\nTriftbruecke\n2020-10-05\n01:26:03.0\n509\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2020\nNessental Triftbahn\nTriftbruecke\n2020-10-05\n01:26:03.0\n509"
   },
   {
     "objectID": "run.html#wiler-vorsass-wilerhorn-605-hm",
     "href": "run.html#wiler-vorsass-wilerhorn-605-hm",
     "title": "Run",
     "section": "Wiler Vorsass –> Wilerhorn (605 Hm)",
-    "text": "Wiler Vorsass –&gt; Wilerhorn (605 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nWiler Vorsass\nWilerhorn\n2023-06-04\n00:45:10.0\n804\n\n\nWiler Vorsass\nWilerhorn\n2021-11-20\n00:47:35.8\n763\n\n\nWiler Vorsass\nWilerhorn\n2020-07-04\n00:46:24.5\n782\n\n\nWiler Vorsass\nWilerhorn\n2020-04-13\n00:50:56.0\n713\n\n\nWiler Vorsass\nWilerhorn\n2019-09-28\n00:49:52.0\n728\n\n\nWiler Vorsass\nWilerhorn\n2019-08-03\n00:47:29.0\n764\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nWiler Vorsass\nWilerhorn\n2023-06-04\n00:45:10.0\n804\n\n\n\n2\nWiler Vorsass\nWilerhorn\n2020-07-04\n00:46:24.5\n782\n1m15s\n\n\n3\nWiler Vorsass\nWilerhorn\n2019-08-03\n00:47:29.0\n764\n2m19s\n\n\n4\nWiler Vorsass\nWilerhorn\n2021-11-20\n00:47:35.8\n763\n2m26s\n\n\n5\nWiler Vorsass\nWilerhorn\n2019-09-28\n00:49:52.0\n728\n4m42s\n\n\n6\nWiler Vorsass\nWilerhorn\n2020-04-13\n00:50:56.0\n713\n5m46s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2023\nWiler Vorsass\nWilerhorn\n2023-06-04\n00:45:10.0\n804\n\n\n2021\nWiler Vorsass\nWilerhorn\n2021-11-20\n00:47:35.8\n763\n\n\n2020\nWiler Vorsass\nWilerhorn\n2020-07-04\n00:46:24.5\n782\n\n\n2019\nWiler Vorsass\nWilerhorn\n2019-08-03\n00:47:29.0\n764"
+    "text": "Wiler Vorsass –&gt; Wilerhorn (605 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nWiler Vorsass\nWilerhorn\n2023-06-04\n00:45:10.0\n804\n\n\nWiler Vorsass\nWilerhorn\n2021-11-20\n00:47:35.8\n763\n\n\nWiler Vorsass\nWilerhorn\n2020-07-04\n00:46:24.5\n782\n\n\nWiler Vorsass\nWilerhorn\n2020-04-13\n00:50:56.0\n713\n\n\nWiler Vorsass\nWilerhorn\n2019-09-28\n00:49:52.0\n728\n\n\nWiler Vorsass\nWilerhorn\n2019-08-03\n00:47:29.0\n764\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nWiler Vorsass\nWilerhorn\n2023-06-04\n00:45:10.0\n804\n\n\n\n2\nWiler Vorsass\nWilerhorn\n2020-07-04\n00:46:24.5\n782\n1m15s\n\n\n3\nWiler Vorsass\nWilerhorn\n2019-08-03\n00:47:29.0\n764\n2m19s\n\n\n4\nWiler Vorsass\nWilerhorn\n2021-11-20\n00:47:35.8\n763\n2m26s\n\n\n5\nWiler Vorsass\nWilerhorn\n2019-09-28\n00:49:52.0\n728\n4m42s\n\n\n6\nWiler Vorsass\nWilerhorn\n2020-04-13\n00:50:56.0\n713\n5m46s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2023\nWiler Vorsass\nWilerhorn\n2023-06-04\n00:45:10.0\n804\n\n\n2021\nWiler Vorsass\nWilerhorn\n2021-11-20\n00:47:35.8\n763\n\n\n2020\nWiler Vorsass\nWilerhorn\n2020-07-04\n00:46:24.5\n782\n\n\n2019\nWiler Vorsass\nWilerhorn\n2019-08-03\n00:47:29.0\n764"
   },
   {
     "objectID": "run.html#sandstrasse-wilerli-na-hm",
     "href": "run.html#sandstrasse-wilerli-na-hm",
     "title": "Run",
     "section": "Sandstrasse –> Wilerli (NA Hm)",
-    "text": "Sandstrasse –&gt; Wilerli (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nWilerli\n2023-12-13\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Sandstrasse –&gt; Wilerli (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nWilerli\n2023-12-13\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#sandstrasse-hundschipfi-winterlicke-772-hm",
     "href": "run.html#sandstrasse-hundschipfi-winterlicke-772-hm",
     "title": "Run",
     "section": "Sandstrasse –> Hundschipfi –> Winterlicke (772 Hm)",
-    "text": "Sandstrasse –&gt; Hundschipfi –&gt; Winterlicke (772 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nWinterlicke\n2024-08-02\n01:17:42.0\n596\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nSandstrasse\nWinterlicke\n2024-08-02\n01:17:42.0\n596\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2024\nSandstrasse\nWinterlicke\n2024-08-02\n01:17:42.0\n596"
+    "text": "Sandstrasse –&gt; Hundschipfi –&gt; Winterlicke (772 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nWinterlicke\n2024-08-02\n01:17:42.0\n596\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nSandstrasse\nWinterlicke\n2024-08-02\n01:17:42.0\n596\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2024\nSandstrasse\nWinterlicke\n2024-08-02\n01:17:42.0\n596"
   },
   {
     "objectID": "run.html#alpbaechli-hundschipfi-winterlicke-788-hm",
     "href": "run.html#alpbaechli-hundschipfi-winterlicke-788-hm",
     "title": "Run",
     "section": "Alpbaechli –> Hundschipfi –> Winterlicke (788 Hm)",
-    "text": "Alpbaechli –&gt; Hundschipfi –&gt; Winterlicke (788 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nWinterlicke\n2019-07-29\n01:28:49.0\n532\n\n\nAlpbaechli\nWinterlicke\n2019-04-22\n01:23:03.0\n569\n\n\nAlpbaechli\nWinterlicke\n2018-11-24\n01:21:10.0\n583\n\n\nAlpbaechli\nWinterlicke\n2018-11-17\n01:23:21.0\n567\n\n\nAlpbaechli\nWinterlicke\n2018-11-09\n01:19:59.0\n591\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbaechli\nWinterlicke\n2018-11-09\n01:19:59.0\n591\n\n\n\n2\nAlpbaechli\nWinterlicke\n2018-11-24\n01:21:10.0\n583\n1m11s\n\n\n3\nAlpbaechli\nWinterlicke\n2019-04-22\n01:23:03.0\n569\n3m4s\n\n\n4\nAlpbaechli\nWinterlicke\n2018-11-17\n01:23:21.0\n567\n3m22s\n\n\n5\nAlpbaechli\nWinterlicke\n2019-07-29\n01:28:49.0\n532\n8m50s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2019\nAlpbaechli\nWinterlicke\n2019-04-22\n01:23:03.0\n569\n\n\n2018\nAlpbaechli\nWinterlicke\n2018-11-09\n01:19:59.0\n591"
+    "text": "Alpbaechli –&gt; Hundschipfi –&gt; Winterlicke (788 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nWinterlicke\n2019-07-29\n01:28:49.0\n532\n\n\nAlpbaechli\nWinterlicke\n2019-04-22\n01:23:03.0\n569\n\n\nAlpbaechli\nWinterlicke\n2018-11-24\n01:21:10.0\n583\n\n\nAlpbaechli\nWinterlicke\n2018-11-17\n01:23:21.0\n567\n\n\nAlpbaechli\nWinterlicke\n2018-11-09\n01:19:59.0\n591\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbaechli\nWinterlicke\n2018-11-09\n01:19:59.0\n591\n\n\n\n2\nAlpbaechli\nWinterlicke\n2018-11-24\n01:21:10.0\n583\n1m11s\n\n\n3\nAlpbaechli\nWinterlicke\n2019-04-22\n01:23:03.0\n569\n3m4s\n\n\n4\nAlpbaechli\nWinterlicke\n2018-11-17\n01:23:21.0\n567\n3m22s\n\n\n5\nAlpbaechli\nWinterlicke\n2019-07-29\n01:28:49.0\n532\n8m50s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2019\nAlpbaechli\nWinterlicke\n2019-04-22\n01:23:03.0\n569\n\n\n2018\nAlpbaechli\nWinterlicke\n2018-11-09\n01:19:59.0\n591"
   },
   {
     "objectID": "run.html#sandstrasse-bielti-wylerli-na-hm",
     "href": "run.html#sandstrasse-bielti-wylerli-na-hm",
     "title": "Run",
     "section": "Sandstrasse –> Bielti –> Wylerli (NA Hm)",
-    "text": "Sandstrasse –&gt; Bielti –&gt; Wylerli (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nWylerli\n2024-05-28\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "text": "Sandstrasse –&gt; Bielti –&gt; Wylerli (NA Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nWylerli\n2024-05-28\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   },
   {
     "objectID": "run.html#alpbaechli-reichenbachfall-zwirgi-374-hm",
     "href": "run.html#alpbaechli-reichenbachfall-zwirgi-374-hm",
     "title": "Run",
     "section": "Alpbaechli –> Reichenbachfall –> Zwirgi (374 Hm)",
-    "text": "Alpbaechli –&gt; Reichenbachfall –&gt; Zwirgi (374 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nZwirgi\n2023-05-11\n\nNA\n\n\nAlpbaechli\nZwirgi\n2021-08-15\n00:26:52.5\n835\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbaechli\nZwirgi\n2021-08-15\n00:26:52.5\n835\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2021\nAlpbaechli\nZwirgi\n2021-08-15\n00:26:52.5\n835"
+    "text": "Alpbaechli –&gt; Reichenbachfall –&gt; Zwirgi (374 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nAlpbaechli\nZwirgi\n2023-05-11\n\nNA\n\n\nAlpbaechli\nZwirgi\n2021-08-15\n00:26:52.5\n835\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nAlpbaechli\nZwirgi\n2021-08-15\n00:26:52.5\n835\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2021\nAlpbaechli\nZwirgi\n2021-08-15\n00:26:52.5\n835"
   },
   {
     "objectID": "bikerun.html",
@@ -2483,5 +2483,12 @@
     "title": "Zusammenfassungen Sport",
     "section": "",
     "text": "Jaehrliche Zusammenfassungen\n\nKilometerAufstiegZeit\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTable continues below\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n\n\n\n\nTotal\n73817\n48432\n48372\n51288\n70050\n87186\n98833\n151528\n\n\npro Woche\n1420\n931.4\n930.2\n986.3\n1347\n1677\n1901\n2914\n\n\npro Tag\n202.2\n132.7\n132.5\n140.5\n191.9\n238.9\n270.8\n415.1\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n2021\n2022\n2023\n2024\n\n\n\n\nTotal\n164095\n75238\n56860\n118166\n\n\npro Woche\n3156\n1447\n1093\n2272\n\n\npro Tag\n449.6\n206.1\n155.8\n323.7\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPro Jahr\n\nBikeRunHikingSkitouringExersuisse\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPro Woche\n\nBikeRunHikingSkitouringExersuisse"
+  },
+  {
+    "objectID": "run.html#sandstrasse-bruenig-1013-567-hm",
+    "href": "run.html#sandstrasse-bruenig-1013-567-hm",
+    "title": "Run",
+    "section": "Sandstrasse –> Bruenig 1013 (567 Hm)",
+    "text": "Sandstrasse –&gt; Bruenig 1013 (567 Hm)\n\nChronologischNach ZeitSchnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nSandstrasse\nBruenig 1013\n2025-04-20\n00:56:30.6\n602\n\n\nSandstrasse\nBruenig 1013\n2025-03-28\n00:56:52.0\n590\n\n\nSandstrasse\nBruenig 1013\n2024-11-08\n00:56:48.5\n580\n\n\nSandstrasse\nBruenig 1013\n2024-09-14\n00:53:02.1\n624\n\n\nSandstrasse\nBruenig 1013\n2024-03-13\n00:56:23.3\n420\n\n\nSandstrasse\nBruenig 1013\n2023-12-22\n00:59:21.5\n399\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nSandstrasse\nBruenig 1013\n2024-09-14\n00:53:02.1\n624\n\n\n\n2\nSandstrasse\nBruenig 1013\n2024-03-13\n00:56:23.3\n420\n3m21s\n\n\n3\nSandstrasse\nBruenig 1013\n2025-04-20\n00:56:30.6\n602\n3m28s\n\n\n4\nSandstrasse\nBruenig 1013\n2024-11-08\n00:56:48.5\n580\n3m46s\n\n\n5\nSandstrasse\nBruenig 1013\n2025-03-28\n00:56:52.0\n590\n3m50s\n\n\n6\nSandstrasse\nBruenig 1013\n2023-12-22\n00:59:21.5\n399\n6m19s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2025\nSandstrasse\nBruenig 1013\n2025-04-20\n00:56:30.6\n602\n\n\n2024\nSandstrasse\nBruenig 1013\n2024-09-14\n00:53:02.1\n624\n\n\n2023\nSandstrasse\nBruenig 1013\n2023-12-22\n00:59:21.5\n399"
   }
 ]
