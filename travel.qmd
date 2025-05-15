@@ -31,7 +31,7 @@ path <- paste(getwd(), "/", sep = "")
 countries <- as.data.frame(read_excel(paste(path, "data/countries.xlsx", sep = ""), col_types = NULL))
 countries <- (countries %>% mutate("year" = year(month)))
 
-countries <- countries %>% pivot_longer(cols = US:Tunisia, names_to = "country", values_to = "days")
+countries <- countries %>% pivot_longer(cols = US:Denmark, names_to = "country", values_to = "days")
 countries2 <- countries %>%
   group_by(year, country) %>%
     summarise(days = sum(days, na.rm = TRUE)) 
