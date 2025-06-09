@@ -46,9 +46,21 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme:
+    - cosmo
+    - custom.scss
     css: styles.css
     toc: true
+    mainfont: Verdana
+    fontsize: 0.9em
+    toc-location: "left"
+    number-sections: true
+    highlight-style: pygments
+    tbl-cap-location: bottom
+    grid:
+      sidebar-width: 400px
+      body-width: 1000px
+      margin-width: 100px
 
 editor: source
 
