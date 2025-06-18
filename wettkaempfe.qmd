@@ -86,6 +86,10 @@ summary(tab1)
 ```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 5}
 par(mfrow = c(1, 1), las = 2, mar = c(4.5, 3, 1, 1))
 b <- table(Disziplin, Jahr)
+add <- matrix(0, ncol = 4, nrow = 2)
+colnames(add) <- c(2020, 2022, 2023, 2024)
+b <- cbind(b, add)
+b <- b[, order(colnames(b))]
 barplot(b, beside = TRUE, legend = TRUE, args.legend = list("bty" = "n", "x" = "topleft"))
 abline(h = 1:100, col = grey(0.5), lty = 2)
 ```
@@ -97,7 +101,8 @@ par(mfrow = c(1, 1), las = 2, mar = c(4, 17, 1, 1))
 ys <- length(a):1
 
 plot(0, 0, type = "n", xlim = range(Jahr), ylim = c(-1, length(unique(Anlass))), xaxt = "n", xlab = "", ylab = "", yaxt = "n")
-axis(1, at = sort(unique(Jahr)), labels = sort(unique(Jahr)))
+xs <- seq(min(Jahr), max(Jahr), by = 1)
+axis(1, at = xs, labels = xs)
 axis(2, at = ys, labels = names(a))
 legend(2002, 0, c("Run", "Bike"), lty = 1, lwd = c(NA, NA), pch = c(19, 17), bty = "n", horiz = TRUE, pt.cex = 1.5)
 
