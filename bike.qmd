@@ -69,7 +69,7 @@ pander(t1)
 
 ## Nach Hoehenmeter pro Stunde
 
-Dieser Abschnitt sortiert die Touren absteigend nach Hoehenmetern pro Stunde, wobei fuer jede Tour nur die schnellste genommen wird.
+Dieser Abschnitt sortiert die Touren absteigend nach Hoehenmetern pro Stunde.
 
 ```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
 t1 <- (t %>% group_by(paste(start, end, sep = "")) %>% filter(is.na(hm_h) == FALSE) %>% arrange(desc(hm_h)) %>% ungroup())
