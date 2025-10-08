@@ -36,14 +36,13 @@ s <- as.numeric(substr(cy, 3, 4))
 # delete when in 2024
 #s <- s - 1
 
-touren <- input_touren(path)
+inp <- input_touren(path)
+touren <- inp$touren
+all <- inp$all
                   
-# skitouren
-all <- (touren %>% mutate(skihalbtag = NULL, skihalbtag_fam = NULL, begleitung1 = NULL, 
-                          begleitung2 = NULL, begleitung3 = NULL, begleitung4 = NULL, beg = NULL,
-                          region = NULL, kommentar = NULL) %>% filter(sport == "Skitour") %>% arrange(end, time))
-ski <- (all %>% select(start, end, date, time, startend))
-tour <- sort(unique(ski$startend))
+selectsport <- "Skitour"
+all <- (all %>% filter(sport == selectsport))
+tour <- sort(unique(touren %>% filter(sport == selectsport) %>% select(end))[, 1])
 
 ski_season <- (all %>% filter(date >= "2012-12-31") %>% arrange(date, desc(time)) %>% group_by(date) %>% slice(1) %>%
                  arrange(season) %>% group_by(season) %>% 
@@ -97,10 +96,10 @@ pander(ski_season)
 
 # f1 <- table(with(touren, cbind(skihalbtag, weekdays(date))[as.numeric(season) == s & is.na(skihalbtag) == FALSE, 2]))
 # f2 <- table(with(touren, cbind(skihalbtag_fam, weekdays(date))[as.numeric(season) == s & is.na(skihalbtag_fam) == FALSE, 2]))
-# f3 <- table(with(touren, cbind(sport == "Skitour", weekdays(date))[as.numeric(season) == s & (sport == "Skitour"), 2]))
+# f3 <- table(with(touren, cbind(sport == selectsport, weekdays(date))[as.numeric(season) == s & (sport == selectsport), 2]))
 # 
 # m1 <- data.frame(matrix(NA, nrow = 7, ncol = 4))
-# colnames(m1) <- c("Skihalbtag", "Skihalbtag Familie", "Skitour", "Wochentag")
+# colnames(m1) <- c("Skihalbtag", "Skihalbtag Familie", selectsport, "Wochentag")
 # m1$Wochentag <- c("Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag")
 # m1[match(names(f1), m1$Wochentag), 1] <- f1
 # m1[match(names(f2), m1$Wochentag), 2] <- f2
@@ -112,7 +111,7 @@ pander(ski_season)
 # pander(m1)
 
 # days on ski (double counting not possible)
-f4 <- with(touren, data.frame(date, skihalbtag, skihalbtag_fam, skitag_fam, tour = as.numeric(sport == "Skitour"), season))
+f4 <- with(touren, data.frame(date, skihalbtag, skihalbtag_fam, skitag_fam, tour = as.numeric(sport == selectsport), season))
 f5 <- f4[f4$season == levels(with(touren, season))[s], ]
 f5$any <- with(f5, pmax(skihalbtag, skihalbtag_fam, skitag_fam, tour, na.rm = TRUE))
 f5_dat <- f5[f5$any == 1, "date"]
@@ -122,7 +121,7 @@ skidays <- length(unique(f5_dat))
 Total Skitage: `r skidays`.
 
 ```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
-t <- (touren %>% filter(sport == "Skitour" & season == paste("Winter ", s - 1, "/", s, sep = "")) %>% hm_print())
+t <- (touren %>% filter(sport == selectsport & season == paste("Winter ", s - 1, "/", s, sep = "")) %>% hm_print())
 ```
 
 - Anzahl Tourentage: `r tail(ski_season, 1)$n`. 
@@ -228,7 +227,7 @@ cat(knit(text = unlist(paste(out, collapse = '\n')), quiet = TRUE))
 Dieser Abschnitt sortiert die Touren absteigend nach Hoehenmetern pro Stunde, wobei fuer jede Tour nur die schnellste genommen wird.
 
 ```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
-t <- (touren %>% filter(is.na(hm_h) == FALSE & sport == "Skitour"))
+t <- (touren %>% filter(is.na(hm_h) == FALSE & sport == selectsport))
 t <- (t %>% group_by(paste(start, end, sep = "")) %>% arrange(desc(hm_h)) %>% slice(1) %>% ungroup())
 t1 <- (t %>% hm_print() %>% select(start, end, date, hm_diff, time, hm_h))
 pander(t1)
@@ -238,7 +237,7 @@ pander(t1)
 ## Nach Datum
 
 ```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
-t <- (touren %>% filter(sport == "Skitour") %>% hm_print())
+t <- (touren %>% filter(sport == selectsport) %>% hm_print())
 t1 <- (t %>% arrange(date, desc(time)) %>% group_by(date) %>% slice(1) %>% rowid_to_column("Nr") %>% select(-beg, -time))
 pander(t1)
 ```

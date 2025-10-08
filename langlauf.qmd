@@ -35,14 +35,13 @@ source(paste(path, "/functions/hm_print.r", sep = ""))
 cy <- as.character(read_excel(paste(path, "data/currentyear.xlsx", sep = "")))
 s <- as.numeric(substr(cy, 3, 4))
 
-touren <- input_touren(path)
+inp <- input_touren(path)
+touren <- inp$touren
+all <- inp$all
                   
-# Langlaufen
-all <- (touren %>% mutate(skihalbtag = NULL, skihalbtag_fam = NULL, begleitung1 = NULL, 
-                          begleitung2 = NULL, begleitung3 = NULL, begleitung4 = NULL, beg = NULL,
-                          region = NULL, kommentar = NULL) %>% filter(sport == "Langlauf") %>% arrange(end, time))
-ski <- (all %>% select(start, end, date, time, startend))
-tour <- sort(unique(ski$startend))
+selectsport <- "Langlauf"
+all <- (all %>% filter(sport == selectsport))
+tour <- sort(unique(touren %>% filter(sport == selectsport) %>% select(end))[, 1])
 
 ski_season <- (all %>% filter(date >= "2013-12-31") %>% arrange(date, desc(time)) %>% group_by(date) %>% slice(1) %>%
                  arrange(season) %>% group_by(season) %>% 
@@ -75,7 +74,7 @@ labs(x = "Saison", y = "Höhenmeter")
 ## Tage auf Langlauf-Ski total
 
 ```{r echo = FALSE, message = FALSE, warning = FALSE, results = "asis", eval = TRUE}
-f4 <- with(touren, data.frame(date, tour = as.numeric(sport == "Langlauf"), season))
+f4 <- with(touren, data.frame(date, tour = as.numeric(sport == selectsport), season))
 f5 <- f4[f4$season == levels(with(touren, season))[s], ]
 f5$any <- with(f5, pmax(tour, na.rm = TRUE))
 f5_dat <- f5[f5$any == 1, "date"]
@@ -85,7 +84,7 @@ skidays <- length(unique(f5_dat))
 Total Langlauftage: `r skidays`.
 
 ```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
-t <- (touren %>% filter(sport == "Langlauf" & season == paste("Winter ", s - 1, "/", s, sep = "")))
+t <- (touren %>% filter(sport == selectsport & season == paste("Winter ", s - 1, "/", s, sep = "")))
 ```
 
 - Anzahl Tourentage: `r tail(ski_season, 1)$n`. 

@@ -79,7 +79,7 @@ packs.html <- c("lubridate") #, "tibble", "summarytools")
 for (i in 1:length(packs.html)){library(packs.html[i], character.only = TRUE)}
 source(paste(path, "/functions/input_touren.r", sep = ""))
 path <- paste(getwd(), "/", sep = "")
-touren <- input_touren(path)
+touren <- input_touren(path)$touren
                   
 # skitouren
 ski <- (touren %>% mutate(skihalbtag = NULL, skihalbtag_fam = NULL, begleitung1 = NULL, 

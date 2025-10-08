@@ -31,20 +31,19 @@ source(paste(path, "/functions/hm_print.r", sep = ""))
 ## input data
 ## =================================================================
 cy <- as.character(read_excel(paste(path, "data/currentyear.xlsx", sep = "")))
-touren <- input_touren(path)
+inp <- input_touren(path)
+touren <- inp$touren
+all <- inp$all
                   
-# Hike
-all <- (touren %>% mutate(skihalbtag = NULL, skihalbtag_fam = NULL, begleitung1 = NULL, begleitung2 = NULL, begleitung3 = NULL, 
-                          begleitung4 = NULL, beg = TRUE, region = NULL, kommentar = NULL) %>% filter(sport == "Hike") %>% arrange(end, time) )
-
-ski <- (all %>% select(start, end, date, time, startend))
-tour <- sort(unique(ski$startend))
+selectsport <- "Hike"
+all <- (all %>% filter(sport == selectsport))
+tour <- sort(unique(touren %>% filter(sport == selectsport) %>% select(end))[, 1])
 ```
 
 # Aktuelles Jahr 
 
 ```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
-t <- (touren %>% filter(sport == "Hike" & year(touren$date) == cy) %>% group_by(date) %>% arrange(desc(time), .by_group = TRUE) %>% slice(1) %>% hm_print())
+t <- (touren %>% filter(sport == selectsport & year(touren$date) == cy) %>% group_by(date) %>% arrange(desc(time), .by_group = TRUE) %>% slice(1) %>% hm_print())
 ```
 
 Anzahl Touren: `r nrow(t)`. 
@@ -61,7 +60,7 @@ pander(t1)
 ## Nach Hoehenmeter
 
 ```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
-thm <- (touren %>% filter(sport == "Hike" & year(touren$date) == cy) %>% group_by(date) %>% arrange(desc(time), .by_group = TRUE) %>% hm_print())
+thm <- (touren %>% filter(sport == selectsport & year(touren$date) == cy) %>% group_by(date) %>% arrange(desc(time), .by_group = TRUE) %>% hm_print())
 t1 <- (thm %>% select(-beg) %>% filter(is.na(hm_diff) == FALSE) %>% arrange(desc(hm_diff))) %>% rowid_to_column("Nr")
 pander(t1)
 ```
@@ -100,7 +99,7 @@ cat(knit(text = unlist(paste(out, collapse = '\n')), quiet = TRUE))
 Dieser Abschnitt sortiert die Touren absteigend nach Hoehenmetern pro Stunde, wobei fuer jede Tour nur die schnellste genommen wird.
 
 ```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
-t <- (touren %>% filter(is.na(hm_h) == FALSE & sport == "Hike"))
+t <- (touren %>% filter(is.na(hm_h) == FALSE & sport == selectsport))
 t <- (t %>% group_by(paste(start, end, sep = "")) %>% arrange(desc(hm_h)) %>% slice(1) %>% ungroup())
 t <- (t %>% hm_print())
 t1 <- (t %>% select(-beg))

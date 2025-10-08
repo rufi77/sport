@@ -35,7 +35,7 @@ s <- as.numeric(substr(cy, 3, 4))
 # delete when in 2024
 #s <- s - 1
 
-touren <- input_touren(path)
+touren <- input_touren(path)$touren
                   
 # skitouren
 all <- (touren %>% mutate(skihalbtag = NULL, skihalbtag_fam = NULL, begleitung1 = NULL, 
