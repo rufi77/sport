@@ -71,7 +71,8 @@ pander(t1)
 Dieser Abschnitt sortiert die Touren absteigend nach Hoehenmetern pro Stunde.
 
 ```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
-t1 <- (t %>% group_by(paste(start, end, sep = "")) %>% filter(is.na(hm_h) == FALSE) %>% arrange(desc(hm_h)) %>% ungroup())
+t1 <- (touren %>% filter(sport == selectsport & year(touren$date) == cy & grepl("Alexander", beg) == FALSE) %>% group_by(date) %>% hm_print())
+t1 <- (t1 %>% group_by(paste(start, end, sep = "")) %>% filter(is.na(hm_h) == FALSE) %>% arrange(desc(hm_h)) %>% ungroup())
 t1 <- (t1 %>% hm_print())
 t1 <- (t1 %>% select(-beg)) %>% rowid_to_column("Nr")
 pander(t1)
