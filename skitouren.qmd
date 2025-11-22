@@ -33,9 +33,6 @@ source(paste(path, "/functions/hm_print.r", sep = ""))
 cy <- as.character(read_excel(paste(path, "data/currentyear.xlsx", sep = "")))
 s <- as.numeric(substr(cy, 3, 4))
 
-# delete when in 2024
-#s <- s - 1
-
 inp <- input_touren(path)
 touren <- inp$touren
 all <- inp$all
@@ -180,7 +177,7 @@ pander(t1)
 # Skimodell
 
 ```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
-all_m <- (all %>% filter(date >= "2012-12-31" & date <= "2025-08-31") %>% arrange(date) %>% group_by(date) %>% slice(1) %>% 
+all_m <- (all %>% filter(date >= "2012-12-31" & date <= "2026-08-31") %>% arrange(date) %>% group_by(date) %>% slice(1) %>% 
             mutate(season = as.character(season)) %>% arrange(season))
 with(all_m, ctable(x = season, y = modell, useNA = "no", 
        prop = "t", totals = TRUE, headings = FALSE, method = "render"))
@@ -195,7 +192,7 @@ kable(sum_mod)
 # Skischuh
 
 ```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
-all_m <- (all %>% filter(date >= "2019-02-14" & date <= "2025-08-31") %>% arrange(date) %>% group_by(date) %>% slice(1) %>% 
+all_m <- (all %>% filter(date >= "2019-02-14" & date <= "2026-08-31") %>% arrange(date) %>% group_by(date) %>% slice(1) %>% 
             mutate(season = as.character(season)) %>% arrange(season))
 with(all_m, ctable(x = season, y = schuh, useNA = "no", 
        prop = "t", totals = TRUE, headings = FALSE, method = "render"))
