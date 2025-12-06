@@ -87,7 +87,7 @@ Total Langlauftage: `r skidays`.
 t <- (touren %>% filter(sport == selectsport & season == paste("Winter ", s - 1, "/", s, sep = "")))
 ```
 
-- Anzahl Tourentage: `r tail(ski_season, 1)$n`. 
+- Anzahl Langlauftage: `r tail(ski_season, 1)$n`. 
 - Total Hoehenmeter: `r disp(tail(ski_season, 1)$Hm, 0)`.
 - Total Kilometer: `r disp(tail(ski_season, 1)$Km, 1)`.
 
@@ -102,7 +102,7 @@ pander(t1)
 # Skimodell
 
 ```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
-all_m <- (all %>% filter(date >= "2023-12-31" & date <= "2025-08-31") %>% arrange(date) %>% group_by(date) %>% slice(1) %>% 
+all_m <- (all %>% filter(date >= "2024-12-31" & date <= "2026-08-31") %>% arrange(date) %>% group_by(date) %>% slice(1) %>% 
             mutate(season = as.character(season)) %>% arrange(season))
 with(all_m, ctable(x = season, y = modell, useNA = "no", 
        prop = "t", totals = TRUE, headings = FALSE, method = "render"))
@@ -117,7 +117,7 @@ kable(sum_mod)
 # Skischuh
 
 ```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
-all_m <- (all %>% filter(date >= "2023-12-31" & date <= "2025-08-31") %>% arrange(date) %>% group_by(date) %>% slice(1) %>% 
+all_m <- (all %>% filter(date >= "2024-12-31" & date <= "2026-08-31") %>% arrange(date) %>% group_by(date) %>% slice(1) %>% 
             mutate(season = as.character(season)) %>% arrange(season))
 with(all_m, ctable(x = season, y = schuh, useNA = "no", 
        prop = "t", totals = TRUE, headings = FALSE, method = "render"))

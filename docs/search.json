@@ -1768,14 +1768,14 @@
     "href": "langlauf.html#tage-auf-langlauf-ski-total",
     "title": "Langlauf",
     "section": "3.1 Tage auf Langlauf-Ski total",
-    "text": "3.1 Tage auf Langlauf-Ski total\nTotal Langlauftage: 2.\n\nAnzahl Tourentage: 2.\nTotal Hoehenmeter: 348.\nTotal Kilometer: 25.4."
+    "text": "3.1 Tage auf Langlauf-Ski total\nTotal Langlauftage: 3.\n\nAnzahl Langlauftage: 3.\nTotal Hoehenmeter: 551.\nTotal Kilometer: 39.4."
   },
   {
     "objectID": "langlauf.html#nach-datum",
     "href": "langlauf.html#nach-datum",
     "title": "Langlauf",
     "section": "3.2 Nach Datum",
-    "text": "3.2 Nach Datum\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\nhm_diff\nkm\n\n\n\n\nGadmen\n\n2025-12-02\n196\n14.07\n\n\nGadmen\n\n2025-12-03\n152\n11.33"
+    "text": "3.2 Nach Datum\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\nhm_diff\nkm\n\n\n\n\nGadmen\n\n2025-12-02\n196\n14.07\n\n\nGadmen\n\n2025-12-03\n152\n11.33\n\n\nGadmen\n\n2025-12-06\n203\n14.02"
   },
   {
     "objectID": "langlauf.html#na-hm",
@@ -1788,7 +1788,7 @@
     "objectID": "langlauf.html#hm",
     "href": "langlauf.html#hm",
     "title": "Langlauf",
-    "section": "6.1 (152 Hm)",
-    "text": "6.1 (152 Hm)\n\nChronologischNach Zeit (overall)Nach Zeit (per Startort)Schnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nGadmen\n\n2025-12-03\n\nNA\n\n\nGadmen\n\n2025-12-02\n\nNA\n\n\nGadmen\n\n2025-02-27\n\nNA\n\n\nBidmi\n\n2025-02-22\n\nNA\n\n\nGadmen\n\n2025-02-19\n\nNA\n\n\nGadmen\n\n2025-02-16\n\nNA\n\n\nGadmen\n\n2025-02-05\n\nNA\n\n\nGadmen\n\n2025-01-21\n\nNA\n\n\nGadmen\n\n2025-01-20\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
+    "section": "6.1 (203 Hm)",
+    "text": "6.1 (203 Hm)\n\nChronologischNach Zeit (overall)Nach Zeit (per Startort)Schnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nGadmen\n\n2025-12-06\n\nNA\n\n\nGadmen\n\n2025-12-03\n\nNA\n\n\nGadmen\n\n2025-12-02\n\nNA\n\n\nGadmen\n\n2025-02-27\n\nNA\n\n\nBidmi\n\n2025-02-22\n\nNA\n\n\nGadmen\n\n2025-02-19\n\nNA\n\n\nGadmen\n\n2025-02-16\n\nNA\n\n\nGadmen\n\n2025-02-05\n\nNA\n\n\nGadmen\n\n2025-01-21\n\nNA\n\n\nGadmen\n\n2025-01-20\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\nNA\nNA\nNA\nNA\nNA\nNA"
   }
 ]
