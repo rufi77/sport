@@ -13,10 +13,16 @@ input_touren <- function(path){
              %>% left_join(hm[, c("ort", "mum")], by = c("end" = "ort")) 
              %>% rename(end_hm = mum) 
              %>% mutate(time_h = as.numeric(hms(time, quiet = TRUE)) / 3600)
-             %>% mutate(startend = paste(start, " --> ", ifelse(is.na(via1), "", paste(via1, " --> ", sep = "")), end, sep = "")))
+             %>% mutate(startend = paste(start, " --> ", ifelse(is.na(via1), "", paste(via1, " --> ", sep = "")), end, sep = ""))
+             %>% mutate(km_h = km_manual / time_h, pace = 1 / km_h * 60))
   
   # add Hm and Hm / h
   touren <- (touren %>% mutate(hm_diff = end_hm - start_hm, hm_h = round(hm_diff / time_h)))
+  
+  # add pace in m:ss
+  touren <- (touren %>% mutate(pace = paste(floor(pace), ":", round((pace - floor(pace)) * 60), "m/km", sep = "")))
+  ind <- touren$pace == "NA:NA"
+  touren[ind, "pace"] <- " "
   
   # overwrite if Hm manually given
   ind <- is.na(touren$hm_manual) == FALSE

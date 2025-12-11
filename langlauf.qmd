@@ -94,7 +94,7 @@ t <- (touren %>% filter(sport == selectsport & season == paste("Winter ", s - 1,
 ## Nach Datum
 
 ```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
-t1 <- (t %>% arrange(date, desc(time)) %>% group_by(date) %>% slice(1) %>% rowid_to_column("Nr") %>% mutate(km = km_manual) %>% select(start, end, date, hm_diff, km))
+t1 <- (t %>% arrange(date, desc(time)) %>% group_by(date) %>% slice(1) %>% rowid_to_column("Nr") %>% mutate(km = km_manual) %>% mutate(km_h = round(km_h, 1)) %>% select(start, end, date, hm_diff, km, km_h, pace))
 pander(t1)
 ```
 
