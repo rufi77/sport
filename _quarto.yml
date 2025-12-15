@@ -13,6 +13,7 @@ project:
     - zusammenfassungen.qmd
     - saisonstart.qmd
     - travel.qmd
+    - summary_winter.qmd
     
 website:
   title: "Sport Kaspar"
@@ -40,6 +41,8 @@ website:
       href: zusammenfassungen.html
     - text: "Saisonlänge"
       href: saisonstart.html
+    - text: "Zusammenfassung Winter"
+      href: summary_winter.html
     right:
       - icon: github
         href: https://github.com/numbersman77/litreview

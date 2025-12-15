@@ -47,6 +47,8 @@ ski_season <- (all %>% filter(date >= "2013-12-31") %>% arrange(date, desc(time)
                  arrange(season) %>% group_by(season) %>% 
                  summarise(n = sum(is.na(unique(date)) == FALSE), Hm = sum(hm_diff, na.rm = TRUE), Km = sum(km_manual, na.rm = TRUE))) %>% 
                  mutate(Hm_tour = round(Hm / n)) %>% arrange(season)
+
+save(ski_season, file = "langlauf")
 ```
 
 # Anzahl Touren pro Saison
