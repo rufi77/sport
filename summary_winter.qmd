@@ -28,7 +28,31 @@ langlauf <- ski_season
 load(file = "skitour")
 skitour <- ski_season
 
+source(paste(path, "/functions/input_touren.r", sep = ""))
+inp <- input_touren(path)
+touren <- inp$touren
+
+cy <- as.character(read_excel(paste(path, "data/currentyear.xlsx", sep = "")))
+s <- as.numeric(substr(cy, 3, 4))
+selectsport <- "Skitour"
+
+# days on ski (double counting not possible)
+f4 <- with(touren, data.frame(date, skihalbtag, skihalbtag_fam, skitag_fam, tour = as.numeric(sport == selectsport), season))
+f5 <- f4[f4$season == levels(with(touren, season))[s], ]
+f5$any <- with(f5, pmax(skihalbtag, skihalbtag_fam, skitag_fam, na.rm = TRUE))
+f5_dat <- f5[f5$any == 1, "date"]
+skidays <- unique(f5_dat)
+skidays <- skidays[is.na(skidays)]
+skidays <- length(skidays)
 ```
 
 
+# Wintersporttage
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t1 <- data.frame(rbind(c("Skitour", tail(skitour$n, 1)), c("Alpinski", skidays), c("Langlauf", tail(langlauf$n, 1))))
+t1 <- rbind(t1, c("Total", sum(as.numeric(t1[, 2]))))
+colnames(t1) <- c("Sportart", "Anzahl Tage")
+pander(t1)
+```
 
