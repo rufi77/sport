@@ -42,7 +42,7 @@ f5 <- f4[f4$season == levels(with(touren, season))[s], ]
 f5$any <- with(f5, pmax(skihalbtag, skihalbtag_fam, skitag_fam, na.rm = TRUE))
 f5_dat <- f5[f5$any == 1, "date"]
 skidays <- unique(f5_dat)
-skidays <- skidays[is.na(skidays)]
+skidays <- skidays[is.na(skidays) == FALSE]
 skidays <- length(skidays)
 ```
 

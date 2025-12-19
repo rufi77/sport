@@ -1,31 +1,38 @@
 [
   {
+    "objectID": "summary_winter.html",
+    "href": "summary_winter.html",
+    "title": "Zusammenfassung Wintersaison",
+    "section": "",
+    "text": "1 Wintersporttage\n\n\n\n\n\n\n\n\nSportart\nAnzahl Tage\n\n\n\n\nSkitour\n6\n\n\nAlpinski\n3\n\n\nLanglauf\n7\n\n\nTotal\n16"
+  },
+  {
     "objectID": "langlauf.html#tage-auf-langlauf-ski-total",
     "href": "langlauf.html#tage-auf-langlauf-ski-total",
     "title": "Langlauf",
     "section": "3.1 Tage auf Langlauf-Ski total",
-    "text": "3.1 Tage auf Langlauf-Ski total\nTotal Langlauftage: 6.\n\nAnzahl Langlauftage: 6.\nTotal Hoehenmeter: 1152.\nTotal Kilometer: 82.6."
+    "text": "3.1 Tage auf Langlauf-Ski total\nTotal Langlauftage: 7.\n\nAnzahl Langlauftage: 7.\nTotal Hoehenmeter: 1152.\nTotal Kilometer: 93.6."
   },
   {
     "objectID": "langlauf.html#nach-datum",
     "href": "langlauf.html#nach-datum",
     "title": "Langlauf",
     "section": "3.2 Nach Datum",
-    "text": "3.2 Nach Datum\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\nhm_diff\nkm\nkm_h\npace\n\n\n\n\nGadmen\n\n2025-12-02\n196\n14.07\nNA\nNA:NAm/km\n\n\nGadmen\n\n2025-12-03\n152\n11.33\nNA\nNA:NAm/km\n\n\nGadmen\n\n2025-12-06\n203\n14.02\nNA\nNA:NAm/km\n\n\nGadmen\n\n2025-12-10\n180\n12.8\n16.3\n3:41m/km\n\n\nGadmen\n\n2025-12-11\n224\n15.47\n16.2\n3:43m/km\n\n\nGadmen\n\n2025-12-15\n197\n14.86\n16.6\n3:37m/km"
+    "text": "3.2 Nach Datum\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\nhm_diff\nkm\nkm_h\npace\n\n\n\n\nGadmen\n\n2025-12-02\n196\n14.07\nNA\nNA:NAm/km\n\n\nGadmen\n\n2025-12-03\n152\n11.33\nNA\nNA:NAm/km\n\n\nGadmen\n\n2025-12-06\n203\n14.02\nNA\nNA:NAm/km\n\n\nGadmen\n\n2025-12-10\n180\n12.8\n16.3\n3:41m/km\n\n\nGadmen\n\n2025-12-11\n224\n15.47\n16.2\n3:43m/km\n\n\nGadmen\n\n2025-12-15\n197\n14.86\n16.6\n3:37m/km\n\n\nGadmen\n\n2025-12-19\nNA\n11\n14.7\n4:5m/km"
   },
   {
-    "objectID": "langlauf.html#hm",
-    "href": "langlauf.html#hm",
+    "objectID": "langlauf.html#na-hm",
+    "href": "langlauf.html#na-hm",
     "title": "Langlauf",
-    "section": "6.1 (197 Hm)",
-    "text": "6.1 (197 Hm)\n\nChronologischNach Zeit (overall)Nach Zeit (per Startort)Schnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nGadmen\n\n2025-12-15\n00:53:39.5\n220\n\n\nGadmen\n\n2025-12-11\n00:57:25.5\n234\n\n\nGadmen\n\n2025-12-10\n00:47:08.4\n229\n\n\nGadmen\n\n2025-12-06\n\nNA\n\n\nGadmen\n\n2025-12-03\n\nNA\n\n\nGadmen\n\n2025-12-02\n\nNA\n\n\nGadmen\n\n2025-02-27\n\nNA\n\n\nBidmi\n\n2025-02-22\n\nNA\n\n\nGadmen\n\n2025-02-19\n\nNA\n\n\nGadmen\n\n2025-02-16\n\nNA\n\n\nGadmen\n\n2025-02-05\n\nNA\n\n\nGadmen\n\n2025-01-21\n\nNA\n\n\nGadmen\n\n2025-01-20\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nGadmen\n\n2025-12-10\n00:47:08.4\n229\n\n\n\n2\nGadmen\n\n2025-12-15\n00:53:39.5\n220\n6m31s\n\n\n3\nGadmen\n\n2025-12-11\n00:57:25.5\n234\n10m17s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nGadmen\n\n2025-12-10\n00:47:08.4\n229\n\n\n\n2\nGadmen\n\n2025-12-15\n00:53:39.5\n220\n6m31s\n\n\n3\nGadmen\n\n2025-12-11\n00:57:25.5\n234\n10m17s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2025\nGadmen\n\n2025-12-10\n00:47:08.4\n229"
+    "section": "6.1 (NA Hm)",
+    "text": "6.1 (NA Hm)\n\nChronologischNach Zeit (overall)Nach Zeit (per Startort)Schnellste Zeit pro Jahr\n\n\n\n\n\n\n\n\n\n\n\n\n\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\nGadmen\n\n2025-12-19\n00:45:00.0\nNA\n\n\nGadmen\n\n2025-12-15\n00:53:39.5\n220\n\n\nGadmen\n\n2025-12-11\n00:57:25.5\n234\n\n\nGadmen\n\n2025-12-10\n00:47:08.4\n229\n\n\nGadmen\n\n2025-12-06\n\nNA\n\n\nGadmen\n\n2025-12-03\n\nNA\n\n\nGadmen\n\n2025-12-02\n\nNA\n\n\nGadmen\n\n2025-02-27\n\nNA\n\n\nBidmi\n\n2025-02-22\n\nNA\n\n\nGadmen\n\n2025-02-19\n\nNA\n\n\nGadmen\n\n2025-02-16\n\nNA\n\n\nGadmen\n\n2025-02-05\n\nNA\n\n\nGadmen\n\n2025-01-21\n\nNA\n\n\nGadmen\n\n2025-01-20\n\nNA\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nGadmen\n\n2025-12-19\n00:45:00.0\nNA\n\n\n\n2\nGadmen\n\n2025-12-10\n00:47:08.4\n229\n2m8s\n\n\n3\nGadmen\n\n2025-12-15\n00:53:39.5\n220\n8m40s\n\n\n4\nGadmen\n\n2025-12-11\n00:57:25.5\n234\n12m25s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\ntime\nhm_h\nRueckst\n\n\n\n\n1\nGadmen\n\n2025-12-19\n00:45:00.0\nNA\n\n\n\n2\nGadmen\n\n2025-12-10\n00:47:08.4\n229\n2m8s\n\n\n3\nGadmen\n\n2025-12-15\n00:53:39.5\n220\n8m40s\n\n\n4\nGadmen\n\n2025-12-11\n00:57:25.5\n234\n12m25s\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nyear\nstart\nend\ndate\ntime\nhm_h\n\n\n\n\n2025\nGadmen\n\n2025-12-19\n00:45:00.0\nNA"
   },
   {
     "objectID": "skitouren.html#tage-auf-ski-total",
     "href": "skitouren.html#tage-auf-ski-total",
     "title": "Skitouren",
     "section": "4.1 Tage auf Ski total",
-    "text": "4.1 Tage auf Ski total\nTotal Skitage: 6.\n\nAnzahl Tourentage: 6.\nTotal Hoehenmeter: 5868.\n\n\nNach DatumNach HoehenmeterNach Hoehenmeter pro StundeMit Papa, nach Hoehenmeter pro StundeMit Alexander, nach Hoehenmeter pro StundeAlleine, nach Hoehenmeter pro Stunde\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\nhm_diff\ntime\nhm_h\n\n\n\n\n1\nReuti Station\nPlanplatten\n2025-11-22\n1180\n02:27:56.0\n479\n\n\n2\nGschwandtenmaad\nChrüterenboden P\n2025-11-27\n610\n01:45:00.0\n349\n\n\n3\nGschwandtenmaad\nTschingel\n2025-11-28\n1024\n02:18:08.0\n445\n\n\n4\nBoozisteinen\nWandelhorn\n2025-11-29\n1162\n01:56:26.0\n599\n\n\n5\nSchwarzwaldalp\nBandspitz\n2025-12-04\n946\n01:18:28.0\n723\n\n\n6\nSchwarzwaldalp\nBandspitz\n2025-12-12\n946\n01:26:58.0\n653\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\nhm_diff\ntime\nhm_h\n\n\n\n\n1\nReuti Station\nPlanplatten\n2025-11-22\n1180\n02:27:56.0\n479\n\n\n2\nBoozisteinen\nWandelhorn\n2025-11-29\n1162\n01:56:26.0\n599\n\n\n3\nGschwandtenmaad\nTschingel\n2025-11-28\n1024\n02:18:08.0\n445\n\n\n4\nSchwarzwaldalp\nBandspitz\n2025-12-04\n946\n01:18:28.0\n723\n\n\n5\nSchwarzwaldalp\nBandspitz\n2025-12-12\n946\n01:26:58.0\n653\n\n\n6\nGschwandtenmaad\nChrüterenboden P\n2025-11-27\n610\n01:45:00.0\n349\n\n\n\n\n\n\nDieser Abschnitt sortiert die Touren absteigend nach Hoehenmetern pro Stunde, wobei fuer jede Tour nur die schnellste genommen wird.\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\nhm_diff\ntime\nhm_h\n\n\n\n\n1\nSchwarzwaldalp\nBandspitz\n2025-12-04\n946\n01:18:28.0\n723\n\n\n2\nSchwarzwaldalp\nBandspitz\n2025-12-12\n946\n01:26:58.0\n653\n\n\n3\nBoozisteinen\nWandelhorn\n2025-11-29\n1162\n01:56:26.0\n599\n\n\n4\nReuti Station\nPlanplatten\n2025-11-22\n1180\n02:27:56.0\n479\n\n\n5\nGschwandtenmaad\nTschingel\n2025-11-28\n1024\n02:18:08.0\n445\n\n\n6\nGschwandtenmaad\nChrüterenboden P\n2025-11-27\n610\n01:45:00.0\n349\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\nhm_diff\ntime\nhm_h\n\n\n\n\n1\nReuti Station\nPlanplatten\n2025-11-22\n1180\n02:27:56.0\n479\n\n\n2\nGschwandtenmaad\nTschingel\n2025-11-28\n1024\n02:18:08.0\n445\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\nhm_diff\ntime\nhm_h\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\nhm_diff\ntime\nhm_h\n\n\n\n\n1\nSchwarzwaldalp\nBandspitz\n2025-12-04\n946\n01:18:28.0\n723\n\n\n2\nSchwarzwaldalp\nBandspitz\n2025-12-12\n946\n01:26:58.0\n653\n\n\n3\nBoozisteinen\nWandelhorn\n2025-11-29\n1162\n01:56:26.0\n599\n\n\n4\nGschwandtenmaad\nChrüterenboden P\n2025-11-27\n610\n01:45:00.0\n349"
+    "text": "4.1 Tage auf Ski total\nTotal Skitage: 9.\n\nAnzahl Tourentage: 6.\nTotal Hoehenmeter: 5868.\n\n\nNach DatumNach HoehenmeterNach Hoehenmeter pro StundeMit Papa, nach Hoehenmeter pro StundeMit Alexander, nach Hoehenmeter pro StundeAlleine, nach Hoehenmeter pro Stunde\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\nhm_diff\ntime\nhm_h\n\n\n\n\n1\nReuti Station\nPlanplatten\n2025-11-22\n1180\n02:27:56.0\n479\n\n\n2\nGschwandtenmaad\nChrüterenboden P\n2025-11-27\n610\n01:45:00.0\n349\n\n\n3\nGschwandtenmaad\nTschingel\n2025-11-28\n1024\n02:18:08.0\n445\n\n\n4\nBoozisteinen\nWandelhorn\n2025-11-29\n1162\n01:56:26.0\n599\n\n\n5\nSchwarzwaldalp\nBandspitz\n2025-12-04\n946\n01:18:28.0\n723\n\n\n6\nSchwarzwaldalp\nBandspitz\n2025-12-12\n946\n01:26:58.0\n653\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\nhm_diff\ntime\nhm_h\n\n\n\n\n1\nReuti Station\nPlanplatten\n2025-11-22\n1180\n02:27:56.0\n479\n\n\n2\nBoozisteinen\nWandelhorn\n2025-11-29\n1162\n01:56:26.0\n599\n\n\n3\nGschwandtenmaad\nTschingel\n2025-11-28\n1024\n02:18:08.0\n445\n\n\n4\nSchwarzwaldalp\nBandspitz\n2025-12-04\n946\n01:18:28.0\n723\n\n\n5\nSchwarzwaldalp\nBandspitz\n2025-12-12\n946\n01:26:58.0\n653\n\n\n6\nGschwandtenmaad\nChrüterenboden P\n2025-11-27\n610\n01:45:00.0\n349\n\n\n\n\n\n\nDieser Abschnitt sortiert die Touren absteigend nach Hoehenmetern pro Stunde, wobei fuer jede Tour nur die schnellste genommen wird.\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\nhm_diff\ntime\nhm_h\n\n\n\n\n1\nSchwarzwaldalp\nBandspitz\n2025-12-04\n946\n01:18:28.0\n723\n\n\n2\nSchwarzwaldalp\nBandspitz\n2025-12-12\n946\n01:26:58.0\n653\n\n\n3\nBoozisteinen\nWandelhorn\n2025-11-29\n1162\n01:56:26.0\n599\n\n\n4\nReuti Station\nPlanplatten\n2025-11-22\n1180\n02:27:56.0\n479\n\n\n5\nGschwandtenmaad\nTschingel\n2025-11-28\n1024\n02:18:08.0\n445\n\n\n6\nGschwandtenmaad\nChrüterenboden P\n2025-11-27\n610\n01:45:00.0\n349\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\nhm_diff\ntime\nhm_h\n\n\n\n\n1\nReuti Station\nPlanplatten\n2025-11-22\n1180\n02:27:56.0\n479\n\n\n2\nGschwandtenmaad\nTschingel\n2025-11-28\n1024\n02:18:08.0\n445\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\nhm_diff\ntime\nhm_h\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNr\nstart\nend\ndate\nhm_diff\ntime\nhm_h\n\n\n\n\n1\nSchwarzwaldalp\nBandspitz\n2025-12-04\n946\n01:18:28.0\n723\n\n\n2\nSchwarzwaldalp\nBandspitz\n2025-12-12\n946\n01:26:58.0\n653\n\n\n3\nBoozisteinen\nWandelhorn\n2025-11-29\n1162\n01:56:26.0\n599\n\n\n4\nGschwandtenmaad\nChrüterenboden P\n2025-11-27\n610\n01:45:00.0\n349"
   },
   {
     "objectID": "skitouren.html#aerlen-s-1157-hm",
@@ -1783,12 +1790,5 @@
     "title": "Tage im Ausland",
     "section": "",
     "text": "Pro Jahr und LandPro Jahr"
-  },
-  {
-    "objectID": "summary_winter.html",
-    "href": "summary_winter.html",
-    "title": "Zusammenfassung Wintersaison",
-    "section": "",
-    "text": "1 Wintersporttage\n\n\n\n\n\n\n\n\nSportart\nAnzahl Tage\n\n\n\n\nSkitour\n6\n\n\nAlpinski\n1\n\n\nLanglauf\n6\n\n\nTotal\n13"
   }
 ]
