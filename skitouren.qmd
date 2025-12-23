@@ -88,37 +88,6 @@ pander(ski_season)
 
 # Aktuelle Saison {.tabset .tabset-fade .tabset-pills}
 
-## Tage auf Ski total
-
-```{r echo = FALSE, message = FALSE, warning = FALSE, results = "asis", eval = TRUE}
-# count skiing days
-
-# f1 <- table(with(touren, cbind(skihalbtag, weekdays(date))[as.numeric(season) == s & is.na(skihalbtag) == FALSE, 2]))
-# f2 <- table(with(touren, cbind(skihalbtag_fam, weekdays(date))[as.numeric(season) == s & is.na(skihalbtag_fam) == FALSE, 2]))
-# f3 <- table(with(touren, cbind(sport == selectsport, weekdays(date))[as.numeric(season) == s & (sport == selectsport), 2]))
-# 
-# m1 <- data.frame(matrix(NA, nrow = 7, ncol = 4))
-# colnames(m1) <- c("Skihalbtag", "Skihalbtag Familie", selectsport, "Wochentag")
-# m1$Wochentag <- c("Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag")
-# m1[match(names(f1), m1$Wochentag), 1] <- f1
-# m1[match(names(f2), m1$Wochentag), 2] <- f2
-# m1[match(names(f3), m1$Wochentag), 3] <- f3
-# rownames(m1) <- m1$Wochentag
-# m1 <- m1[, -4]
-# m1[is.na(m1)] <- ""
-# m1 <- t(m1)
-# pander(m1)
-
-# days on ski (double counting not possible)
-f4 <- with(touren, data.frame(date, skihalbtag, skihalbtag_fam, skitag_fam, tour = as.numeric(sport == selectsport), season))
-f5 <- f4[f4$season == levels(with(touren, season))[s], ]
-f5$any <- with(f5, pmax(skihalbtag, skihalbtag_fam, skitag_fam, tour, na.rm = TRUE))
-f5_dat <- f5[f5$any == 1, "date"]
-skidays <- length(unique(f5_dat))
-```
-
-Total Skitage: `r skidays`.
-
 ```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
 t <- (touren %>% filter(sport == selectsport & season == paste("Winter ", s - 1, "/", s, sep = "")) %>% hm_print())
 ```

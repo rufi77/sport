@@ -13,6 +13,7 @@ project:
     - zusammenfassungen.qmd
     - saisonstart.qmd
     - travel.qmd
+    - skifahren.qmd
     - summary_winter.qmd
     
 website:
@@ -21,7 +22,7 @@ website:
     left:
     - text: "Wettkaempfe"
       href: wettkaempfe.html
-    - text: "Ausdauer"
+    - text: "Sportarten"
       menu:
         - text: "Bike"
           href: bike.html
@@ -33,16 +34,18 @@ website:
           href: bikerun.html
         - text: "Skitouren"
           href: skitouren.html
+        - text: "Skifahren"
+          href: skifahren.html
         - text: "Langlauf"
           href: langlauf.html
-    - text: "Kieser"
-      href: kieser.html
-    - text: "Zusammenfassungen"
+        - text: "Kieser"
+          href: kieser.html
+    - text: "Zusammenfassung Winter"
+      href: summary_winter.html
+    - text: "Zusammenfassung über die Jahre"
       href: zusammenfassungen.html
     - text: "Saisonlänge"
       href: saisonstart.html
-    - text: "Zusammenfassung Winter"
-      href: summary_winter.html
     right:
       - icon: github
         href: https://github.com/numbersman77/litreview

@@ -1,0 +1,92 @@
+---
+title: "Skifahren"
+author: 
+- name: Kaspar Rufibach
+  affiliation: Meiringen
+date: "Letzte Aenderung: `r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  rmarkdown::html_document:
+    highlight: pygments
+    number_sections: yes
+    self_contained: yes
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+---
+
+```{r setup, include=FALSE}
+## load packages
+packs.html <- c("knitr", "pander", "reporttools", "dplyr", "lubridate", "readxl", "tibble", "summarytools", "ggplot2")
+for (i in 1:length(packs.html)){library(packs.html[i], character.only = TRUE)}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+path <- "C:/rufibach/01_personal/05_Sport/40_reporting/"
+path <- paste(getwd(), "/", sep = "")
+
+source(paste(path, "/functions/input_touren.r", sep = ""))
+source(paste(path, "/functions/hm_print.r", sep = ""))
+
+## =================================================================
+## input data
+## =================================================================
+cy <- as.character(read_excel(paste(path, "data/currentyear.xlsx", sep = "")))
+s <- as.numeric(substr(cy, 3, 4))
+
+inp <- input_touren(path)
+touren <- inp$touren
+all <- inp$all
+                  
+selectsport <- "Skifahren"
+all <- (all %>% filter(sport == selectsport))
+tour <- sort(unique(touren %>% filter(sport == selectsport) %>% select(end))[, 1])
+
+ski_season <- (all %>% filter(date >= "2024-12-31") %>% arrange(date, desc(time)) %>% group_by(date) %>% slice(1) %>%
+                 arrange(season) %>% group_by(season) %>% 
+                 summarise(n = sum(is.na(unique(date)) == FALSE), Hm = sum(hm_diff, na.rm = TRUE))) %>% 
+                 mutate(Hm_tour = round(Hm / n)) %>% arrange(season)
+```
+
+# Skifahren pro Saison: Anzahl
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 5, fig.height = 3}
+ggplot(data = ski_season, aes(x = season, y = n, group = 1)) +
+geom_line(color = "red") +
+geom_point() +
+theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) +
+labs(x = "Saison", y = "Anzahl Skitage")
+```
+
+# Skifahren pro Saison: Höhenmeter
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 5, fig.height = 3}
+ggplot(data = ski_season, aes(x = season, y = Hm, group = 1)) +
+geom_line(color = "red") +
+geom_point() +
+theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) +
+labs(x = "Saison", y = "Höhenmeter")
+```
+
+# Höhenmeter pro Skitag pro Saison
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+pander(ski_season)
+```
+
+# Aktuelle Saison {.tabset .tabset-fade .tabset-pills}
+
+## Nach Datum
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t <- (touren %>% filter(sport == selectsport & season == paste("Winter ", s - 1, "/", s, sep = "")) %>% hm_print())
+t1 <- (t %>% arrange(date, desc(time)) %>% group_by(date) %>% slice(1) %>% rowid_to_column("Nr") %>% select(-beg))
+pander(t1)
+```
+
+## Nach Hoehenmeter
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t1 <- (t %>% arrange(desc(hm_diff)) %>% select(-beg) %>% rowid_to_column("Nr"))
+pander(t1)
+```
+
