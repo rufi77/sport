@@ -20,7 +20,7 @@ input_touren <- function(path){
   touren <- (touren %>% mutate(hm_diff = end_hm - start_hm, hm_h = round(hm_diff / time_h)))
   
   # add pace in m:ss
-  touren <- (touren %>% mutate(pace = paste(floor(pace), ":", round((pace - floor(pace)) * 60), "m/km", sep = "")))
+  touren <- (touren %>% mutate(sek = round((pace - floor(pace)) * 60)) %>% mutate(pace = paste(floor(pace), ":", ifelse(sek <= 9, "0", ""), sek, "m/km", sep = "")))
   ind <- touren$pace == "NA:NA"
   touren[ind, "pace"] <- " "
   
@@ -29,6 +29,8 @@ input_touren <- function(path){
   touren[ind, "hm_diff"] <- touren[ind, "hm_manual"]
   touren[ind, "hm_h"] <- round(touren[ind, "hm_diff"] / touren[ind, "time_h"])
   #touren <- (touren %>% mutate(hm_diff = ifelse(ind, touren$hm_manual, hm_diff), hm_h = round(hm_diff / time_h)))
+  
+  touren <- touren %>% mutate(pace = replace(pace, pace == "NA:NANAm/km", ""), km_h = replace(km_h, is.na(km_h), NA), hm_diff = replace(hm_diff, is.na(hm_diff), NA))
   
   # add season
   cuts <- parse_date_time(x = "2000-07-31", orders = "ymd") + years(x = seq.int(from = 0, to = 50, by = 1))
