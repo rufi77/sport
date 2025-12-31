@@ -108,7 +108,7 @@ ys <- km[, 3:ncol(km)]
 plot(0, 0, type = "n", xlim = range(xs), ylim = c(0, max(ys)), xlab = "", ylab = "Kilometer", 
      main = "Kilometer")
 for (i in 1:nrow(km)){lines(xs, ys[i, ], type = "b", col = i + 1, lwd = 2)}
-legend("bottomleft", legend = km$Sport, lty = 1, col = 2:(nrow(km) + 1), bty = "n", lwd = 2)
+legend("topleft", legend = km$Sport, lty = 1, col = 2:(nrow(km) + 1), bty = "n", lwd = 2)
 ```
 
 ## Aufstieg
@@ -136,7 +136,8 @@ mtext(text = "Aufstieg", side = 2, line = 4, adj = 0.5)
 ```
 
 ```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 5}
-df <- rbind(cbind(xs, t(ys)[, 1]), cbind(xs, t(ys)[, 2]), cbind(xs, t(ys)[, 3]), cbind(xs, t(ys)[, 4]))
+df <- cbind(xs, t(ys)[, 1])
+for (i in 2:nrow(ys)){df <- rbind(df, cbind(xs, t(ys)[, i]))}
 df <- data.frame(df, rep(as.character(km[, "Sport"]), each = length(xs)))
 colnames(df) <- c("Jahr", "Hm", "Disziplin")
 ggplot(df, aes(x = Jahr, y = Hm, fill = Disziplin)) + geom_area(position = 'stack')
@@ -144,12 +145,12 @@ ggplot(df, aes(x = Jahr, y = Hm, fill = Disziplin)) + geom_area(position = 'stac
 
 ```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 5}
 par(mfrow = c(1, 1), mar = c(6, 5, 3, 1), las = 2)
-plot(0, 0, type = "n", xlim = c(1, 12), ylim = c(0, 20000), xlab = "", ylab = "", main = "Aufstieg", xaxt = "n")
+plot(0, 0, type = "n", xlim = c(1, 12), ylim = c(0, 25000), xlab = "", ylab = "", main = "Aufstieg", xaxt = "n")
 for (i in 2:ncol(ascent)){lines(1:12, ascent[, i], type = "b", col = i, lwd = 2)}
 axis(1, at = 1:12, labels = ascent[, "month"])
 par(las = 0)
 mtext(text = "Aufstieg (Hm)", side = 2, line = 4, adj = 0.5)
-legend("bottomleft", legend = paste(colnames(ascent)[-1], ": ", apply(ascent[, -1], 2, sum, na.rm = TRUE), sep = ""), lty = 1, col = 2:ncol(ascent), bty = "n", lwd = 2)
+legend("topleft", legend = paste(colnames(ascent)[-1], ": ", apply(ascent[, -1], 2, sum, na.rm = TRUE), sep = ""), lty = 1, col = 2:ncol(ascent), bty = "n", lwd = 2)
 ```
 
 ```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 5}
