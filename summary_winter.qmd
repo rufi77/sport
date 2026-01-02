@@ -31,19 +31,12 @@ skitour <- ski_season
 source(paste(path, "/functions/input_touren.r", sep = ""))
 inp <- input_touren(path)
 touren <- inp$touren
-
-cy <- as.character(read_excel(paste(path, "data/currentyear.xlsx", sep = "")))
-s <- as.numeric(substr(cy, 3, 4))
-selectsport <- "Skitour"
+all <- inp$all
 
 # days on ski (double counting not possible)
-f4 <- with(touren, data.frame(date, skihalbtag, skihalbtag_fam, skitag_fam, tour = as.numeric(sport == selectsport), season))
-f5 <- f4[f4$season == levels(with(touren, season))[s], ]
-f5$any <- with(f5, pmax(skihalbtag, skihalbtag_fam, skitag_fam, na.rm = TRUE))
-f5_dat <- f5[f5$any == 1, "date"]
-skidays <- unique(f5_dat)
-skidays <- skidays[is.na(skidays) == FALSE]
-skidays <- length(skidays)
+ski_season <- (all %>% filter(sport == "Skifahren", date >= "2024-12-31") %>% arrange(date, desc(time)) %>% group_by(date) %>% slice(1) %>%
+                 arrange(season) %>% group_by(season) %>% summarise(n = sum(is.na(unique(date)) == FALSE)) %>% arrange(season))
+skidays <- tail(ski_season$n, 1)
 ```
 
 
