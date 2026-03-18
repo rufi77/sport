@@ -1,0 +1,47 @@
+---
+title: "Mobility"
+author: 
+- name: Kaspar Rufibach
+  affiliation: Meiringen
+date: "Letzte Aenderung: `r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  rmarkdown::html_document:
+    highlight: pygments
+    number_sections: yes
+    self_contained: yes
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+---
+
+```{r setup, include=FALSE}
+packs.html <- c("knitr", "pander", "dplyr", "lubridate")
+for (i in 1:length(packs.html)){library(packs.html[i], character.only = TRUE)}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+path <- "C:/rufibach/01_personal/05_Sport/40_reporting/"
+path <- paste(getwd(), "/", sep = "")
+
+mob1 <- read.csv(paste(path, "data/mobility2023_2025.csv", sep = ""), sep = ";")
+mob2 <- read.csv(paste(path, "data/export.csv", sep = ""), sep = ";")
+mob2 <- (mob2 %>% mutate(year = substr(Reservation.von, 7, 10)) %>% filter(year >= 2026) %>% select(-year))
+
+mob3 <- (rbind(mob1, mob2) %>% mutate(year = substr(Reservation.von, 7, 10), Km = Kilometer.total, Franken = Kosten.Total) %>% filter(year >= 2023))
+
+total <- aggregate(cbind(Km, Franken) ~ year, data = mob3, FUN = sum)
+year_frac <- as.numeric(today() - as.Date(paste(substr(today(), 1, 4), "-01-01", sep = ""), origin = "1899-12-30")) / 365.25
+total[nrow(total), 2:3] <- total[nrow(total), 2:3] / year_frac 
+```
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 7}
+par(mfrow = c(1, 1), las = 1, mar = c(4.5, 4.5, 4.5, 1))
+
+xs <- seq(2020, 2040, by = 1)
+with(total, plot(year, Km, type = "b", col = 2, lwd = 3, xlab = "Jahr", ylab = "Kilometer", main = "Kilometer", xaxt = "n", ylim = c(0, 1300)))
+axis(1, at = xs, labels = xs)
+with(total, plot(year, Franken, type = "b", col = 2, lwd = 3, xlab = "Jahr", ylab = "Franken", main = "Franken", xaxt = "n", ylim = c(0, 1700)))
+axis(1, at = xs, labels = xs)
+with(total, plot(year, Franken / Km, type = "b", col = 2, lwd = 3, xlab = "Jahr", ylab = "Franken pro Kilometer", main = "Franken pro Kilometer", xaxt = "n", ylim = c(0, 2)))
+axis(1, at = xs, labels = xs)
+```

@@ -15,6 +15,7 @@ project:
     - travel.qmd
     - skifahren.qmd
     - summary_winter.qmd
+    - mobility.qmd
     
 website:
   title: "Sport Kaspar"
@@ -46,6 +47,12 @@ website:
       href: zusammenfassungen.html
     - text: "Saisonlänge"
       href: saisonstart.html
+    - text: "Anderes"
+      menu:
+        - text: "Travel"
+          href: travel.html
+        - text: "Mobility"
+          href: mobility.html
     right:
       - icon: github
         href: https://github.com/numbersman77/litreview

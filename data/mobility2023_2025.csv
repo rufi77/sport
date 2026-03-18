@@ -1,0 +1,80 @@
+Nummer;Reservationsnummer;Reservation von;Reservation bis;Standort;Ziel-Standort;Kategorie;Fahrzeugnummer;Kilometer total;Kosten Total;Reservationsbemerkung;Kostenstelle;Selbstbehalt 300
+13;35157034;31.12.2025 10:30;31.12.2025 14:00;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;43;38.97;;;0
+14;35159727;29.12.2025 07:30;29.12.2025 10:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;37;33.5;;;0
+15;35151958;27.12.2025 07:30;27.12.2025 10:00;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;38;41.3;;;0
+16;35111618;21.12.2025 07:00;21.12.2025 10:00;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;38;44.3;;;0
+17;35119379;19.12.2025 17:30;19.12.2025 21:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;37;35.96;;;0
+18;35093010;16.12.2025 07:30;16.12.2025 12:00;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;0;38.07;;;0
+19;35093009;15.12.2025 07:30;15.12.2025 12:00;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;37;38.42;;;0
+20;35088553;12.12.2025 07:00;12.12.2025 11:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;29;32.15;;;0
+21;35088798;11.12.2025 07:30;11.12.2025 10:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;37;34.73;;;0
+22;35084643;10.12.2025 07:00;10.12.2025 09:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;37;32.27;;;0
+23;35071223;06.12.2025 20:30;06.12.2025 21:30;Bremgarten (AG) West;;Economy;41139;4;5.5;;;0
+24;35047027;04.12.2025 07:30;04.12.2025 12:00;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;29;32.77;;;0
+25;35013735;27.11.2025 07:00;27.11.2025 11:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;22;27.21;;;0
+26;34762302;25.09.2025 09:00;25.09.2025 10:00;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;5;7.25;;;0
+27;34748579;23.09.2025 08:30;23.09.2025 13:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;21;32.85;;;0
+28;34559701;10.08.2025 00:00;10.08.2025 10:00;Lungern Bahnhof;;Economy Electro;36958;30;39.05;;;0
+29;34562846;06.08.2025 13:00;06.08.2025 14:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;17;23.45;;;0
+30;34435879;17.07.2025 12:30;17.07.2025 14:00;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;24;30.15;;;0
+31;34435878;09.07.2025 12:00;09.07.2025 16:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;54;60.9;;;0
+32;34042852;04.04.2025 06:00;04.04.2025 07:00;Lungern Bahnhof;;Economy Electro;36958;0;10.62;;;0
+33;34033418;28.03.2025 15:30;28.03.2025 16:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;4;7.15;;;0
+34;33975591;17.03.2025 07:00;17.03.2025 12:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;29;41.9;;;0
+35;33979929;15.03.2025 10:30;15.03.2025 13:30;Sarnen Bahnhof;;Combi;23094;34;39.4;;;0
+36;33902358;27.02.2025 19:30;27.02.2025 21:00;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;15;17.25;;;0
+37;33880426;21.02.2025 06:30;21.02.2025 12:00;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;38;48.8;;;0
+38;33874919;19.02.2025 18:00;19.02.2025 21:00;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;37;41.95;;;0
+39;33869257;15.02.2025 14:30;15.02.2025 16:00;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;3;7.05;;;0
+40;33843801;10.02.2025 08:00;10.02.2025 09:00;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;0;9;;;0
+41;33810463;05.02.2025 09:00;05.02.2025 14:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;37;48.7;;;0
+42;33810459;04.02.2025 07:00;04.02.2025 09:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;0;12.75;;;0
+43;33781207;25.01.2025 07:00;25.01.2025 10:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;28;34.3;;;0
+44;33770714;24.01.2025 07:00;24.01.2025 11:00;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;23;33.05;;;0
+45;33768953;21.01.2025 17:30;21.01.2025 21:00;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;37;44.2;;;0
+46;33746964;20.01.2025 09:00;20.01.2025 16:00;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;39;54.15;;;0
+47;33757377;18.01.2025 14:30;18.01.2025 16:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;30;31.5;;;0
+48;33719167;12.01.2025 07:00;12.01.2025 14:00;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;24;44.4;;;0
+49;33689757;02.01.2025 11:00;02.01.2025 16:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;18;34.05;;;0
+50;33672590;28.12.2024 06:00;28.12.2024 13:00;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;40;53.5;;;0
+51;33672353;27.12.2024 15:30;27.12.2024 16:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;0;3;;;0
+52;33669080;27.12.2024 10:00;27.12.2024 16:00;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;26;41.6;;;0
+53;33623521;16.12.2024 06:00;16.12.2024 10:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;28;39.55;;;0
+54;33586161;06.12.2024 12:30;06.12.2024 14:00;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;5;8.75;;;0
+55;33290605;01.10.2024 10:00;01.10.2024 15:30;Neuchâtel Gare;;Budget;10617;33;34.61;;;0
+56;33248244;17.09.2024 18:00;17.09.2024 22:00;Basel Bahnhof SBB / Central Bahnparking;;Economy;43580;15;22.8;;;0
+57;33088554;29.08.2024 14:00;30.08.2024 00:00;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;43;66.66;;;0
+58;33122868;27.08.2024 16:30;27.08.2024 21:30;Thun Bahnhof;;Budget;270;10;18.45;;;0
+59;33163812;26.08.2024 13:00;26.08.2024 17:00;Spiez Bahnhof;;Budget;34056;16;19.72;;;0
+60;33083326;09.08.2024 16:00;09.08.2024 22:00;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;37;50.19;;;0
+61;32824160;04.06.2024 18:00;04.06.2024 21:30;Neuchâtel Oriette;;Economy;36354;40;74.24;;;0
+62;32722322;09.05.2024 05:00;09.05.2024 11:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;58;69.21;;;0
+63;32643185;21.04.2024 09:30;21.04.2024 15:30;Sarnen Bahnhof;;Economy Electro;35261;43;49.55;;;0
+64;32455637;09.03.2024 07:00;09.03.2024 13:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;29;46.98;;;0
+65;32455633;07.03.2024 06:00;07.03.2024 14:00;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;23;42.51;;;0
+66;32425895;28.02.2024 07:00;28.02.2024 11:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;29;39.48;;;0
+67;32362883;13.02.2024 07:00;13.02.2024 11:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;0;44.25;;;0
+68;32336991;06.02.2024 07:00;06.02.2024 14:00;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;43;58.41;;;0
+69;32235330;14.01.2024 07:00;14.01.2024 14:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;23;42.51;;;0
+70;32216981;12.01.2024 07:00;12.01.2024 12:00;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;22;35.64;;;0
+71;32216972;07.01.2024 09:30;07.01.2024 14:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;22;37.89;;;0
+72;32206591;05.01.2024 06:00;05.01.2024 12:00;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;32;47.34;;;0
+73;32185263;29.12.2023 06:00;29.12.2023 10:00;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;29;35.73;;;0
+74;32097229;10.12.2023 06:00;10.12.2023 09:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;0;33;;;0
+75;32051878;27.11.2023 23:00;28.11.2023 07:30;Kerzers Bahnhof;;Combi;41157;27;39.24;;;0
+76;32004610;17.11.2023 09:00;17.11.2023 10:00;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;4;6.48;;;0
+77;31973824;10.11.2023 09:00;10.11.2023 10:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;6;10.47;;;0
+78;31763852;22.09.2023 08:00;22.09.2023 10:00;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;29;31.23;;;0
+79;31621698;20.08.2023 10:00;20.08.2023 15:00;Luzern Bahnhof;;Budget;36390;12;19.44;;;0
+80;31271245;26.05.2023 10:30;26.05.2023 11:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;17;20.04;;;0
+81;31227828;17.05.2023 18:00;18.05.2023 11:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;37;74.94;;;0
+82;31174484;04.05.2023 05:00;04.05.2023 14:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;63;80.31;;;0
+83;30944727;11.03.2023 10:00;11.03.2023 11:00;Luzern Bahnhof;;Budget;36390;8;7.96;;;0
+84;30901185;03.03.2023 10:00;03.03.2023 16:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;25;41.25;;;0
+85;30850439;17.02.2023 08:00;17.02.2023 13:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;48;58.26;;;0
+86;30844648;16.02.2023 08:00;16.02.2023 11:00;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;29;35.73;;;0
+87;30807395;06.02.2023 13:00;06.02.2023 16:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;34;40.83;;;0
+88;30796844;03.02.2023 13:00;03.02.2023 17:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;31;40.47;;;0
+89;30774112;30.01.2023 12:00;30.01.2023 17:00;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;29;40.23;;;0
+90;30768736;28.01.2023 16:30;28.01.2023 22:30;Meiringen Bahnhof / Einstellhalle Casino;;Combi;33634;35;50.7;;;0
+91;30672287;07.01.2023 09:00;07.01.2023 14:30;Luzern Bahnhof;;Budget;31021;30;31.1;;;0
