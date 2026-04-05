@@ -23,29 +23,115 @@ knitr::opts_chunk$set(echo = TRUE)
 options(warn = -1)
 path <- paste(getwd(), "/", sep = "")
 
-load(file = "langlauf")
-langlauf <- ski_season
-load(file = "skitour")
-skitour <- ski_season
-
 source(paste(path, "/functions/input_touren.r", sep = ""))
 inp <- input_touren(path)
 touren <- inp$touren
 all <- inp$all
 
-# days on ski (double counting not possible)
-ski_season <- (all %>% filter(sport == "Skifahren", date >= "2024-12-31") %>% arrange(date, desc(time)) %>% group_by(date) %>% slice(1) %>%
-                 arrange(season) %>% group_by(season) %>% summarise(n = sum(is.na(unique(date)) == FALSE)) %>% arrange(season))
-skidays <- tail(ski_season$n, 1)
+# ski alpin
+skialpin <- (all %>% filter(sport == "Skifahren") %>% arrange(date, desc(time)) %>% group_by(date) %>% slice(1) %>%
+                 arrange(season) %>% group_by(season) %>% summarise(n = sum(is.na(unique(date)) == FALSE)) %>% 
+                 add_row(season = c("Winter 22/23"), n = 0) %>% arrange(season) %>% mutate(sport = "skialpin"))
+
+# skitouren
+skitour <- (all %>% filter(sport == "Skitour") %>% arrange(date, desc(time)) %>% group_by(date) %>% slice(1) %>%
+                 arrange(season) %>% group_by(season) %>%
+                 summarise(n = sum(is.na(unique(date)) == FALSE), Hm = sum(hm_diff, na.rm = TRUE))) %>% 
+                 mutate(Hm_tour = round(Hm / n)) %>% add_row(season = c("Winter 05/06", "Winter 06/07", "Winter 09/10", "Winter 13/14", "Winter 14/15"), Hm = 0, n = 0, Hm_tour = NA) %>% 
+                 arrange(season) %>% mutate(sport = "skitour")
+
+# langlauf
+langlauf <- (all %>% filter(sport == "Langlauf", date >= "2013-12-31") %>% arrange(date, desc(time)) %>% group_by(date) %>% slice(1) %>%
+                 arrange(season) %>% group_by(season) %>% 
+                 summarise(n = sum(is.na(unique(date)) == FALSE), Hm = sum(hm_diff, na.rm = TRUE), Km = sum(km_manual, na.rm = TRUE))) %>% 
+                 mutate(Hm_tour = round(Hm / n), sport = "langlauf") %>% arrange(season)
+
+# merge them all together
+winter <- bind_rows(skialpin, skitour, langlauf) %>% arrange(season)
+```
+
+# Skitouren 
+
+## Anzahl Touren pro Saison
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 5, fig.height = 3}
+ggplot(data = skitour, aes(x = season, y = n, group = 1)) +
+geom_line(color = "red") +
+geom_point() +
+theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) +
+labs(x = "Saison", y = "Anzahl Touren")
+```
+
+## Höhenmeter pro Saison
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 5, fig.height = 3}
+ggplot(data = skitour, aes(x = season, y = Hm, group = 1)) +
+geom_line(color = "red") +
+geom_point() +
+theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) +
+labs(x = "Saison", y = "Höhenmeter")
+```
+
+## Höhenmeter pro Tour pro Saison
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 5, fig.height = 3}
+ggplot(data = filter(skitour, season >= "Winter 15/16"), aes(x = season, y = Hm_tour, group = 1)) +
+geom_line(color = "red") +
+geom_point() +
+theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) +
+labs(x = "Saison", y = "Höhenmeter pro Tour") + ylim(0, 2000)
 ```
 
 
-# Wintersporttage
+# Anzahl Wintersporttage
 
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 5, fig.height = 3}
+ggplot(data = filter(winter, season >= "Winter 18/19"), aes(x = season, y = n, group = sport, color = sport)) +
+geom_line(linewidth = 1, linetype = 2) +
+geom_point() +
+theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) +
+labs(x = "Saison", y = "Anzahl Touren")
+```
+
+
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = FALSE}
+# If needed, ensure columns are correctly typed
+df <- filter(winter, season >= "Winter 18/19") %>%
+    mutate(n = as.integer(n),
+           sport = as.character(sport),
+           season = as.character(season))
+
+# Pivot to wide format: rows = sport, cols = season, values = n
+wide0 <- df %>%
+    select(sport, season, n) %>%
+    pivot_wider(names_from = season,
+                values_from = n)
+
+pander(wide0)
+```
 ```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
-t1 <- data.frame(rbind(c("Skitour", tail(skitour$n, 1)), c("Alpinski", skidays), c("Langlauf", tail(langlauf$n, 1))))
-t1 <- rbind(t1, c("Total", sum(as.numeric(t1[, 2]))))
-colnames(t1) <- c("Sportart", "Anzahl Tage")
-pander(t1)
+df_summary <- filter(winter, season >= "Winter 18/19") %>%
+  group_by(sport, season) %>%
+  summarise(n = sum(n, na.rm = TRUE), .groups = "drop") %>%
+  arrange(season)
+
+# Wide-Format (Sporten als Spalten, Seasons als Spaltennamen)
+wide <- df_summary %>%
+  pivot_wider(names_from = season, values_from = n, values_fill = 0)
+
+# Transponieren: Rows = Seasons, Columns = Sports
+# Entferne First-Spalte (sport), nutze sie später als Spaltennamen
+sports <- wide$sport
+mat <- as.matrix(wide[ , -1, drop = FALSE])   # Matrix: Zeilen = Sport, Spalten = Seasons
+transposed_mat <- t(mat)                       # Rows = Seasons, Columns = Sports
+
+# In DataFrame umwandeln und Seasons-Spalte hinzufügen
+transposed_df <- as.data.frame(transposed_mat)
+colnames(transposed_df) <- sports
+transposed_df <- tibble(Season = rownames(transposed_df), transposed_df)
+rownames(transposed_df) <- NULL
+
+pander(transposed_df)
 ```
 

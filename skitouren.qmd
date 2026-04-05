@@ -41,108 +41,29 @@ selectsport <- "Skitour"
 all <- (all %>% filter(sport == selectsport))
 tour <- sort(unique(touren %>% filter(sport == selectsport) %>% select(end))[, 1])
 
-ski_season <- (all %>% filter(date >= "2012-12-31") %>% arrange(date, desc(time)) %>% group_by(date) %>% slice(1) %>%
+skitour <- (all %>% filter(sport == "Skitour") %>% arrange(date, desc(time)) %>% group_by(date) %>% slice(1) %>%
                  arrange(season) %>% group_by(season) %>% 
-                 summarise(n = sum(is.na(unique(date)) == FALSE), Hm = sum(hm_diff, na.rm = TRUE))) %>% 
+                 summarise(n = sum(is.na(unique(date)) == FALSE), Hm = sum(hm_diff, na.rm = TRUE)) %>% 
                  mutate(Hm_tour = round(Hm / n)) %>%
-                 add_row(season = c("Winter 13/14", "Winter 14/15"), Hm = 0, n = 0, Hm_tour = NA) %>% arrange(season)
-
-save(ski_season, file = "skitour")
-```
-
-# Anzahl Touren pro Saison
-
-```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 5, fig.height = 3}
-ggplot(data = ski_season, aes(x = season, y = n, group = 1)) +
-geom_line(color = "red") +
-geom_point() +
-theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) +
-labs(x = "Saison", y = "Anzahl Touren")
-```
-
-# Höhenmeter pro Saison
-
-```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 5, fig.height = 3}
-ggplot(data = ski_season, aes(x = season, y = Hm, group = 1)) +
-geom_line(color = "red") +
-geom_point() +
-theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) +
-labs(x = "Saison", y = "Höhenmeter")
-```
-
-# Höhenmeter pro Tour pro Saison
-
-```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 5, fig.height = 3}
-ggplot(data = ski_season, aes(x = season, y = Hm_tour, group = 1)) +
-geom_line(color = "red") +
-geom_point() +
-theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) +
-labs(x = "Saison", y = "Höhenmeter pro Tour") + ylim(0, 2000)
-```
-
-```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
-pander(ski_season)
+                 add_row(season = c("Winter 05/06", "Winter 06/07", "Winter 09/10", "Winter 13/14", "Winter 14/15"), Hm = 0, n = 0, Hm_tour = NA) %>% 
+                 arrange(season))
 ```
 
 
+# Skitouren nach Saison
 
-# Aktuelle Saison {.tabset .tabset-fade .tabset-pills}
+```{r zzz, echo = FALSE, message = FALSE, warning = FALSE, results = "asis"}
+# how to do this with child documents: https://gist.github.com/rmoff/a043676a2f084b81a434
+out <- NULL
+for (s in 26:11){
+  seas <- paste("Winter ", s - 1, "/", s, sep = "")
+  this_s <- (skitour %>% filter(season == seas))
+  t <- (touren %>% filter(sport == selectsport & season == seas) %>% hm_print())
+  out <- c(out, knit_expand('_tour_saison.qmd'))
+}
 
-```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
-t <- (touren %>% filter(sport == selectsport & season == paste("Winter ", s - 1, "/", s, sep = "")) %>% hm_print())
+cat(knit(text = unlist(paste(out, collapse = '\n')), quiet = TRUE))
 ```
-
-- Anzahl Tourentage: `r tail(ski_season, 1)$n`. 
-- Total Hoehenmeter: `r disp(tail(ski_season, 1)$Hm, 0)`.
-
-::: {.panel-tabset .nav-pills}
-
-## Nach Datum
-
-```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
-t1 <- (t %>% arrange(date, desc(time)) %>% group_by(date) %>% slice(1) %>% rowid_to_column("Nr") %>% select(-beg))
-pander(t1)
-```
-
-## Nach Hoehenmeter
-
-```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
-t1 <- (t %>% arrange(desc(hm_diff)) %>% select(-beg) %>% rowid_to_column("Nr"))
-pander(t1)
-```
-
-## Nach Hoehenmeter pro Stunde
-
-Dieser Abschnitt sortiert die Touren absteigend nach Hoehenmetern pro Stunde, wobei fuer jede Tour nur die schnellste genommen wird.
-
-```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
-t1 <- (t %>% group_by(paste(start, end, sep = "")) %>% arrange(desc(hm_h))  %>% ungroup())   #%>% slice(1)
-t1 <- (t1 %>% hm_print())
-t1 <- (t1 %>% select(-beg) %>% rowid_to_column("Nr"))
-pander(t1)
-```
-
-## Mit Papa, nach Hoehenmeter pro Stunde
-
-```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
-t1 <- (t %>% filter(grepl("Papa", beg)) %>% select(-beg) %>% arrange(desc(hm_h))) %>% rowid_to_column("Nr")
-pander(t1)
-```
-## Mit Alexander, nach Hoehenmeter pro Stunde
-
-```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
-t1 <- (t %>% filter(grepl("Alexander", beg)) %>% select(-beg) %>% arrange(desc(hm_h))) %>% rowid_to_column("Nr")
-pander(t1)
-```
-
-## Alleine, nach Hoehenmeter pro Stunde
-
-```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
-t1 <- (t %>% filter(beg == "NA NA NA NA NA") %>% select(-beg) %>% arrange(desc(hm_h))) %>% rowid_to_column("Nr")
-pander(t1)
-```
-:::
-
 
 
 # Skimodell
@@ -178,7 +99,7 @@ kable(sum_mod)
 
 Dieser Abschnitt listet die Touren auf, chronologisch oder nach Laufzeit. Fuer die Listen nach Zeit werden die Touren ohne Zeitangabe nicht aufgefuehrt.
 
-```{r echo = FALSE, message = FALSE, warning = FALSE, results = "asis"}
+```{r bla, echo = FALSE, message = FALSE, warning = FALSE, results = "asis"}
 
 # how to do this with child documents: https://gist.github.com/rmoff/a043676a2f084b81a434
 
@@ -190,6 +111,7 @@ for (i in 1:length(tour)){
 cat(knit(text = unlist(paste(out, collapse = '\n')), quiet = TRUE))
 ```
 
+
 # Hoehenmeter pro Stunde
 
 Dieser Abschnitt sortiert die Touren absteigend nach Hoehenmetern pro Stunde, wobei fuer jede Tour nur die schnellste genommen wird.
@@ -200,11 +122,16 @@ t <- (t %>% group_by(paste(start, end, sep = "")) %>% arrange(desc(hm_h)) %>% sl
 t1 <- (t %>% hm_print() %>% select(start, end, date, hm_diff, time, hm_h))
 pander(t1)
 ```
+
+
+
 # All time {.tabset .tabset-fade .tabset-pills}
+
+::: {.panel-tabset .nav-pills}
 
 ## Nach Datum
 
-```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+```{r aa1, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
 t <- (touren %>% filter(sport == selectsport) %>% hm_print())
 t1 <- (t %>% arrange(date, desc(time)) %>% group_by(date) %>% slice(1) %>% rowid_to_column("Nr") %>% select(-beg, -time))
 pander(t1)
@@ -212,31 +139,46 @@ pander(t1)
 
 ## Nach Hoehenmeter
 
-```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+```{r aa2, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
 t1 <- (t %>% arrange(desc(hm_diff)) %>% rowid_to_column("Nr") %>% select(-time, -beg))
+pander(t1)
+```
+
+## Nach Hoehenmeter pro Stunde
+
+```{r aa21, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t1 <- (t %>% group_by(paste(start, end, sep = "")) %>% arrange(desc(hm_h)) %>% ungroup())   #%>% slice(1)
+t1 <- (t1 %>% hm_print())
+t1 <- (t1 %>% select(-beg) %>% rowid_to_column("Nr"))
 pander(t1)
 ```
 
 ## Mit Papa, nach Datum
 
-```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
-t1 <- (t %>% filter(grepl("Papa", beg)) %>% arrange(desc(date))) %>% rowid_to_column("Nr") %>% select(, -beg)
+```{r aa3, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t1 <- (t %>% filter(grepl("Papa", beg)) %>% arrange(desc(date))) %>% rowid_to_column("Nr") %>% select(-beg)
 pander(t1)
 ```
 
 ## Mit Papa, nach Hoehenmeter pro Stunde
 
-```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
-t1 <- (t %>% filter(grepl("Papa", beg)) %>% arrange(desc(hm_h))) %>% rowid_to_column("Nr") %>% select(, -beg)
+```{r aa4, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t1 <- (t %>% filter(grepl("Papa", beg)) %>% arrange(desc(hm_h))) %>% rowid_to_column("Nr") %>% select(-beg)
 pander(t1)
 ```
 
 ## Alleine, nach Hoehenmeter pro Stunde
 
-```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
-t1 <- (t %>% filter(beg == "NA NA NA NA NA") %>% arrange(desc(hm_h))) %>% rowid_to_column("Nr") %>% select(, -beg)
+```{r aa5, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t1 <- (t %>% filter(beg == "NA NA NA NA NA") %>% arrange(desc(hm_h))) %>% rowid_to_column("Nr") %>% select(-beg)
 pander(t1)
 ```
 
 :::
+
+
+
+
+
+
 

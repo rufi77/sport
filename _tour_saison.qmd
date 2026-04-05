@@ -1,0 +1,60 @@
+```{r echo = FALSE}
+s <- as.numeric('{{s}}')
+```
+
+## Saison `r paste("20", s, sep = "")`
+
+
+- Anzahl Tourentage: `r this_s$n`. 
+- Total Hoehenmeter: `r format(this_s$Hm, scientific = FALSE)`.
+
+::: {.panel-tabset .nav-pills}
+
+### Nach Datum
+
+```{r echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t1 <- (t %>% arrange(date, desc(time)) %>% group_by(date) %>% slice(1) %>% rowid_to_column("Nr") %>% select(-beg))
+pander(t1)
+```
+
+### Nach Hoehenmeter
+
+```{r echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t1 <- (t %>% arrange(desc(hm_diff)) %>% select(-beg) %>% rowid_to_column("Nr"))
+pander(t1)
+```
+
+### Nach Hoehenmeter pro Stunde
+
+Dieser Abschnitt sortiert die Touren absteigend nach Hoehenmetern pro Stunde, wobei fuer jede Tour nur die schnellste genommen wird.
+
+```{r echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t1 <- (t %>% group_by(paste(start, end, sep = "")) %>% arrange(desc(hm_h))  %>% ungroup())   #%>% slice(1)
+t1 <- (t1 %>% hm_print())
+t1 <- (t1 %>% select(-beg) %>% rowid_to_column("Nr"))
+pander(t1)
+```
+
+### Mit Papa, nach Hoehenmeter pro Stunde
+
+```{r echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t1 <- (t %>% filter(grepl("Papa", beg)) %>% select(-beg) %>% arrange(desc(hm_h))) %>% rowid_to_column("Nr")
+pander(t1)
+```
+
+### Mit Alexander, nach Hoehenmeter pro Stunde
+
+```{r echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t1 <- (t %>% filter(grepl("Alexander", beg)) %>% select(-beg) %>% arrange(desc(hm_h))) %>% rowid_to_column("Nr")
+pander(t1)
+```
+
+### Alleine, nach Hoehenmeter pro Stunde
+
+```{r echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t1 <- (t %>% filter(beg == "NA NA NA NA NA") %>% select(-beg) %>% arrange(desc(hm_h))) %>% rowid_to_column("Nr")
+pander(t1)
+```
+:::
+
+

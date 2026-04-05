@@ -72,7 +72,7 @@ format:
     tbl-cap-location: bottom
     grid:
       sidebar-width: 400px
-      body-width: 1000px
+      body-width: 1400px
       margin-width: 100px
 
 editor: source
