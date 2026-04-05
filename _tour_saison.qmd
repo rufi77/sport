@@ -1,9 +1,12 @@
 ```{r echo = FALSE}
 s <- as.numeric('{{s}}')
+
+seas <- paste("Winter ", s - 1, "/", s, sep = "")
+this_s <- (skitour %>% filter(season == seas))
+t <- (touren %>% filter(sport == selectsport & season == seas) %>% hm_print())
 ```
 
 ## Saison `r paste("20", s, sep = "")`
-
 
 - Anzahl Tourentage: `r this_s$n`. 
 - Total Hoehenmeter: `r format(this_s$Hm, scientific = FALSE)`.

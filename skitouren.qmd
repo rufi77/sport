@@ -56,9 +56,6 @@ skitour <- (all %>% filter(sport == "Skitour") %>% arrange(date, desc(time)) %>%
 # how to do this with child documents: https://gist.github.com/rmoff/a043676a2f084b81a434
 out <- NULL
 for (s in 26:11){
-  seas <- paste("Winter ", s - 1, "/", s, sep = "")
-  this_s <- (skitour %>% filter(season == seas))
-  t <- (touren %>% filter(sport == selectsport & season == seas) %>% hm_print())
   out <- c(out, knit_expand('_tour_saison.qmd'))
 }
 
