@@ -82,6 +82,10 @@ theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) +
 labs(x = "Saison", y = "Höhenmeter pro Tour") + ylim(0, 2000)
 ```
 
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+pander(filter(skitour, season >= "Winter 15/16") %>% select(-sport))
+```
+
 
 # Anzahl Wintersporttage
 
@@ -131,6 +135,8 @@ transposed_df <- as.data.frame(transposed_mat)
 colnames(transposed_df) <- sports
 transposed_df <- tibble(Season = rownames(transposed_df), transposed_df)
 rownames(transposed_df) <- NULL
+
+transposed_df <- (transposed_df |> rowwise() |> mutate(total = sum(c(skitour, skialpin, langlauf))))
 
 pander(transposed_df)
 ```
