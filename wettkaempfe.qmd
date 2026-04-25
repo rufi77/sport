@@ -86,7 +86,7 @@ summary(tab1)
 ```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 5}
 par(mfrow = c(1, 1), las = 2, mar = c(4.5, 3, 1, 1))
 b <- table(Disziplin, Jahr)
-add <- matrix(0, ncol = 4, nrow = 2)
+add <- matrix(0, ncol = 4, nrow = 3)
 colnames(add) <- c(2020, 2022, 2023, 2024)
 b <- cbind(b, add)
 b <- b[, order(colnames(b))]
@@ -104,14 +104,17 @@ plot(0, 0, type = "n", xlim = range(Jahr), ylim = c(-1, length(unique(Anlass))),
 xs <- seq(min(Jahr), max(Jahr), by = 1)
 axis(1, at = xs, labels = xs)
 axis(2, at = ys, labels = names(a))
-legend(2002, 0, c("Run", "Bike"), lty = 1, lwd = c(NA, NA), pch = c(19, 17), bty = "n", horiz = TRUE, pt.cex = 1.5)
+legend(2002, 0, c("Run", "Bike", "Skitour"), lty = 1, lwd = c(NA, NA, NA), pch = c(19, 17, 18), bty = "n", horiz = TRUE, pt.cex = 1.5)
 
 for (i in 1:length(a)){
      ind <- (Anlass == names(a)[i])
      ind[is.na(ind)] <- FALSE
      J2 <- Jahr[ind]
      J2 <- J2[is.na(J2) == FALSE]
-     points(J2, rep(ys[i], sum(ind, na.rm = TRUE)), col = i, pch = ifelse(Disziplin[ind][1] == "Run", 19, 17), cex = 1.5)
+     symb <- 19
+     if (Disziplin[ind][1] == "Bike"){symb <- 17}
+     if (Disziplin[ind][1] == "Skitour"){symb <- 18}
+     points(J2, rep(ys[i], sum(ind, na.rm = TRUE)), col = i, pch = symb, cex = 1.5)
 }
 ```
 
