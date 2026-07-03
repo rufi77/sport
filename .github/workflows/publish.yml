@@ -1,0 +1,31 @@
+Copy
+yaml
+name: Render and Publish
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.2.2
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Render Quarto project
+        uses: quarto-dev/quarto-actions/render@v2
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4.4.3
+        with:
+          name: docs
+          path: docs/
+
+      - name: Deploy to GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/
