@@ -16,6 +16,7 @@ project:
     - skifahren.qmd
     - summary_winter.qmd
     - mobility.qmd
+    - schwimmen.qmd
     
 website:
   title: "Sport Kaspar"
@@ -39,6 +40,8 @@ website:
           href: skifahren.html
         - text: "Langlauf"
           href: langlauf.html
+        - text: "Schwimmen"
+          href: schwimmen.html
         - text: "Kieser"
           href: kieser.html
     - text: "Zusammenfassung Winter"

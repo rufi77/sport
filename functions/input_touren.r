@@ -17,13 +17,18 @@ input_touren <- function(path){
              %>% mutate(km_h = km_manual / time_h, pace = 1 / km_h * 60))
   
   # add Hm and Hm / h
-  touren <- (touren %>% mutate(hm_diff = end_hm - start_hm, hm_h = round(hm_diff / time_h)))
+  touren <- (touren %>% mutate(hm_diff = end_hm - start_hm, hm_h = round(hm_diff / time_h), min_100m = (touren$time_h / touren$hm_manual) * 60 * 100))
   
   # add pace in m:ss
   touren <- (touren %>% mutate(sek = round((pace - floor(pace)) * 60)) %>% mutate(pace = paste(floor(pace), ":", ifelse(sek <= 9, "0", ""), sek, "m/km", sep = "")))
   ind <- touren$pace == "NA:NA"
   touren[ind, "pace"] <- " "
   
+  # add time/100m in m:ss for swimming
+  touren <- (touren %>% mutate(sek2 = round((min_100m - floor(min_100m)) * 60)) %>% mutate(min_100m = paste(floor(min_100m), ":", ifelse(sek2 <= 9, "0", ""), sek2, "/100m", sep = "")))
+  ind <- touren$min_100m == "NA:NA"
+  touren[ind, "min_100m"] <- " "
+
   # overwrite if Hm manually given
   ind <- is.na(touren$hm_manual) == FALSE
   touren[ind, "hm_diff"] <- touren[ind, "hm_manual"]
