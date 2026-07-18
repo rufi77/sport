@@ -80,7 +80,7 @@ pander(t1)
 # Schuh
 
 ```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
-all_m0 <- all[all$date >= "2024-07-20" & all$date <= "2025-08-31" & is.na(all$schuh) == FALSE, ]
+all_m0 <- all[is.na(all$schuh) == FALSE, ]
 all_m <- (all_m0 %>% arrange(date) %>% group_by(date) %>% slice(1) %>% select(-season))
 sum_mod <- (all_m %>% arrange(schuh) %>% group_by(schuh) %>% summarise(Km = sum(km_manual, na.rm = TRUE), Hm = sum(hm_diff, na.rm = TRUE)))
 kable(sum_mod)
