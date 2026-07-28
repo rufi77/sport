@@ -54,7 +54,7 @@ input_touren <- function(path){
   touren[, char_cols][apply(touren[, char_cols], 1:2, function(x){is.na(x)})] <- ""
 
   all <- (touren %>% mutate(skihalbtag = NULL, skihalbtag_fam = NULL, begleitung1 = NULL, begleitung2 = NULL, begleitung3 = NULL, 
-                            begleitung4 = NULL, beg = NULL, region = NULL, kommentar = NULL) %>% arrange(end, time) )
+                            begleitung4 = NULL, begleitung5 = NULL, beg = NULL, region = NULL, kommentar = NULL) %>% arrange(end, time) )
   
   return(list("touren" = touren, "all" = all))
   

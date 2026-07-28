@@ -90,10 +90,8 @@ kable(sum_mod)
 
 Dieser Abschnitt listet die Touren auf, chronologisch oder nach Laufzeit. Fuer die Listen nach Zeit werden die Touren ohne Zeitangabe nicht aufgefuehrt.
 
-```{r echo = FALSE, message = FALSE, warning = FALSE, results = "asis"}
-
+```{r tour, echo = FALSE, message = FALSE, warning = FALSE, results = "asis"}
 # how to do this with child documents: https://gist.github.com/rmoff/a043676a2f084b81a434
-
 out <- NULL
 for (i in 1:length(tour)){
   out <- c(out, knit_expand('_tour_summary.qmd'))
@@ -101,6 +99,8 @@ for (i in 1:length(tour)){
 
 cat(knit(text = unlist(paste(out, collapse = '\n')), quiet = TRUE))
 ```
+
+
 
 # Hoehenmeter pro Stunde
 

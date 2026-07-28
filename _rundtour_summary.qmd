@@ -1,0 +1,57 @@
+```{r, echo = FALSE}
+k <- as.numeric('{{k}}')
+
+# how to do this with child documents: https://gist.github.com/rmoff/a043676a2f084b81a434
+t0 <- (rundtour %>% filter(rund == rtours[k]) %>% arrange(desc(date))) 
+```
+
+## `r paste(rtours[k], sep = "")` 
+
+::: {.panel-tabset .nav-pills}
+
+### Chronologisch
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t <- (t0 %>% select(start, via1, via2, via3, end, date, time, hm_h))
+pander(t)
+```
+
+### Nach Zeit (overall)
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t <- (rundtour %>% filter(rund == rtours[k] & time != "") %>% arrange(time, desc(date))) %>% mutate(d = 60 * (time_h - first(time_h))) %>% mutate(Rueckst = paste(floor(d), "m", round((1 - (ceiling(d) - d)) * 60), "s", sep = "")) %>% 
+  select(start, via1, via2, via3, end, date, time, hm_h, Rueckst) %>% rowid_to_column("Nr")
+
+t[1, "Rueckst"] <- ""
+
+if (nrow(t) > 0){
+  cut <- 15
+  t <- (t %>% mutate(start = substr(start, 1, cut), end = substr(end, 1, cut)))
+  pander(t)
+}
+```
+
+### Nach Zeit (per Startort)
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t <- (rundtour %>% filter(rund == rtours[k] & time != "") %>% arrange(start, time, desc(date))) %>% mutate(d = 60 * (time_h - first(time_h))) %>% mutate(Rueckst = paste(floor(d), "m", round((1 - (ceiling(d) - d)) * 60), "s", sep = "")) %>% select(start, via1, via2, via3, end, date, time, hm_h, Rueckst) %>% rowid_to_column("Nr")
+
+t[1, "Rueckst"] <- ""
+
+if (nrow(t) > 0){
+  cut <- 15
+  t <- (t %>% mutate(start = substr(start, 1, cut), end = substr(end, 1, cut)))
+  pander(t)
+}
+```
+
+### Schnellste Zeit pro Jahr
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t0 <- (rundtour %>% filter(rund == rtours[k] & time != "") %>% group_by(year) %>% slice_min(order_by = time) %>% arrange(desc(date)))
+
+t <- (t0 %>% select(start, via1, via2, via3, end, date, time, hm_h))
+if (nrow(t) > 0){pander(t)}
+```
+
+:::

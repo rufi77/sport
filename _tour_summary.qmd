@@ -1,4 +1,4 @@
-```{r echo = FALSE}
+```{r, echo = FALSE}
 i <- as.numeric('{{i}}')
 
 # how to do this with child documents: https://gist.github.com/rmoff/a043676a2f084b81a434

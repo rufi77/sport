@@ -17,6 +17,8 @@ project:
     - summary_winter.qmd
     - mobility.qmd
     - schwimmen.qmd
+    - run_rund.qmd
+    - bike_rund.qmd
     
 website:
   title: "Sport Kaspar"
@@ -28,8 +30,12 @@ website:
       menu:
         - text: "Bike"
           href: bike.html
+        - text: "Bike (roundtours)"
+          href: bike_rund.html
         - text: "Run"
           href: run.html
+        - text: "Run (roundtours)"
+          href: run_rund.html
         - text: "Wandern"
           href: hike.html
         - text: "Bike & Run"
@@ -74,9 +80,9 @@ format:
     highlight-style: pygments
     tbl-cap-location: bottom
     grid:
-      sidebar-width: 400px
-      body-width: 1400px
-      margin-width: 100px
+      sidebar-width: 300px
+      body-width: 1600px
+      margin-width: 50px
 
 editor: source
 

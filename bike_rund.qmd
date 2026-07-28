@@ -1,0 +1,60 @@
+---
+title: "Bike (roundtours)"
+author: 
+- name: Kaspar Rufibach
+  affiliation: Meiringen
+date: "Letzte Aenderung: `r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  rmarkdown::html_document:
+    highlight: pygments
+    number_sections: yes
+    self_contained: yes
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+---
+
+```{r setup, include=FALSE}
+## load packages
+packs.html <- c("knitr", "pander", "reporttools", "dplyr", "lubridate", "readxl", "tibble")
+for (i in 1:length(packs.html)){library(packs.html[i], character.only = TRUE)}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+path <- "C:/rufibach/01_personal/05_Sport/40_reporting/"
+path <- paste(getwd(), "/", sep = "")
+
+source(paste(path, "/functions/input_touren.r", sep = ""))
+source(paste(path, "/functions/hm_print.r", sep = ""))
+
+## =================================================================
+## input data
+## =================================================================
+cy <- as.character(read_excel(paste(path, "data/currentyear.xlsx", sep = "")))
+inp <- input_touren(path)
+touren <- inp$touren
+all <- inp$all
+```
+
+
+# Rundtouren
+
+Dieser Abschnitt listet fixe Rundtouren auf.
+
+```{r rundtouren, echo = FALSE, message = FALSE, warning = FALSE, results = "asis"}
+selectsport <- "Bike"
+                  
+# rundtouren
+rundtour <- (filter(touren, sport == selectsport) %>% mutate(rund = case_when(
+            via2 == "Wiler Vorsass" ~ "Rund um WilerhornHundschipfi"
+    )))
+rtours <- unique(select(filter(rundtour, is.na(rund) == FALSE), rund)[, 1])
+
+# how to do this with child documents: https://gist.github.com/rmoff/a043676a2f084b81a434
+out2 <- NULL
+for (k in 1:length(rtours)){
+  out2 <- c(out2, knit_expand('_rundtour_summary.qmd'))
+}
+
+cat(knit(text = unlist(paste(out2, collapse = '\n')), quiet = TRUE))
+``` 
