@@ -46,6 +46,7 @@ selectsport <- "Run"
                   
 # rundtouren
 rundtour <- (filter(touren, sport == selectsport) %>% mutate(rund = case_when(
+            via1 == "Milifloeh" & end == "Reuti Station" ~ "Milifloeh - Reuti Station",
             via1 == "Hundschipfi" & (end %in% c("Winterlicke", "Gadmen") == FALSE) ~ "Hundschipfi",
             end == "Schwendichehrrunde" ~ "Schwendichehr",
             via1 == "Hundschipfi" & end == "Winterlicke" ~ "Hundschipfi - Winterlicke"
