@@ -47,7 +47,8 @@ selectsport <- "Bike"
                   
 # rundtouren
 rundtour <- (filter(touren, sport == selectsport) %>% mutate(rund = case_when(
-            via2 == "Wiler Vorsass" ~ "Rund um WilerhornHundschipfi"
+            via2 == "Wiler Vorsass" ~ "Rund um WilerhornHundschipfi",
+            via1 == "Wyler" & via2 == "Boden" ~ "Boden - Winterlicke"
     )))
 rtours <- unique(select(filter(rundtour, is.na(rund) == FALSE), rund)[, 1])
 
