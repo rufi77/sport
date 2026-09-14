@@ -50,7 +50,8 @@ rundtour <- (filter(touren, sport == selectsport) %>% mutate(rund = case_when(
             via1 == "Hundschipfi" & (end %in% c("Winterlicke", "Gadmen") == FALSE) ~ "Hundschipfi",
             end == "Schwendichehrrunde" ~ "Schwendichehr",
             via1 == "Hundschipfi" & end == "Winterlicke" ~ "Hundschipfi - Winterlicke",
-            start == "Grimsel Hospiz" & via1 == "Lauteraarhuette" & end == "Grimsel Hospiz" ~ "Lauteraarhuette"
+            start == "Grimsel Hospiz" & via1 == "Lauteraarhuette" & end == "Grimsel Hospiz" ~ "Lauteraarhuette",
+            start == "Axalp" & via1 == "Wildgaerst" & end == "Schwarzwaldalp" ~ "Wildgaerst"
     )))
 rtours <- unique(select(filter(rundtour, is.na(rund) == FALSE), rund)[, 1])
 
