@@ -65,6 +65,17 @@ bike_season <- (all %>% arrange(date, desc(time)) %>% group_by(date) %>% slice(1
                  summarise(first = min(date), last = max(date)))
 bike_season_long <- bike_season %>% gather(key = "which", value = "date", first:last) %>% mutate(diff = yday(date)) %>% arrange(date)
 
+# freiwasserschwimmen
+all <- (touren %>% filter(date >= "2025-01-01") %>% mutate(skihalbtag = NULL, skihalbtag_fam = NULL, begleitung1 = NULL, 
+                                                           begleitung2 = NULL, begleitung3 = NULL, begleitung4 = NULL,
+                                                           beg = NULL, region = NULL, kommentar = NULL) %>% filter(sport == "Freiwasserschwimmen"))
+
+schwimmen <- (all %>% select(start, end, date, time, startend))
+
+schwimmen_season <- (all %>% arrange(date, desc(time)) %>% group_by(date) %>% slice(1) %>%
+                 arrange(year) %>% group_by(year) %>% 
+                 summarise(first = min(date), last = max(date)))
+schwimmen_season_long <- schwimmen_season %>% gather(key = "which", value = "date", first:last) %>% mutate(diff = yday(date)) %>% arrange(date)
 ```
 
 
@@ -94,4 +105,17 @@ ggplot(bike_season_long, aes(diff, year)) +
         geom_point(aes(color = which)) + scale_x_continuous(limits = c(0, 365), breaks = c(0, cumsum(xs)), 
                           labels = c("1. Jan", xs_lab)) + 
        labs(x = "Datum", y = "Jahr", title = "Erste und letzte Biketour pro Saison") + theme(legend.position = "none")
+```
+
+
+## Freiwasserschwimmen
+
+```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 5}
+xs <- c(30, 31, 30, 31, 31, 30, 31, 30)
+xs_lab <- substr(as.character(as.Date(paste("2000-03-31", sep = ""), origin = "1899-12-30") + cumsum(xs)), 6, 10)
+ggplot(schwimmen_season_long, aes(diff, year)) +
+        geom_line(aes(group = year)) +
+        geom_point(aes(color = which)) + scale_x_continuous(limits = c(0, 365), breaks = c(0, cumsum(xs)), 
+                          labels = c("1. Jan", xs_lab)) + 
+       labs(x = "Datum", y = "Jahr", title = "Erstes und letztes Mal Schwimmen im See pro Saison") + theme(legend.position = "none")
 ```
