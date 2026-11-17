@@ -31,7 +31,7 @@ path <- paste(getwd(), "/", sep = "")
 countries <- as.data.frame(read_excel(paste(path, "data/countries.xlsx", sep = ""), col_types = NULL))
 countries <- (countries %>% mutate("year" = year(month)))
 
-countries <- countries %>% pivot_longer(cols = US:Denmark, names_to = "country", values_to = "days")
+countries <- countries %>% pivot_longer(cols = US:Czechia, names_to = "country", values_to = "days")
 countries2 <- countries %>%
   group_by(year, country) %>%
     summarise(days = sum(days, na.rm = TRUE)) 
@@ -50,7 +50,7 @@ countries3 <- countries %>%
 ```{r, echo = FALSE, fig.cap = "", fig.align = "center", fig.width = 7, fig.height = 9}
 par(las = 2, mar = c(7, 4.5, 3, 1), mfrow = c(4, 3))
 for (y in sort(unique(countries2$year))){
-  barplot(days ~ country, data = countries2, subset = (year == y), main = y, xlab = "", ylim = c(0, 15), col = 1:10)
+  barplot(days ~ country, data = countries2, subset = (year == y), main = y, xlab = "", ylim = c(0, 20), col = 1:10)
 }
 ```
 
