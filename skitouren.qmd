@@ -55,7 +55,7 @@ skitour <- (all %>% filter(sport == "Skitour") %>% arrange(date, desc(time)) %>%
 ```{r zzz, echo = FALSE, message = FALSE, warning = FALSE, results = "asis"}
 # how to do this with child documents: https://gist.github.com/rmoff/a043676a2f084b81a434
 out <- NULL
-for (s in 26:11){
+for (s in 27:11){
   out <- c(out, knit_expand('_tour_saison.qmd'))
 }
 
@@ -66,7 +66,7 @@ cat(knit(text = unlist(paste(out, collapse = '\n')), quiet = TRUE))
 # Skimodell
 
 ```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
-all_m <- (all %>% filter(date >= "2012-12-31" & date <= "2026-08-31") %>% arrange(date) %>% group_by(date) %>% slice(1) %>% 
+all_m <- (all %>% filter(date >= "2012-12-31" & date <= "2027-08-31") %>% arrange(date) %>% group_by(date) %>% slice(1) %>% 
             mutate(season = as.character(season)) %>% arrange(season))
 with(all_m, ctable(x = season, y = modell, useNA = "no", 
        prop = "t", totals = TRUE, headings = FALSE, method = "render"))
@@ -81,7 +81,7 @@ kable(sum_mod)
 # Skischuh
 
 ```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
-all_m <- (all %>% filter(date >= "2019-02-14" & date <= "2026-08-31") %>% arrange(date) %>% group_by(date) %>% slice(1) %>% 
+all_m <- (all %>% filter(date >= "2019-02-14" & date <= "2027-08-31") %>% arrange(date) %>% group_by(date) %>% slice(1) %>% 
             mutate(season = as.character(season)) %>% arrange(season))
 with(all_m, ctable(x = season, y = schuh, useNA = "no", 
        prop = "t", totals = TRUE, headings = FALSE, method = "render"))

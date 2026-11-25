@@ -93,7 +93,10 @@ ggplot(ski_season_long, aes(diff, season)) +
                           labels = xs_lab) + 
        labs(x = "Datum", y = "Saison", title = "Erste und letzte Skitour pro Saison") + theme(legend.position = "none") 
 ```
-
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t1 <- select(ski_season, season, n, first, last) 
+kable(t1)
+```
 
 ## Bike
 
@@ -107,6 +110,12 @@ ggplot(bike_season_long, aes(diff, year)) +
        labs(x = "Datum", y = "Jahr", title = "Erste und letzte Biketour pro Saison") + theme(legend.position = "none")
 ```
 
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t1 <- select(bike_season, year, first, last) 
+kable(t1)
+```
+
+
 
 ## Freiwasserschwimmen
 
@@ -118,4 +127,10 @@ ggplot(schwimmen_season_long, aes(diff, year)) +
         geom_point(aes(color = which)) + scale_x_continuous(limits = c(0, 365), breaks = c(0, cumsum(xs)), 
                           labels = c("1. Jan", xs_lab)) + 
        labs(x = "Datum", y = "Jahr", title = "Erstes und letztes Mal Schwimmen im See pro Saison") + theme(legend.position = "none")
+```
+
+
+```{r, echo = FALSE, results = 'asis', message = FALSE, eval = TRUE}
+t1 <- select(schwimmen_season, year, first, last) 
+kable(t1)
 ```
